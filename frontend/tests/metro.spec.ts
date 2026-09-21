@@ -1,4 +1,6 @@
 import { test, expect, type Page } from "@playwright/test";
+import type { Journey } from "../src/lib/journey";
+import { lowerCrowdingCars, crowdColor, legDoors } from "../src/lib/boarding";
 async function ready(page: Page) {
   await page.goto("/");
   await expect(
@@ -55,15 +57,15 @@ test("Konkuk to Express Bus Terminal predicts all intervening segments and selec
     to_line: 7,
     at: "2026-09-22T08:15:00+09:00",
   });
-  await expect(page.locator(".journey-segment")).toHaveCount(j.ride_segments);
+  await expect(page.locator(".map-segment")).toHaveCount(j.ride_segments);
   const ride = j.steps
     .filter((s: { kind: string }) => s.kind === "ride")
     .at(-1);
-  await page.locator(".journey-segment").last().click();
-  await expect(page.locator(".mean-value")).toContainText(
+  await page.locator(".map-segment").last().click();
+  await expect(page.locator(".map-readout")).toContainText(
     ride.forecast.train_mean_congestion_pct.toFixed(1),
   );
-  await expect(page.locator(".car")).toHaveCount(8);
+  await expect(page.locator(".train-car")).toHaveCount(8);
 });
 test("all nine lines call real API and render returned car count", async ({
   page,
@@ -82,7 +84,9 @@ test("all nine lines call real API and render returned car count", async ({
     expect(r.status()).toBe(200);
     const j = await r.json();
     const first = j.steps.find((s: { kind: string }) => s.kind === "ride");
-    await expect(page.locator(".car")).toHaveCount(first.forecast.cars.length);
+    await expect(page.locator(".train-car")).toHaveCount(
+      first.forecast.cars.length,
+    );
   }
 });
 test("transfer journey displays transfer steps separately", async ({
@@ -95,7 +99,7 @@ test("transfer journey displays transfer steps separately", async ({
   expect(r.status()).toBe(200);
   const j = await r.json();
   expect(j.transfer_count).toBeGreaterThan(0);
-  await expect(page.locator(".transfer-step")).toHaveCount(
+  await expect(page.locator(".map-transfer")).toHaveCount(
     j.steps.filter((s: { kind: string }) => s.kind === "transfer").length,
   );
 });
@@ -106,7 +110,7 @@ test("branch has four cars and changed inputs label previous result", async ({
   await schedule(page);
   await route(page, 2, "성수", 2, "신설동");
   expect((await search(page)).status()).toBe(200);
-  await expect(page.locator(".car")).toHaveCount(4);
+  await expect(page.locator(".train-car")).toHaveCount(4);
   await page.getByRole("button", { name: /^8 8호선$/ }).click();
   await expect(page.locator("main").getByRole("status")).toContainText(
     "이전 조회 결과",
@@ -125,7 +129,7 @@ test("9 express route preference and same-station validation", async ({
     strategy: "fewest_transfers",
     allow_express: true,
   });
-  await expect(page.locator(".car")).toHaveCount(6);
+  await expect(page.locator(".train-car")).toHaveCount(6);
   await page
     .getByLabel("목적지역", { exact: true })
     .selectOption({ label: "김포공항" });
@@ -135,14 +139,40 @@ test("9 express route preference and same-station validation", async ({
 });
 test("unavailable journey never manufactures zero congestion", async ({
   page,
+  request,
 }) => {
+  const j: Journey = await (
+    await request.post("/api/metro/journey", {
+      data: {
+        from_station: "건대입구",
+        to_station: "고속터미널",
+        from_line: 7,
+        to_line: 7,
+        at: "2026-09-22T08:15:00+09:00",
+      },
+    })
+  ).json();
+  j.status = "unavailable";
+  j.predicted_segments = 0;
+  j.available_segment_weighted_mean_pct = null;
+  for (const l of j.legs) {
+    l.cars = [];
+    l.predicted_segments = 0;
+    l.coverage = 0;
+  }
+  for (const step of j.steps)
+    if (step.kind === "ride") {
+      step.forecast = null;
+      step.status = "unavailable";
+      step.unavailable_reason = "테스트: 관측 자료 없음";
+    }
   await ready(page);
-  await schedule(page, "2026-09-22T03:00");
-  const r = await search(page);
-  expect(r.status()).toBe(200);
-  expect((await r.json()).status).toBe("unavailable");
-  await expect(page.locator(".car")).toHaveCount(0);
-  await expect(page.locator(".journey-aggregate")).toContainText("자료 없음");
+  await page.route("**/api/metro/journey", (r) => r.fulfill({ json: j }));
+  await search(page);
+  await expect(page.locator(".boarding-advice")).toContainText(
+    "추천 자료가 없습니다",
+  );
+  await expect(page.locator(".train-car").first()).toContainText("—");
 });
 test("now omits at and failed server remains retryable", async ({ page }) => {
   await ready(page);
@@ -166,7 +196,7 @@ test("320px mobile has no page or car-value overflow", async ({ page }) => {
   await ready(page);
   await schedule(page);
   await search(page);
-  await expect(page.locator(".car")).toHaveCount(8);
+  await expect(page.locator(".train-car")).toHaveCount(8);
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= window.innerWidth,
@@ -193,4 +223,107 @@ test("late response is ignored after route change", async ({ page }) => {
   await page.getByRole("button", { name: /^1 1호선$/ }).click();
   await page.waitForTimeout(650);
   await expect(page.locator("main").getByRole("alert")).toHaveCount(0);
+});
+
+test("connected train recommends journey average, highlights known door, and does not promise seats", async ({
+  page,
+  request,
+}) => {
+  const j: Journey = await (
+    await request.post("/api/metro/journey", {
+      data: {
+        from_station: "건대입구",
+        to_station: "고속터미널",
+        from_line: 7,
+        to_line: 7,
+        at: "2026-09-22T08:15:00+09:00",
+      },
+    })
+  ).json();
+  j.legs[0].cars = j.legs[0].cars.map((c) => ({
+    ...c,
+    estimated_mean_congestion_pct: c.car === 2 ? 30 : 90,
+    estimated_peak_congestion_pct: c.car === 2 ? 50 : 120,
+  }));
+  j.arrival_alighting_guidance = {
+    status: "available",
+    note: "테스트용 문 위치",
+    points: [
+      { car: 2, door: 3, facility: "에스컬레이터", toward_station: "반포" },
+    ],
+  };
+  await ready(page);
+  await page.route("**/api/metro/journey", (r) => r.fulfill({ json: j }));
+  await search(page);
+  await expect(page.locator(".boarding-advice")).toContainText(
+    "2호차가 상대적으로",
+  );
+  await expect(page.locator(".seat-note")).toContainText("알 수 없습니다");
+  await expect(page.locator(".door-position.known")).toContainText("2-3");
+  await expect(page.locator(".door-advice")).toContainText("2호차 3번 문");
+  await expect(page.locator(".journey-segment,.car-grid")).toHaveCount(0);
+  const colors = await page
+    .locator(".train-car")
+    .evaluateAll((nodes) =>
+      nodes.map((e) => getComputedStyle(e).backgroundColor),
+    );
+  expect(colors[0]).not.toBe(colors[1]);
+  await page.locator(".map-segment").first().hover();
+  await expect(page.locator(".map-readout")).toContainText("열차 평균");
+});
+test("equal estimates do not create false recommendations; colours use fixed scale", () => {
+  const leg = {
+    cars: [
+      {
+        car: 1,
+        estimated_mean_congestion_pct: 50,
+        estimated_peak_congestion_pct: 80,
+      },
+      {
+        car: 2,
+        estimated_mean_congestion_pct: 50,
+        estimated_peak_congestion_pct: 80,
+      },
+    ],
+  } as Journey["legs"][number];
+  expect(lowerCrowdingCars(leg)).toEqual([]);
+  leg.cars[1].estimated_mean_congestion_pct = 30;
+  expect(lowerCrowdingCars(leg)).toEqual([2]);
+  expect(crowdColor(250)).toBe(crowdColor(200));
+  expect(crowdColor(0)).not.toBe(crowdColor(100));
+});
+
+test("door guidance belongs to the selected train, not the next train", () => {
+  const journey = {
+    legs: [
+      { car_count: 10, step_indices: [0] },
+      { car_count: 8, step_indices: [2] },
+    ],
+    steps: [
+      { kind: "ride" },
+      {
+        kind: "transfer",
+        door_guidance: {
+          routes: [
+            {
+              alight: { car: 10, door: 4, label: "10호차 4번 문" },
+              board: { car: 7, door: 4, label: "7호차 4번 문" },
+            },
+          ],
+        },
+      },
+      { kind: "ride" },
+    ],
+    arrival_alighting_guidance: {
+      points: [{ car: 2, door: 3, facility: "에스컬레이터" }],
+    },
+  } as unknown as Journey;
+  expect(legDoors(journey, 0).points).toEqual([
+    { car: 10, door: 4, purpose: "빠른 환승" },
+  ]);
+  expect(legDoors(journey, 1).points[0]).toMatchObject({
+    car: 2,
+    door: 3,
+    purpose: "하차 접근",
+  });
 });

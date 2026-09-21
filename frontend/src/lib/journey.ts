@@ -14,8 +14,13 @@ export type RideStep = {
   status: string;
   unavailable_reason: string | null;
   forecast: Prediction | null;
+  timing_basis?: string;
+  waiting_minutes?: number;
+  dwell_minutes?: number;
+  schedule?: { train_no: string; destination: string } | null;
 };
 export type TransferStep = {
+  door_guidance?: DoorGuidance;
   kind: "transfer";
   from_station: string;
   to_station: string;
@@ -26,6 +31,19 @@ export type TransferStep = {
   estimated_minutes: number;
 };
 export type Journey = {
+  timetable?: {
+    status: string;
+    as_of?: string;
+    matched_ride_segments: number;
+    fallback_ride_segments: number;
+    current_service_verified?: boolean;
+  };
+  endpoint_facilities?: {
+    departure: StationFacilities;
+    arrival: StationFacilities;
+  };
+  departure_boarding_guidance?: DoorGuidance;
+  arrival_alighting_guidance?: DoorGuidance;
   from_station: string;
   to_station: string;
   departure_at: string;
@@ -55,4 +73,37 @@ export type Journey = {
     }[];
   }[];
   warnings: string[];
+};
+
+export type DoorGuidance = {
+  status: string;
+  note: string;
+  as_of?: string;
+  points?: {
+    car: number;
+    door: number;
+    facility: string;
+    toward_station: string;
+  }[];
+  routes?: {
+    source_route_id: string;
+    alight: { label: string };
+    board: { label: string };
+    from_direction: string;
+    to_direction: string;
+  }[];
+};
+export type StationFacilities = {
+  station_id: string;
+  station_name: string;
+  line: number;
+  status: string;
+  as_of: string;
+  features: Record<string, boolean | null>;
+  nursing_rooms: {
+    location: string;
+    fare_area: string;
+    type: string;
+    as_of: string;
+  }[];
 };

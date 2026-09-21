@@ -1,4 +1,6 @@
 "use client";
+
+import JourneyExperience from "./journey-experience";
 import { useEffect, useMemo, useRef, useState, type FormEvent } from "react";
 import {
   ArrowRight,
@@ -11,20 +13,12 @@ import {
   MapPin,
   LoaderCircle,
 } from "lucide-react";
-import {
-  api,
-  koreanNow,
-  lineColors,
-  timeLabel,
-  type Segment,
-  type Prediction,
-} from "@/lib/metro";
+import { api, koreanNow, lineColors, type Segment } from "@/lib/metro";
 
 import type { Journey } from "@/lib/journey";
 
 export default function SubwayApp() {
-  const [journey, setJourney] = useState<Journey | null>(null),
-    [legIndex, setLegIndex] = useState(0);
+  const [journey, setJourney] = useState<Journey | null>(null);
   const [segments, setSegments] = useState<Segment[]>([]),
     [catalogError, setCatalogError] = useState(""),
     [catalogLoading, setCatalogLoading] = useState(true);
@@ -35,9 +29,7 @@ export default function SubwayApp() {
     [origin, setOrigin] = useState(""),
     [destination, setDestination] = useState("");
   const [scheduled, setScheduled] = useState(false),
-    [at, setAt] = useState(""),
-    [result, setResult] = useState<Prediction | null>(null),
-    [selectedCar, setSelectedCar] = useState(1);
+    [at, setAt] = useState("");
   const [pending, setPending] = useState(false),
     [error, setError] = useState(""),
     [dirty, setDirty] = useState(false);
@@ -122,7 +114,6 @@ export default function SubwayApp() {
     const serial = ++sequence.current;
     setPending(true);
     setError("");
-    setResult(null);
     setJourney(null);
     setDirty(false);
     try {
@@ -141,11 +132,6 @@ export default function SubwayApp() {
       );
       if (sequence.current !== serial) return;
       setJourney(data);
-      const first = data.steps.findIndex((s) => s.kind === "ride");
-      const step = data.steps[first];
-      setLegIndex(first);
-      setResult(step?.kind === "ride" ? step.forecast : null);
-      setSelectedCar(1);
     } catch (e) {
       if (sequence.current === serial && !controller.signal.aborted)
         setError((e as Error).message);
@@ -153,16 +139,6 @@ export default function SubwayApp() {
       if (sequence.current === serial) setPending(false);
     }
   }
-  const car = result?.cars.find((c) => c.car === selectedCar),
-    mean = result?.train_mean_congestion_pct || 0;
-  const same =
-    !!result &&
-    result.cars.every(
-      (c) =>
-        Math.abs(
-          c.estimated_congestion_pct - result.cars[0].estimated_congestion_pct,
-        ) < 0.001,
-    );
   const lineStationCount = new Set(
     segments
       .filter((s) => s.line === line)
@@ -476,350 +452,14 @@ export default function SubwayApp() {
                     입력 조건이 변경됐습니다. 아래는 이전 조회 결과입니다.
                   </p>
                 )}
-                <div className="journey-overview">
-                  <span className="pill">이동 경로 예측</span>
-                  <h2 className="trip-title">
-                    {journey.from_station}
-                    <ArrowRight size={21} />
-                    {journey.to_station}
-                  </h2>
-                  <p className="helper">
-                    {timeLabel(journey.departure_at)} 출발 · 한국 시간
-                  </p>
-                  <div className="journey-summary">
-                    <span>
-                      약 {Math.round(journey.estimated_minutes)}분 · 가정 기반
-                    </span>
-                    <span>환승/열차 변경 {journey.transfer_count}회</span>
-                    <span>{journey.ride_segments}개 이동 구간</span>
-                  </div>
-                  <p className="helper mt-3">
-                    {journey.route_strategy === "fewest_transfers"
-                      ? "환승 최소"
-                      : "예상시간 우선"}{" "}
-                    경로 · 도착 예상 {timeLabel(journey.estimated_arrival_at)}
-                    <br />
-                    실제 시간표·대기·지연을 반영한 도착 안내가 아닙니다.
-                  </p>
-                  <div className="journey-aggregate">
-                    <span>예측 가능한 구간의 평균 혼잡도</span>
-                    <strong>
-                      {journey.available_segment_weighted_mean_pct === null
-                        ? "자료 없음"
-                        : journey.available_segment_weighted_mean_pct.toFixed(
-                            1,
-                          ) + "%"}
-                    </strong>
-                    <small>
-                      {journey.predicted_segments}/{journey.ride_segments}개
-                      구간 · 탑승시간 가중 평균
-                    </small>
-                  </div>
-                  {journey.status !== "complete" && (
-                    <p className="change-notice" role="status">
-                      일부 구간에 예측 자료가 없습니다. 평균은 예측 가능한
-                      구간만 포함합니다.
-                    </p>
-                  )}
-                  <div
-                    className="journey-segments"
-                    aria-label="이동 경로 구간 선택"
-                  >
-                    {journey.steps.map((step, i) =>
-                      step.kind === "transfer" ? (
-                        <div className="transfer-step" key={i}>
-                          {step.from_station} 환승 · {step.from_line}호선 →{" "}
-                          {step.to_line}호선
-                          <span>
-                            도보·대기 약 {Math.round(step.estimated_minutes)}분
-                            (가정)
-                          </span>
-                        </div>
-                      ) : (
-                        <button
-                          type="button"
-                          className="journey-segment"
-                          key={i}
-                          aria-pressed={i === legIndex}
-                          onClick={() => {
-                            setLegIndex(i);
-                            setResult(step.forecast);
-                            setSelectedCar(1);
-                          }}
-                        >
-                          <span
-                            className="step-line"
-                            style={{ color: lineColors[step.line] }}
-                          >
-                            {step.line}호선 · {step.service}
-                            {step.train_change_wait_minutes > 0
-                              ? " · 열차 변경"
-                              : ""}
-                          </span>
-                          {step.from_station} → {step.to_station}
-                          <span>{timeLabel(step.forecast_at)} 기준</span>
-                          <strong>
-                            {step.forecast
-                              ? step.forecast.train_mean_congestion_pct.toFixed(
-                                  1,
-                                ) + "%"
-                              : "자료 없음"}
-                          </strong>
-                        </button>
-                      ),
-                    )}
-                  </div>
-                  <details className="method">
-                    <summary>탑승 열차별 칸 평균·최대 혼잡도</summary>
-                    <p className="helper mt-2">
-                      같은 열차를 타는 구간끼리 집계합니다. 환승 전후의 호차는
-                      서로 다른 열차입니다.
-                    </p>
-                    {journey.legs.map((leg, i) => (
-                      <div key={i} className="leg-summary">
-                        <strong>
-                          {leg.line}호선 {leg.service} · {leg.from_station} →{" "}
-                          {leg.to_station}
-                        </strong>
-                        <p className="helper">
-                          {leg.predicted_segments}/{leg.total_segments}개 구간에
-                          자료 있음 · 평균은 유효 구간의 탑승시간 가중값
-                        </p>
-                        {leg.cars.length ? (
-                          <table>
-                            <thead>
-                              <tr>
-                                <th>호차</th>
-                                <th>평균</th>
-                                <th>최대</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              {leg.cars.map((c) => (
-                                <tr key={c.car}>
-                                  <td>{c.car}호차</td>
-                                  <td>
-                                    {c.estimated_mean_congestion_pct.toFixed(1)}
-                                    %
-                                  </td>
-                                  <td>
-                                    {c.estimated_peak_congestion_pct.toFixed(1)}
-                                    %
-                                  </td>
-                                </tr>
-                              ))}
-                            </tbody>
-                          </table>
-                        ) : (
-                          <p>자료 없음</p>
-                        )}
-                      </div>
-                    ))}
-                  </details>
-                  <details className="method">
-                    <summary>경로·시간 계산 기준</summary>
-                    <ul>
-                      {journey.warnings.map((w, i) => (
-                        <li key={i}>{w}</li>
-                      ))}
-                    </ul>
-                  </details>
-                </div>
-                {!result ? (
-                  <div role="status" className="empty-state">
-                    <Info size={25} />
-                    <h2>이 구간의 예측값이 없습니다</h2>
-                    <p>
-                      {journey.steps[legIndex]?.kind === "ride"
-                        ? journey.steps[legIndex].unavailable_reason
-                        : "탑승 구간을 선택하세요."}
-                    </p>
-                    <p>다른 구간을 선택하면 확인할 수 있어요.</p>
-                  </div>
-                ) : (
-                  <>
-                    <div className="result-heading">
-                      <div>
-                        <div className="flex items-center gap-2 flex-wrap">
-                          <span
-                            className="line-badge"
-                            style={{ background: lineColors[result.line] }}
-                          >
-                            {result.line}호선
-                          </span>
-                          <span className="pill">
-                            {result.service || "일반"}
-                          </span>
-                          <span className="pill">칸별 추정</span>
-                        </div>
-                        <h2 className="trip-title">
-                          {result.from_station}
-                          <ArrowRight size={21} />
-                          {result.to_station}
-                        </h2>
-                        <p className="helper">
-                          {timeLabel(result.requested_at)} · {result.direction}
-                        </p>
-                      </div>
-                      <span className="subtle-label">
-                        {result.cars.length}량 편성
-                      </span>
-                    </div>
-                    <div className="mean-row">
-                      <div>
-                        <span className="field-label">
-                          열차 평균 예상 혼잡도
-                        </span>
-                        <div className="mean-value">
-                          {mean.toFixed(1)}
-                          <small>%</small>
-                        </div>
-                      </div>
-                      <div className="mean-note">
-                        {result.daytype} · {result.time_bin} 시간대
-                        <br />
-                        개별 열차의 실측값이 아닙니다
-                      </div>
-                    </div>
-                    <div className="flex items-center justify-between gap-3 flex-wrap mt-7 mb-4">
-                      <h3>칸별 혼잡도 비교</h3>
-                      <span className="helper">
-                        호차 번호순 · 칸을 눌러 상세 보기
-                      </span>
-                    </div>
-                    <div
-                      className="car-grid"
-                      style={
-                        {
-                          "--columns":
-                            result.cars.length === 4
-                              ? 4
-                              : result.cars.length === 6
-                                ? 3
-                                : result.cars.length === 8
-                                  ? 4
-                                  : 5,
-                        } as React.CSSProperties
-                      }
-                    >
-                      {result.cars.map((c) => (
-                        <button
-                          type="button"
-                          className="car"
-                          key={c.car}
-                          aria-pressed={selectedCar === c.car}
-                          aria-label={`${c.car}호차 ${c.estimated_congestion_pct.toFixed(1)}%, 상세 보기`}
-                          onClick={() => setSelectedCar(c.car)}
-                        >
-                          <span className="car-number">{c.car}호차</span>
-                          <strong>
-                            {c.estimated_congestion_pct.toFixed(1)}
-                            <small>%</small>
-                          </strong>
-                          <span className="car-track">
-                            <span
-                              style={{
-                                width:
-                                  Math.min(
-                                    (c.estimated_congestion_pct /
-                                      Math.max(
-                                        150,
-                                        ...result.cars.map(
-                                          (x) => x.estimated_congestion_pct,
-                                        ),
-                                      )) *
-                                      100,
-                                    100,
-                                  ) + "%",
-                              }}
-                            />
-                          </span>
-                        </button>
-                      ))}
-                    </div>
-                    {same && (
-                      <p className="helper mt-3">
-                        이 결과에서는 모든 칸에 동일한 값이 배분되었습니다. 칸별
-                        우열을 구분하지 않습니다.
-                      </p>
-                    )}
-                    {car && (
-                      <div className="car-detail" aria-live="polite">
-                        <div className="flex justify-between gap-3 flex-wrap">
-                          <strong>{car.car}호차 상세</strong>
-                          <span>
-                            열차 평균 대비{" "}
-                            {car.estimated_congestion_pct - mean > 0 ? "+" : ""}
-                            {(car.estimated_congestion_pct - mean).toFixed(1)}%p
-                          </span>
-                        </div>
-                        <p>
-                          위치 배분 가정에 따른 범위{" "}
-                          <b>
-                            {car.scenario_range_pct[0].toFixed(1)}–
-                            {car.scenario_range_pct[1].toFixed(1)}%
-                          </b>
-                        </p>
-                        <span className="helper">
-                          이 범위는 통계적 신뢰구간이 아닙니다.
-                        </span>
-                        {result.location_features?.transfer_board_cars.includes(
-                          car.car,
-                        ) && (
-                          <p className="location-note">
-                            환승 후 승차 위치가 인접한 호차입니다.
-                          </p>
-                        )}
-                        {result.location_features?.access_cars.includes(
-                          car.car,
-                        ) && (
-                          <p className="location-note">
-                            에스컬레이터 접근 위치가 인접한 호차입니다.
-                          </p>
-                        )}
-                      </div>
-                    )}
-                    <div className="evidence-note">
-                      <Info size={16} />
-                      <p>
-                        칸별 값은 공개 혼잡도와 위치 정보를 결합한 추정
-                        시나리오입니다. 실제 칸별 관측값으로 검증되지
-                        않았습니다.
-                      </p>
-                    </div>
-                    <details className="method">
-                      <summary>예측 기준과 데이터 확인</summary>
-                      <ul>
-                        {result.warnings.map((w, i) => (
-                          <li key={i}>{w}</li>
-                        ))}
-                      </ul>
-                      <dl>
-                        <dt>운행일</dt>
-                        <dd>{result.service_date}</dd>
-                        <dt>모델 버전</dt>
-                        <dd>{result.model_version}</dd>
-                        {Object.entries(result.evidence).map(([k, v]) => (
-                          <div className="contents" key={k}>
-                            <dt>
-                              {(
-                                {
-                                  available_after: "조회 가능 기준일",
-                                  next_profile_last_period: "다음 시간대 조사",
-                                  trained_through: "학습 기준",
-                                  profile_last_period: "최근 조사",
-                                  profile_snapshot_count: "조사 건수",
-                                  car_ground_truth_count: "칸별 실측 정답 수",
-                                } as Record<string, string>
-                              )[k] || k}
-                            </dt>
-                            <dd>{String(v)}</dd>
-                          </div>
-                        ))}
-                      </dl>
-                    </details>
-                  </>
-                )}
+                <JourneyExperience
+                  key={
+                    journey.departure_at +
+                    journey.from_station +
+                    journey.to_station
+                  }
+                  journey={journey}
+                />
               </>
             )}
           </section>
