@@ -2,6 +2,16 @@
 
 대상: AWS `410618141864`, 서울 `ap-northeast-2`, GitHub `yeonsung-cloud-mlops/subway`의 `main`.
 
+## 생성된 환경
+
+2026-09-21 `subway-production` 스택 생성 완료. [리소스 식별자](deployment.json)에 EC2, 영속 디스크, 보안 그룹, 백업 버킷을 기록했습니다. Docker Compose 설치와 데이터 볼륨 마운트, IMDSv2 강제 설정을 확인했고 IAM 정책 시뮬레이터에서 배포 역할의 `iam:CreateUser`, `ec2:RunInstances`, `ssm:UpdateDocument`가 거부됨을 확인했습니다.
+
+- 서비스 주소: http://43.203.18.42
+- API 문서: http://43.203.18.42/docs
+- [배포 실행/결과](https://github.com/yeonsung-cloud-mlops/subway/actions/workflows/deploy.yml)
+- 등록 완료 Secrets: `AWS_ROLE_ARN`, `AWS_INSTANCE_ID`. 활성화 변수: `AWS_DEPLOY_ENABLED=true`.
+- 앱의 현재 배포 성공 여부와 SHA는 Actions 실행 결과 및 서버의 `/srv/subway/deployed-commit`에서 확인합니다.
+
 ## 리소스와 비용
 
 - 전용 VPC / 퍼블릭 서브넷 / 인터넷 게이트웨이. NAT Gateway, ALB, RDS 없음.
