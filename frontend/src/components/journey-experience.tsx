@@ -20,8 +20,6 @@ export default function JourneyExperience({ journey }: { journey: Journey }) {
   const best = leg ? lowerCrowdingCars(leg) : [];
   const car = leg?.cars.find((c) => c.car === (selectedCar ?? best[0] ?? 1));
   const guidance = leg ? legDoors(journey, legIndex) : null;
-  const chosen = hover ?? pinned;
-  const step = chosen === null ? null : journey.steps[chosen];
   const convenient = guidance?.points.filter((p) => best.includes(p.car)) || [];
   function selectStep(i: number) {
     setPinned(i);
@@ -62,15 +60,17 @@ export default function JourneyExperience({ journey }: { journey: Journey }) {
           <div className="route-track">
             {journey.steps.map((s, i) =>
               s.kind === "transfer" ? (
-                <div className="map-transfer" key={i}>
-                  <span className="transfer-node" />
-                  <span>
-                    {s.from_station}
-                    <small>
-                      {s.from_line} → {s.to_line}호선 환승
-                    </small>
-                  </span>
-                </div>
+                s.purpose === "destination_access" ? null : (
+                  <div className="map-transfer" key={i}>
+                    <span className="transfer-node" />
+                    <span>
+                      {s.from_station}
+                      <small>
+                        {s.from_line} → {s.to_line}호선 환승
+                      </small>
+                    </span>
+                  </div>
+                )
               ) : (
                 <button
                   type="button"
@@ -121,37 +121,33 @@ export default function JourneyExperience({ journey }: { journey: Journey }) {
                 </button>
               ),
             )}
-            <div className="map-destination">
+            <div
+              className="map-destination"
+              style={
+                {
+                  "--route-color":
+                    lineColors[
+                      journey.to_line ?? journey.legs.at(-1)?.line ?? 1
+                    ],
+                } as React.CSSProperties
+              }
+            >
               <span className="map-node" />
-              <b>{journey.to_station}</b>
+              <span className="map-station">
+                {journey.to_station}
+                <small>
+                  {journey.to_line ?? journey.legs.at(-1)?.line}호선 도착
+                </small>
+              </span>
             </div>
           </div>
-          <div className="map-readout" aria-live="polite">
-            {step?.kind === "ride" ? (
-              <>
-                <strong>
-                  {step.from_station} → {step.to_station}
-                </strong>
-                <span>
-                  {step.forecast
-                    ? `열차 평균 ${step.forecast.train_mean_congestion_pct.toFixed(1)}%`
-                    : "예측 자료 없음"}
-                </span>
-                <small>{timeLabel(step.forecast_at)} 기준</small>
-              </>
-            ) : step?.kind === "transfer" ? (
-              <>
-                <strong>{step.from_station} 환승</strong>
-                <TransferDoors guidance={step.door_guidance} />
-              </>
-            ) : (
-              <span>
-                노선 위 구간을 선택하면
-                <br />
-                시간대별 혼잡도가 표시됩니다.
-              </span>
-            )}
-          </div>
+          {!!journey.destination_access_minutes && (
+            <p className="helper destination-access">
+              도착역 내 {journey.to_line}호선 이동 약{" "}
+              {Math.round(journey.destination_access_minutes)}분 포함 · 추가
+              열차 탑승 없음
+            </p>
+          )}
         </section>
         <section className="boarding-view" aria-label="탑승할 열차와 호차 안내">
           <h3>어느 칸에 탈까요?</h3>
@@ -231,7 +227,8 @@ export default function JourneyExperience({ journey }: { journey: Journey }) {
                             ? c.estimated_mean_congestion_pct.toFixed(1) + "%"
                             : "—"}
                         </strong>
-                        <span className="train-windows" aria-hidden="true">
+                        <span className="train-doors" aria-hidden="true">
+                          <i />
                           <i />
                           <i />
                           <i />
@@ -255,47 +252,6 @@ export default function JourneyExperience({ journey }: { journey: Journey }) {
                 {leg.predicted_segments}/{leg.total_segments}개 구간의 탑승시간
                 가중 평균 · 부분 자료는 전체 이동을 대표하지 않을 수 있습니다.
               </p>
-              {car && (
-                <div className="selected-car-detail" aria-live="polite">
-                  <h4>
-                    {car.car}호차{" "}
-                    <span>
-                      구간 평균 {car.estimated_mean_congestion_pct.toFixed(1)}%
-                      · 최대 {car.estimated_peak_congestion_pct.toFixed(1)}%
-                    </span>
-                  </h4>
-                  <div
-                    className="door-strip"
-                    aria-label={`${car.car}호차 문 위치`}
-                  >
-                    {[1, 2, 3, 4].map((d) => {
-                      const point = guidance?.points.find(
-                        (p) => p.car === car.car && p.door === d,
-                      );
-                      return (
-                        <div
-                          className={
-                            point ? "door-position known" : "door-position"
-                          }
-                          key={d}
-                        >
-                          <span className="door-drawing" aria-hidden="true" />
-                          <strong>
-                            {car.car}-{d}
-                          </strong>
-                          <small>
-                            {point ? point.purpose : "문별 혼잡도 미측정"}
-                          </small>
-                        </div>
-                      );
-                    })}
-                  </div>
-                  <p className="helper">
-                    문 번호는 위치 확인용 도식입니다. 문마다 승객이 얼마나
-                    몰리는지는 알 수 없습니다.
-                  </p>
-                </div>
-              )}
               <div className="door-advice">
                 <h3>어떤 문이 편할까요?</h3>
                 <dl>
@@ -318,10 +274,6 @@ export default function JourneyExperience({ journey }: { journey: Journey }) {
                         : best.length
                           ? "추천 칸과 확인된 접근 문이 겹치지 않습니다. 혼잡도와 동선 중 우선순위를 선택하세요."
                           : "칸별 우열 또는 문 위치를 확인할 수 없습니다."}
-                  </dd>
-                  <dt>혼잡도가 가장 낮은 문</dt>
-                  <dd>
-                    문별 혼잡도 데이터가 없어 특정 문을 추천할 수 없습니다.
                   </dd>
                 </dl>
                 {guidance?.guidance?.note && (

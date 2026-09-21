@@ -921,26 +921,6 @@ input[type="datetime-local"] {
   font-size: 12px;
   min-height: 35px;
 }
-.map-readout {
-  border-top: 1px solid var(--line);
-  margin-top: 15px;
-  padding-top: 14px;
-  font-size: 11px;
-  min-height: 80px;
-  word-break: keep-all;
-}
-.map-readout strong,
-.map-readout span,
-.map-readout small {
-  display: block;
-}
-.map-readout span {
-  margin-top: 5px;
-}
-.map-readout small {
-  color: var(--muted);
-  margin-top: 5px;
-}
 .boarding-view {
   min-width: 0;
 }
@@ -1076,16 +1056,22 @@ input[type="datetime-local"] {
   letter-spacing: -0.05em;
   margin-top: 3px;
 }
-.train-windows {
+.train-doors {
   display: flex;
-  gap: 4px;
-  padding: 4px 5px;
+  gap: 3px;
+  padding: 4px 2px;
 }
-.train-windows i {
-  height: 12px;
+.train-doors i {
+  height: 19px;
   flex: 1;
   border: 1px solid #48636d;
-  background: #ffffff99;
+  background: linear-gradient(
+    to right,
+    #ffffff99 46%,
+    #48636d 46%,
+    #48636d 54%,
+    #ffffff99 54%
+  );
   border-radius: 2px;
 }
 .train-wheels:before,
@@ -1135,65 +1121,6 @@ input[type="datetime-local"] {
 .heat-legend small {
   color: var(--muted);
   font-size: 10px;
-}
-.selected-car-detail {
-  padding: 20px 0;
-  margin-top: 15px;
-  border-top: 1px solid var(--line);
-}
-.selected-car-detail h4 {
-  font-size: 14px;
-  font-weight: 600;
-}
-.selected-car-detail h4 > span {
-  display: block;
-  font-size: 11px;
-  font-weight: 400;
-  color: var(--muted);
-  margin-top: 4px;
-}
-.door-strip {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 8px;
-  margin: 18px 0;
-  text-align: center;
-}
-.door-position {
-  min-width: 0;
-}
-.door-drawing {
-  position: relative;
-  display: block;
-  width: 28px;
-  height: 36px;
-  border: 1px solid #a2b1b8;
-  margin: 0 auto 7px;
-  background: #eef2f3;
-  border-radius: 3px 3px 0 0;
-}
-.door-drawing:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  border-left: 1px solid #a2b1b8;
-}
-.door-position.known .door-drawing {
-  border: 2px solid #176780;
-  background: #d2eceb;
-}
-.door-position strong {
-  display: block;
-  font-size: 12px;
-}
-.door-position small {
-  display: block;
-  font-size: 10px;
-  color: var(--muted);
-  word-break: keep-all;
-  margin-top: 3px;
 }
 .door-advice {
   border-top: 1px solid var(--line);
@@ -1258,9 +1185,9 @@ input[type="datetime-local"] {
   top: 5px;
 }
 .map-destination {
-  flex: 0 0 85px;
-  padding: 55px 0 0;
-  min-height: 80px;
+  flex: 0 0 95px;
+  padding: 55px 4px 0;
+  min-height: 112px;
 }
 .map-transfer {
   flex: 0 0 95px;
@@ -1278,16 +1205,6 @@ input[type="datetime-local"] {
 .transfer-node {
   top: 3px;
 }
-.map-readout {
-  min-height: 62px;
-  margin-top: 4px;
-}
-.map-readout strong,
-.map-readout span,
-.map-readout small {
-  display: inline-block;
-  margin-right: 10px;
-}
 @media (max-width: 1000px) {
   .boarding-advice strong {
     font-size: 21px;
@@ -1302,9 +1219,6 @@ input[type="datetime-local"] {
   }
   .leg-tabs button {
     min-height: 44px;
-  }
-  .door-strip {
-    gap: 4px;
   }
 }
 .map-tooltip {

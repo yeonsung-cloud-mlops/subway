@@ -62,9 +62,10 @@ test("Konkuk to Express Bus Terminal predicts all intervening segments and selec
     .filter((s: { kind: string }) => s.kind === "ride")
     .at(-1);
   await page.locator(".map-segment").last().click();
-  await expect(page.locator(".map-readout")).toContainText(
+  await expect(page.locator(".map-crowding-value").last()).toContainText(
     ride.forecast.train_mean_congestion_pct.toFixed(1),
   );
+  await expect(page.locator(".map-readout")).toHaveCount(0);
   await expect(page.locator(".train-car")).toHaveCount(8);
 });
 test("all nine lines call real API and render returned car count", async ({
@@ -259,7 +260,12 @@ test("connected train recommends journey average, highlights known door, and doe
     "2호차가 상대적으로",
   );
   await expect(page.locator(".seat-note")).toContainText("알 수 없습니다");
-  await expect(page.locator(".door-position.known")).toContainText("2-3");
+  await expect(page.locator(".selected-car-detail,.door-strip")).toHaveCount(0);
+  for (const train of await page.locator(".train-car").all()) {
+    await expect(train.locator(".train-doors i")).toHaveCount(4);
+  }
+  await page.locator(".train-car").first().click();
+  await expect(page.locator(".door-strip")).toHaveCount(0);
   await expect(page.locator(".door-advice")).toContainText("2호차 3번 문");
   await expect(page.locator(".journey-segment,.car-grid")).toHaveCount(0);
   const colors = await page
@@ -269,7 +275,8 @@ test("connected train recommends journey average, highlights known door, and doe
     );
   expect(colors[0]).not.toBe(colors[1]);
   await page.locator(".map-segment").first().hover();
-  await expect(page.locator(".map-readout")).toContainText("열차 평균");
+  await expect(page.getByRole("tooltip")).toBeVisible();
+  await expect(page.locator(".map-readout")).toHaveCount(0);
 });
 test("equal estimates do not create false recommendations; colours use fixed scale", () => {
   const leg = {
