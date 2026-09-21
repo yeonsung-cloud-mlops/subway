@@ -867,35 +867,21 @@ input[type="datetime-local"] {
 .map-station {
   width: 100%;
 }
-.map-crowding {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  margin-top: 9px;
-}
-.map-crowding-scale {
-  position: relative;
-  flex: 1;
-  height: 6px;
-  min-width: 25px;
-  border-radius: 3px;
-  background: linear-gradient(to right, #22c55e, #facc15 50%, #ef4444);
-}
-.map-crowding-scale[data-missing="true"] {
-  background: #d7dde0;
-}
-.map-crowding-marker {
+.map-crowding-rail {
   position: absolute;
-  top: -3px;
-  width: 4px;
-  height: 12px;
-  border-radius: 2px;
-  background: var(--ink);
-  box-shadow: 0 0 0 1px white;
-  transform: translateX(-50%);
+  left: 10px;
+  right: -10px;
+  top: 23px;
+  height: 5px;
+  background: var(--crowding-color);
 }
 .map-crowding-value {
-  font-size: 11px;
+  position: absolute;
+  top: 31px;
+  left: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
@@ -1241,68 +1227,68 @@ input[type="datetime-local"] {
     grid-template-columns: 160px minmax(0, 1fr);
   }
 }
+.experience-layout {
+  grid-template-columns: 1fr;
+}
+.route-track {
+  display: flex;
+  overflow-x: auto;
+  padding: 8px 4px 12px;
+  scrollbar-width: thin;
+}
+.map-segment {
+  flex: 0 0 95px;
+  min-height: 112px;
+  display: block;
+  padding: 55px 4px 0;
+}
+.map-station {
+  display: block;
+}
+.map-rail {
+  left: 10px;
+  right: -10px;
+  top: 10px;
+  bottom: auto;
+  width: auto;
+  height: 6px;
+}
+.map-node {
+  left: 3px;
+  top: 5px;
+}
+.map-destination {
+  flex: 0 0 85px;
+  padding: 55px 0 0;
+  min-height: 80px;
+}
+.map-transfer {
+  flex: 0 0 95px;
+  padding: 55px 4px 0;
+  min-height: 80px;
+}
+.map-transfer:before {
+  left: 8px;
+  right: 0;
+  top: 10px;
+  bottom: auto;
+  border-left: 0;
+  border-top: 5px dotted #7b8790;
+}
+.transfer-node {
+  top: 3px;
+}
+.map-readout {
+  min-height: 62px;
+  margin-top: 4px;
+}
+.map-readout strong,
+.map-readout span,
+.map-readout small {
+  display: inline-block;
+  margin-right: 10px;
+}
 @media (max-width: 1000px) {
-  .experience-layout {
-    grid-template-columns: 1fr;
-  }
-  .route-track {
-    display: flex;
-    overflow-x: auto;
-    padding: 8px 4px 12px;
-    scrollbar-width: thin;
-  }
-  .map-segment {
-    flex: 0 0 95px;
-    min-height: 112px;
-    display: block;
-    padding: 27px 4px 0;
-  }
-  .map-station {
-    display: block;
-  }
-  .map-rail {
-    left: 10px;
-    right: -10px;
-    top: 10px;
-    bottom: auto;
-    width: auto;
-    height: 6px;
-  }
-  .map-node {
-    left: 3px;
-    top: 5px;
-  }
-  .map-destination {
-    flex: 0 0 85px;
-    padding: 28px 0 0;
-    min-height: 80px;
-  }
-  .map-transfer {
-    flex: 0 0 95px;
-    padding: 28px 4px 0;
-    min-height: 80px;
-  }
-  .map-transfer:before {
-    left: 8px;
-    right: 0;
-    top: 10px;
-    bottom: auto;
-    border-left: 0;
-    border-top: 5px dotted #7b8790;
-  }
-  .transfer-node {
-    top: 3px;
-  }
-  .map-readout {
-    min-height: 62px;
-    margin-top: 4px;
-  }
-  .map-readout strong,
-  .map-readout span,
-  .map-readout small {
-    display: inline-block;
-    margin-right: 10px;
-  }
   .boarding-advice strong {
     font-size: 21px;
   }

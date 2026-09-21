@@ -1,15 +1,24 @@
 import type { Journey, DoorGuidance } from "./journey";
-export function crowdColor(value: number) {
-  const t = Math.max(0, Math.min(200, value)) / 100;
-  const stops = [
+export function crowdColor(
+  value: number,
+  stops = [
     [157, 228, 210],
     [255, 215, 139],
     [242, 142, 161],
-  ];
+  ],
+) {
+  const t = Math.max(0, Math.min(200, value)) / 100;
   const a = stops[t <= 1 ? 0 : 1],
     b = stops[t <= 1 ? 1 : 2],
     f = t <= 1 ? t : t - 1;
   return `rgb(${a.map((v, i) => Math.round(v + (b[i] - v) * f)).join(",")})`;
+}
+export function routeCrowdColor(value: number) {
+  return crowdColor(value, [
+    [34, 197, 94],
+    [250, 204, 21],
+    [239, 68, 68],
+  ]);
 }
 export function lowerCrowdingCars(leg: Journey["legs"][number]) {
   const cars = leg.cars.filter((c) =>

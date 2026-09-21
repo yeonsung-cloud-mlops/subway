@@ -3,7 +3,12 @@ import { useState } from "react";
 import { ArrowRight, Info } from "lucide-react";
 import type { Journey } from "@/lib/journey";
 import { lineColors, timeLabel } from "@/lib/metro";
-import { crowdColor, lowerCrowdingCars, legDoors } from "@/lib/boarding";
+import {
+  crowdColor,
+  routeCrowdColor,
+  lowerCrowdingCars,
+  legDoors,
+} from "@/lib/boarding";
 import { JourneyDetails, TransferDoors } from "./journey-details";
 
 export default function JourneyExperience({ journey }: { journey: Journey }) {
@@ -64,7 +69,6 @@ export default function JourneyExperience({ journey }: { journey: Journey }) {
                     <small>
                       {s.from_line} → {s.to_line}호선 환승
                     </small>
-
                   </span>
                 </div>
               ) : (
@@ -75,6 +79,9 @@ export default function JourneyExperience({ journey }: { journey: Journey }) {
                   style={
                     {
                       "--route-color": lineColors[s.line],
+                      "--crowding-color": s.forecast
+                        ? routeCrowdColor(s.forecast.train_mean_congestion_pct)
+                        : "#d7dde0",
                     } as React.CSSProperties
                   }
                   aria-pressed={pinned === i}
@@ -86,6 +93,12 @@ export default function JourneyExperience({ journey }: { journey: Journey }) {
                   onBlur={() => setHover(null)}
                 >
                   <span className="map-rail" />
+                  <span className="map-crowding-rail" aria-hidden="true" />
+                  <span className="map-crowding-value">
+                    {s.forecast
+                      ? `${s.forecast.train_mean_congestion_pct.toFixed(1)}%`
+                      : "자료 없음"}
+                  </span>
                   <span className="map-node" />
                   <span className="map-station">
                     {s.from_station}
@@ -93,27 +106,6 @@ export default function JourneyExperience({ journey }: { journey: Journey }) {
                       {s.line}호선 {s.service}
                       {s.train_change_wait_minutes > 0 ? " · 열차 변경" : ""}
                     </small>
-                    <span className="map-crowding">
-                      <span
-                        className="map-crowding-scale"
-                        data-missing={!s.forecast}
-                        aria-hidden="true"
-                      >
-                        {s.forecast && (
-                          <span
-                            className="map-crowding-marker"
-                            style={{
-                              left: `${Math.max(0, Math.min(200, s.forecast.train_mean_congestion_pct)) / 2}%`,
-                            }}
-                          />
-                        )}
-                      </span>
-                      <span className="map-crowding-value">
-                        {s.forecast
-                          ? `${s.forecast.train_mean_congestion_pct.toFixed(1)}%`
-                          : "자료 없음"}
-                      </span>
-                    </span>
                   </span>
                   {hover === i && (
                     <span className="map-tooltip" role="tooltip">
