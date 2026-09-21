@@ -1,0 +1,688 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "Subway Seoul: ARM EC2, persistent SQLite, private ECR, GitHub main-only OIDC, fixed SSM deployment.",
+  "Parameters": {
+    "Ami": {
+      "Type": "AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>",
+      "Default": "/aws/service/ami-amazon-linux-latest/al2023-ami-kernel-default-arm64"
+    }
+  },
+  "Resources": {
+    "Vpc": {
+      "Type": "AWS::EC2::VPC",
+      "Properties": {
+        "CidrBlock": "10.81.0.0/24",
+        "EnableDnsSupport": true,
+        "EnableDnsHostnames": true,
+        "Tags": [
+          {
+            "Key": "Project",
+            "Value": "subway"
+          }
+        ]
+      }
+    },
+    "Gateway": {
+      "Type": "AWS::EC2::InternetGateway",
+      "Properties": {
+        "Tags": [
+          {
+            "Key": "Project",
+            "Value": "subway"
+          }
+        ]
+      }
+    },
+    "GatewayAttachment": {
+      "Type": "AWS::EC2::VPCGatewayAttachment",
+      "Properties": {
+        "VpcId": {
+          "Ref": "Vpc"
+        },
+        "InternetGatewayId": {
+          "Ref": "Gateway"
+        }
+      }
+    },
+    "Subnet": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "VpcId": {
+          "Ref": "Vpc"
+        },
+        "CidrBlock": "10.81.0.0/26",
+        "AvailabilityZone": {
+          "Fn::Select": [
+            0,
+            {
+              "Fn::GetAZs": ""
+            }
+          ]
+        },
+        "Tags": [
+          {
+            "Key": "Project",
+            "Value": "subway"
+          }
+        ]
+      }
+    },
+    "RouteTable": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "Vpc"
+        },
+        "Tags": [
+          {
+            "Key": "Project",
+            "Value": "subway"
+          }
+        ]
+      }
+    },
+    "Route": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "RouteTable"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "GatewayId": {
+          "Ref": "Gateway"
+        }
+      },
+      "DependsOn": "GatewayAttachment"
+    },
+    "SubnetRoute": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "SubnetId": {
+          "Ref": "Subnet"
+        },
+        "RouteTableId": {
+          "Ref": "RouteTable"
+        }
+      }
+    },
+    "SecurityGroup": {
+      "Type": "AWS::EC2::SecurityGroup",
+      "Properties": {
+        "GroupDescription": "Subway public HTTP only; administration uses SSM, no SSH",
+        "VpcId": {
+          "Ref": "Vpc"
+        },
+        "SecurityGroupIngress": [
+          {
+            "IpProtocol": "tcp",
+            "FromPort": 80,
+            "ToPort": 80,
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "SecurityGroupEgress": [
+          {
+            "IpProtocol": "tcp",
+            "FromPort": 443,
+            "ToPort": 443,
+            "CidrIp": "0.0.0.0/0"
+          },
+          {
+            "IpProtocol": "tcp",
+            "FromPort": 80,
+            "ToPort": 80,
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Tags": [
+          {
+            "Key": "Project",
+            "Value": "subway"
+          }
+        ]
+      }
+    },
+    "BackendRepository": {
+      "Type": "AWS::ECR::Repository",
+      "Properties": {
+        "RepositoryName": "subway/backend",
+        "ImageTagMutability": "IMMUTABLE",
+        "EncryptionConfiguration": {
+          "EncryptionType": "AES256"
+        },
+        "ImageScanningConfiguration": {
+          "ScanOnPush": true
+        },
+        "Tags": [
+          {
+            "Key": "Project",
+            "Value": "subway"
+          }
+        ]
+      },
+      "DeletionPolicy": "Retain",
+      "UpdateReplacePolicy": "Retain"
+    },
+    "FrontendRepository": {
+      "Type": "AWS::ECR::Repository",
+      "Properties": {
+        "RepositoryName": "subway/frontend",
+        "ImageTagMutability": "IMMUTABLE",
+        "EncryptionConfiguration": {
+          "EncryptionType": "AES256"
+        },
+        "ImageScanningConfiguration": {
+          "ScanOnPush": true
+        },
+        "Tags": [
+          {
+            "Key": "Project",
+            "Value": "subway"
+          }
+        ]
+      },
+      "DeletionPolicy": "Retain",
+      "UpdateReplacePolicy": "Retain"
+    },
+    "BackupBucket": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "BucketEncryption": {
+          "ServerSideEncryptionConfiguration": [
+            {
+              "ServerSideEncryptionByDefault": {
+                "SSEAlgorithm": "AES256"
+              }
+            }
+          ]
+        },
+        "PublicAccessBlockConfiguration": {
+          "BlockPublicAcls": true,
+          "BlockPublicPolicy": true,
+          "IgnorePublicAcls": true,
+          "RestrictPublicBuckets": true
+        },
+        "OwnershipControls": {
+          "Rules": [
+            {
+              "ObjectOwnership": "BucketOwnerEnforced"
+            }
+          ]
+        },
+        "LifecycleConfiguration": {
+          "Rules": [
+            {
+              "Id": "ExpireBackups",
+              "Status": "Enabled",
+              "Prefix": "backups/",
+              "ExpirationInDays": 14
+            }
+          ]
+        },
+        "Tags": [
+          {
+            "Key": "Project",
+            "Value": "subway"
+          }
+        ]
+      },
+      "DeletionPolicy": "Retain",
+      "UpdateReplacePolicy": "Retain"
+    },
+    "BackupBucketPolicy": {
+      "Type": "AWS::S3::BucketPolicy",
+      "Properties": {
+        "Bucket": {
+          "Ref": "BackupBucket"
+        },
+        "PolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Deny",
+              "Principal": "*",
+              "Action": "s3:*",
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "BackupBucket",
+                    "Arn"
+                  ]
+                },
+                {
+                  "Fn::Sub": "${BackupBucket.Arn}/*"
+                }
+              ],
+              "Condition": {
+                "Bool": {
+                  "aws:SecureTransport": "false"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "DataVolume": {
+      "Type": "AWS::EC2::Volume",
+      "Properties": {
+        "AvailabilityZone": {
+          "Fn::Select": [
+            0,
+            {
+              "Fn::GetAZs": ""
+            }
+          ]
+        },
+        "Size": 8,
+        "VolumeType": "gp3",
+        "Encrypted": true,
+        "Tags": [
+          {
+            "Key": "Project",
+            "Value": "subway"
+          }
+        ]
+      },
+      "DeletionPolicy": "Retain",
+      "UpdateReplacePolicy": "Retain"
+    },
+    "InstanceRole": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "ec2.amazonaws.com"
+              },
+              "Action": "sts:AssumeRole"
+            }
+          ]
+        },
+        "Policies": [
+          {
+            "PolicyName": "SubwayRuntime",
+            "PolicyDocument": {
+              "Version": "2012-10-17",
+              "Statement": [
+                {
+                  "Effect": "Allow",
+                  "Action": [
+                    "ssm:UpdateInstanceInformation"
+                  ],
+                  "Resource": "*"
+                },
+                {
+                  "Effect": "Allow",
+                  "Action": [
+                    "ssmmessages:CreateControlChannel",
+                    "ssmmessages:CreateDataChannel",
+                    "ssmmessages:OpenControlChannel",
+                    "ssmmessages:OpenDataChannel"
+                  ],
+                  "Resource": "*"
+                },
+                {
+                  "Effect": "Allow",
+                  "Action": [
+                    "ecr:GetAuthorizationToken"
+                  ],
+                  "Resource": "*"
+                },
+                {
+                  "Effect": "Allow",
+                  "Action": [
+                    "ecr:BatchGetImage",
+                    "ecr:GetDownloadUrlForLayer",
+                    "ecr:BatchCheckLayerAvailability"
+                  ],
+                  "Resource": [
+                    {
+                      "Fn::GetAtt": [
+                        "BackendRepository",
+                        "Arn"
+                      ]
+                    },
+                    {
+                      "Fn::GetAtt": [
+                        "FrontendRepository",
+                        "Arn"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Effect": "Allow",
+                  "Action": [
+                    "s3:PutObject"
+                  ],
+                  "Resource": {
+                    "Fn::Sub": "${BackupBucket.Arn}/backups/*"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "Tags": [
+          {
+            "Key": "Project",
+            "Value": "subway"
+          }
+        ]
+      }
+    },
+    "InstanceProfile": {
+      "Type": "AWS::IAM::InstanceProfile",
+      "Properties": {
+        "Roles": [
+          {
+            "Ref": "InstanceRole"
+          }
+        ]
+      }
+    },
+    "Instance": {
+      "Type": "AWS::EC2::Instance",
+      "Properties": {
+        "ImageId": {
+          "Ref": "Ami"
+        },
+        "InstanceType": "t4g.micro",
+        "IamInstanceProfile": {
+          "Ref": "InstanceProfile"
+        },
+        "MetadataOptions": {
+          "HttpTokens": "required",
+          "HttpEndpoint": "enabled",
+          "HttpPutResponseHopLimit": 1
+        },
+        "CreditSpecification": {
+          "CPUCredits": "standard"
+        },
+        "BlockDeviceMappings": [
+          {
+            "DeviceName": "/dev/xvda",
+            "Ebs": {
+              "VolumeSize": 12,
+              "VolumeType": "gp3",
+              "Encrypted": true,
+              "DeleteOnTermination": true
+            }
+          }
+        ],
+        "NetworkInterfaces": [
+          {
+            "DeviceIndex": "0",
+            "AssociatePublicIpAddress": true,
+            "SubnetId": {
+              "Ref": "Subnet"
+            },
+            "GroupSet": [
+              {
+                "Ref": "SecurityGroup"
+              }
+            ]
+          }
+        ],
+        "UserData": {
+          "Fn::Base64": {
+            "Fn::Sub": "#!/bin/bash\nset -euxo pipefail\nexport AWS_DEFAULT_REGION=${AWS::Region}\ndnf install -y docker python3 util-linux\nsystemctl enable --now docker amazon-ssm-agent\nmkdir -p /usr/local/lib/docker/cli-plugins /opt/subway /srv/subway\ncurl -fL --retry 5 https://github.com/docker/compose/releases/download/v5.5.1/docker-compose-linux-aarch64 -o /usr/local/lib/docker/cli-plugins/docker-compose\ncurl -fL --retry 5 https://github.com/docker/compose/releases/download/v5.5.1/docker-compose-linux-aarch64.sha256 -o /tmp/compose.sha256\n(cd /usr/local/lib/docker/cli-plugins; sed 's/docker-compose-linux-aarch64/docker-compose/' /tmp/compose.sha256 | sha256sum -c -)\nchmod 755 /usr/local/lib/docker/cli-plugins/docker-compose\nif [ ! -f /swapfile ]; then\n  fallocate -l 1G /swapfile\n  chmod 600 /swapfile\n  mkswap /swapfile\n  echo '/swapfile none swap sw 0 0' >> /etc/fstab\nfi\nswapon -a\nVOLUME_SERIAL=$(echo '${DataVolume}' | tr -d '-')\nDEVICE=''\nfor attempt in $(seq 1 120); do\n  DEVICE=$(lsblk -dn -o PATH,SERIAL | awk -v serial=\"$VOLUME_SERIAL\" '$2==serial {print $1}')\n  if [ -b \"$DEVICE\" ]; then break; fi\n  sleep 5\ndone\ntest -b \"$DEVICE\"\nif ! blkid \"$DEVICE\"; then mkfs.ext4 \"$DEVICE\"; fi\nUUID=$(blkid -s UUID -o value \"$DEVICE\")\necho \"UUID=$UUID /srv/subway ext4 defaults,nofail 0 2\" >> /etc/fstab\nmount /srv/subway\nmkdir -p /srv/subway/data /srv/subway/backups\nchown 10001:10001 /srv/subway/data\nchmod 750 /srv/subway/data /srv/subway/backups\ncat > /etc/subway.conf <<'ENV'\nAWS_ACCOUNT_ID=${AWS::AccountId}\nAWS_REGION=${AWS::Region}\nBACKUP_BUCKET=${BackupBucket}\nENV\nprintf '%s' 'IyEvYmluL2Jhc2gKIyBJbnN0YWxsZWQgYnkgQ2xvdWRGb3JtYXRpb247IFNTTSBjYW4gb25seSBzdXBwbHkgYSB2YWxpZGF0ZWQgaW1tdXRhYmxlIGltYWdlIHRhZy4Kc2V0IC1FZXVvIHBpcGVmYWlsCmV4ZWMgOT4vdmFyL2xvY2svc3Vid2F5LWRlcGxveS5sb2NrCmZsb2NrIC1uIDkgfHwgeyBlY2hvICdBbm90aGVyIGRlcGxveW1lbnQgaXMgcnVubmluZyc7IGV4aXQgMTsgfQpzb3VyY2UgL2V0Yy9zdWJ3YXkuY29uZgpDT01NSVRfU0hBPSR7MTo/R2l0IGNvbW1pdCBTSEEgcmVxdWlyZWR9CltbICRDT01NSVRfU0hBID1+IF5bMC05YS1mXXs0MH0kIF1dIHx8IGV4aXQgMgp0ZXN0IC1mIC9vcHQvc3Vid2F5L2Jvb3RzdHJhcC1yZWFkeQptb3VudHBvaW50IC1xIC9zcnYvc3Vid2F5CmNkIC9vcHQvc3Vid2F5ClJFR0lTVFJZPSIkQVdTX0FDQ09VTlRfSUQuZGtyLmVjci4kQVdTX1JFR0lPTi5hbWF6b25hd3MuY29tIgpleHBvcnQgQVdTX0RFRkFVTFRfUkVHSU9OPSIkQVdTX1JFR0lPTiIKZXhwb3J0IERPQ0tFUl9DT05GSUcKRE9DS0VSX0NPTkZJRz0kKG1rdGVtcCAtZCkKdHJhcCAncm0gLXJmICIkRE9DS0VSX0NPTkZJRyInIEVYSVQKYXdzIGVjciBnZXQtbG9naW4tcGFzc3dvcmQgfCBkb2NrZXIgbG9naW4gLS11c2VybmFtZSBBV1MgLS1wYXNzd29yZC1zdGRpbiAiJFJFR0lTVFJZIiA+L2Rldi9udWxsCmNhdCA+IG5leHQuZW52IDw8RU5WCkJBQ0tFTkRfSU1BR0U9JFJFR0lTVFJZL3N1YndheS9iYWNrZW5kOiRDT01NSVRfU0hBCkZST05URU5EX0lNQUdFPSRSRUdJU1RSWS9zdWJ3YXkvZnJvbnRlbmQ6JENPTU1JVF9TSEEKRU5WCmNvbXBvc2UoKSB7IGRvY2tlciBjb21wb3NlIC0tZW52LWZpbGUgIiQxIiAtZiBjb21wb3NlLnlhbWwgIiR7QDoyfSI7IH0KY29tcG9zZSBuZXh0LmVudiBwdWxsIC0tcXVpZXQKUFJFVklPVVM9MAppZiBbIC1mIGN1cnJlbnQuZW52IF07IHRoZW4KICBjcCBjdXJyZW50LmVudiBwcmV2aW91cy5lbnYKICBQUkVWSU9VUz0xCmZpCkRCX0VYSVNURUQ9MApTTkFQU0hPVF9SRUFEWT0wCkJBQ0tVUD0iL3Nydi9zdWJ3YXkvYmFja3Vwcy9wcmVkZXBsb3ktJChkYXRlIC11ICslWSVtJWRUJUglTSVTWiktJENPTU1JVF9TSEEuc3FsaXRlMyIKcm9sbGJhY2soKSB7CiAgc3RhdHVzPSQ/CiAgdHJhcCAtIEVSUgogIHNldCArZQogIGVjaG8gJ0RlcGxveW1lbnQgZmFpbGVkOyByZXN0b3JpbmcgcHJldmlvdXMgZGF0YWJhc2UgYW5kIGltYWdlcy4nCiAgY29tcG9zZSBuZXh0LmVudiBzdG9wIGJhY2tlbmQKICBpZiBbICIkU05BUFNIT1RfUkVBRFkiID0gMSBdOyB0aGVuCiAgICBybSAtZiAvc3J2L3N1YndheS9kYXRhL3N1YndheS5zcWxpdGUzLXdhbCAvc3J2L3N1YndheS9kYXRhL3N1YndheS5zcWxpdGUzLXNobQogICAgY3AgIiRCQUNLVVAiIC9zcnYvc3Vid2F5L2RhdGEvc3Vid2F5LnNxbGl0ZTMKICAgIGNob3duIDEwMDAxOjEwMDAxIC9zcnYvc3Vid2F5L2RhdGEvc3Vid2F5LnNxbGl0ZTMKICBmaQogIGlmIFsgIiRQUkVWSU9VUyIgPSAxIF07IHRoZW4KICAgIGNvbXBvc2UgcHJldmlvdXMuZW52IHVwIC1kIC0tbm8tYnVpbGQgLS13YWl0IC0td2FpdC10aW1lb3V0IDI0MAogIGZpCiAgZXhpdCAiJHN0YXR1cyIKfQp0cmFwIHJvbGxiYWNrIEVSUgppZiBbIC1mIC9zcnYvc3Vid2F5L2RhdGEvc3Vid2F5LnNxbGl0ZTMgXTsgdGhlbgogIERCX0VYSVNURUQ9MQogIGlmIFsgIiRQUkVWSU9VUyIgPSAxIF07IHRoZW4gY29tcG9zZSBjdXJyZW50LmVudiBzdG9wIGJhY2tlbmQ7IGZpCiAgcHl0aG9uMyAtICIkQkFDS1VQIiA8PCdQWScKaW1wb3J0IHNxbGl0ZTMsIHN5cwpzb3VyY2U9c3FsaXRlMy5jb25uZWN0KCdmaWxlOi9zcnYvc3Vid2F5L2RhdGEvc3Vid2F5LnNxbGl0ZTM/bW9kZT1ybycsIHVyaT1UcnVlKQp0YXJnZXQ9c3FsaXRlMy5jb25uZWN0KHN5cy5hcmd2WzFdKQpzb3VyY2UuYmFja3VwKHRhcmdldCkKYXNzZXJ0IHRhcmdldC5leGVjdXRlKCdQUkFHTUEgcXVpY2tfY2hlY2snKS5mZXRjaG9uZSgpWzBdID09ICdvaycKdGFyZ2V0LmNsb3NlKCk7IHNvdXJjZS5jbG9zZSgpClBZCiAgU05BUFNIT1RfUkVBRFk9MQogIGF3cyBzMyBjcCAiJEJBQ0tVUCIgInMzOi8vJEJBQ0tVUF9CVUNLRVQvYmFja3Vwcy8kKGJhc2VuYW1lICIkQkFDS1VQIikiIC0tb25seS1zaG93LWVycm9ycwpmaQojIEltcG9ydCBvZmZpY2lhbCBvcmlnaW5hbHMgb25seSBvbiB0aGUgaW5pdGlhbCBkZXBsb3ltZW50LiBUaGUgc2VlZCBpcyBhbHJlYWR5IGJ1bmRsZWQuCmlmIFsgISAtZiAvc3J2L3N1YndheS9vcmlnaW5hbHMtcmVhZHkgXTsgdGhlbgogIGNvbXBvc2UgbmV4dC5lbnYgcnVuIC0tcm0gLS1uby1kZXBzIGJhY2tlbmQgcHl0aG9uIC1tIHNjcmlwdHMuYm9vdHN0cmFwIC0tZG93bmxvYWQgLS1kYiAvYXBwL3Zhci9zdWJ3YXkuc3FsaXRlMwogIHRvdWNoIC9zcnYvc3Vid2F5L29yaWdpbmFscy1yZWFkeQpmaQpjb21wb3NlIG5leHQuZW52IHVwIC1kIC0tbm8tYnVpbGQgLS13YWl0IC0td2FpdC10aW1lb3V0IDI0MApjb21wb3NlIG5leHQuZW52IGV4ZWMgLVQgYmFja2VuZCBweXRob24gLW0gc2NyaXB0cy5zbW9rZV9jb21wb3NlIC0tdXJsIGh0dHA6Ly9uZ2lueDo4MDgwIC0tcmVxdWlyZS1vcmlnaW5hbHMKY3AgbmV4dC5lbnYgY3VycmVudC5lbnYKdHJhcCAtIEVSUgpwcmludGYgJyVzXG4nICIkQ09NTUlUX1NIQSIgPiAvc3J2L3N1YndheS9kZXBsb3llZC1jb21taXQKIyBLZWVwIHR3byBsb2NhbCBzbmFwc2hvdHM7IFMzIHJldGVudGlvbiBpcyAxNCBkYXlzLgpweXRob24zIC0gPDwnUFknCmZyb20gcGF0aGxpYiBpbXBvcnQgUGF0aApmb3Igb2xkIGluIHNvcnRlZChQYXRoKCcvc3J2L3N1YndheS9iYWNrdXBzJykuZ2xvYigncHJlZGVwbG95LSouc3FsaXRlMycpLCByZXZlcnNlPVRydWUpWzI6XToKICAgIG9sZC51bmxpbmsoKQpQWQojIE9sZCBpbWFnZXMgcmVtYWluIGluIEVDUiBmb3Igcm9sbGJhY2s7IHJlY2xhaW0gb25seSB1bnVzZWQgbG9jYWwgYXBwbGljYXRpb24gaW1hZ2VzLgpkb2NrZXIgaW1hZ2UgcHJ1bmUgLWFmIC0tZmlsdGVyIHVudGlsPTI0aCA+L2Rldi9udWxsCnByaW50ZiAnREVQTE9ZTUVOVF9TVUNDRVNTICVzXG4nICIkQ09NTUlUX1NIQSIK' | base64 -d > /usr/local/bin/subway-deploy\nchmod 755 /usr/local/bin/subway-deploy\nprintf '%s' 'bmFtZTogc3Vid2F5LXByb2R1Y3Rpb24KeC1sb2dnaW5nOiAmbG9nZ2luZwogIGRyaXZlcjoganNvbi1maWxlCiAgb3B0aW9uczoge21heC1zaXplOiAiMTBtIiwgbWF4LWZpbGU6ICIzIn0Kc2VydmljZXM6CiAgYmFja2VuZDoKICAgIGltYWdlOiAke0JBQ0tFTkRfSU1BR0U6P3JlcXVpcmVkfQogICAgZW52aXJvbm1lbnQ6IHtTUUxJVEVfUEFUSDogL2FwcC92YXIvc3Vid2F5LnNxbGl0ZTMsIFRaOiBBc2lhL1Nlb3VsfQogICAgdm9sdW1lczogWy9zcnYvc3Vid2F5L2RhdGE6L2FwcC92YXJdCiAgICByZXN0YXJ0OiB1bmxlc3Mtc3RvcHBlZAogICAgaW5pdDogdHJ1ZQogICAgbWVtX2xpbWl0OiA0MjBtCiAgICBzZWN1cml0eV9vcHQ6IFsibm8tbmV3LXByaXZpbGVnZXM6dHJ1ZSJdCiAgICBsb2dnaW5nOiAqbG9nZ2luZwogICAgaGVhbHRoY2hlY2s6CiAgICAgIHRlc3Q6IFtDTUQsIHB5dGhvbiwgLWMsICJpbXBvcnQgdXJsbGliLnJlcXVlc3Q7IHVybGxpYi5yZXF1ZXN0LnVybG9wZW4oJ2h0dHA6Ly8xMjcuMC4wLjE6ODAwMC9oZWFsdGgnLCB0aW1lb3V0PTUpIl0KICAgICAgaW50ZXJ2YWw6IDEwcwogICAgICB0aW1lb3V0OiA1cwogICAgICBzdGFydF9wZXJpb2Q6IDkwcwogICAgICByZXRyaWVzOiA5CiAgZnJvbnRlbmQ6CiAgICBpbWFnZTogJHtGUk9OVEVORF9JTUFHRTo/cmVxdWlyZWR9CiAgICBlbnZpcm9ubWVudDoge01FVFJPX0FQSV9VUkw6ICJodHRwOi8vYmFja2VuZDo4MDAwIn0KICAgIHJlc3RhcnQ6IHVubGVzcy1zdG9wcGVkCiAgICBpbml0OiB0cnVlCiAgICBtZW1fbGltaXQ6IDIyMG0KICAgIHNlY3VyaXR5X29wdDogWyJuby1uZXctcHJpdmlsZWdlczp0cnVlIl0KICAgIGRlcGVuZHNfb246CiAgICAgIGJhY2tlbmQ6IHtjb25kaXRpb246IHNlcnZpY2VfaGVhbHRoeX0KICAgIGxvZ2dpbmc6ICpsb2dnaW5nCiAgICBoZWFsdGhjaGVjazoKICAgICAgdGVzdDogW0NNRCwgbm9kZSwgLWUsICJmZXRjaCgnaHR0cDovLzEyNy4wLjAuMTozMDAwJykudGhlbihyPT5wcm9jZXNzLmV4aXQoci5vaz8wOjEpKS5jYXRjaCgoKT0+cHJvY2Vzcy5leGl0KDEpKSJdCiAgICAgIGludGVydmFsOiAxMHMKICAgICAgdGltZW91dDogNXMKICAgICAgc3RhcnRfcGVyaW9kOiAyMHMKICAgICAgcmV0cmllczogNgogIG5naW54OgogICAgaW1hZ2U6IG5naW54OnN0YWJsZS1hbHBpbmUKICAgIHBvcnRzOiBbIjgwOjgwODAiXQogICAgdm9sdW1lczogWy9vcHQvc3Vid2F5L25naW54LmNvbmY6L2V0Yy9uZ2lueC9jb25mLmQvZGVmYXVsdC5jb25mOnJvXQogICAgcmVzdGFydDogdW5sZXNzLXN0b3BwZWQKICAgIG1lbV9saW1pdDogNjRtCiAgICBzZWN1cml0eV9vcHQ6IFsibm8tbmV3LXByaXZpbGVnZXM6dHJ1ZSJdCiAgICBkZXBlbmRzX29uOgogICAgICBiYWNrZW5kOiB7Y29uZGl0aW9uOiBzZXJ2aWNlX2hlYWx0aHl9CiAgICAgIGZyb250ZW5kOiB7Y29uZGl0aW9uOiBzZXJ2aWNlX2hlYWx0aHl9CiAgICBsb2dnaW5nOiAqbG9nZ2luZwogICAgaGVhbHRoY2hlY2s6CiAgICAgIHRlc3Q6IFtDTUQsIHdnZXQsIC1xLCAtTywgL2Rldi9udWxsLCAiaHR0cDovLzEyNy4wLjAuMTo4MDgwL25naW54LWhlYWx0aCJdCiAgICAgIGludGVydmFsOiAxMHMKICAgICAgdGltZW91dDogNXMKICAgICAgcmV0cmllczogNgo=' | base64 -d > /opt/subway/compose.yaml\nchmod 644 /opt/subway/compose.yaml\nprintf '%s' 'c2VydmVyIHsKICAgIGxpc3RlbiA4MDgwOwogICAgc2VydmVyX25hbWUgXzsKICAgIHNlcnZlcl90b2tlbnMgb2ZmOwogICAgY2xpZW50X21heF9ib2R5X3NpemUgMTZrOwogICAgcmVzb2x2ZXIgMTI3LjAuMC4xMSB2YWxpZD0xMHMgaXB2Nj1vZmY7CiAgICBzZXQgJGZyb250ZW5kIGh0dHA6Ly9mcm9udGVuZDozMDAwOwogICAgc2V0ICRiYWNrZW5kIGh0dHA6Ly9iYWNrZW5kOjgwMDA7CgogICAgcHJveHlfaHR0cF92ZXJzaW9uIDEuMTsKICAgIHByb3h5X3NldF9oZWFkZXIgSG9zdCAkaHR0cF9ob3N0OwogICAgcHJveHlfc2V0X2hlYWRlciBYLVJlYWwtSVAgJHJlbW90ZV9hZGRyOwogICAgcHJveHlfc2V0X2hlYWRlciBYLUZvcndhcmRlZC1Gb3IgJHByb3h5X2FkZF94X2ZvcndhcmRlZF9mb3I7CiAgICBwcm94eV9zZXRfaGVhZGVyIFgtRm9yd2FyZGVkLVByb3RvICRzY2hlbWU7CiAgICBwcm94eV9zZXRfaGVhZGVyIENvbm5lY3Rpb24gIiI7CiAgICBwcm94eV9jb25uZWN0X3RpbWVvdXQgNXM7CiAgICBwcm94eV9yZWFkX3RpbWVvdXQgNjBzOwogICAgcHJveHlfYnVmZmVyaW5nIG9mZjsKCiAgICBsb2NhdGlvbiA9IC9uZ2lueC1oZWFsdGggewogICAgICAgIGFjY2Vzc19sb2cgb2ZmOwogICAgICAgIGRlZmF1bHRfdHlwZSB0ZXh0L3BsYWluOwogICAgICAgIHJldHVybiAyMDAgJ29rXG4nOwogICAgfQogICAgbG9jYXRpb24gfiBeLyh2MS98aGVhbHRoJHxkb2NzKCR8Lyl8cmVkb2MkfG9wZW5hcGlcLmpzb24kKSB7CiAgICAgICAgcHJveHlfcGFzcyAkYmFja2VuZCRyZXF1ZXN0X3VyaTsKICAgIH0KICAgIGxvY2F0aW9uIC8gewogICAgICAgIHByb3h5X3Bhc3MgJGZyb250ZW5kJHJlcXVlc3RfdXJpOwogICAgfQp9Cg==' | base64 -d > /opt/subway/nginx.conf\nchmod 644 /opt/subway/nginx.conf\ntouch /opt/subway/bootstrap-ready\n"
+          }
+        },
+        "Tags": [
+          {
+            "Key": "Project",
+            "Value": "subway"
+          },
+          {
+            "Key": "Name",
+            "Value": "subway-production"
+          }
+        ]
+      },
+      "DependsOn": [
+        "Route",
+        "SubnetRoute"
+      ]
+    },
+    "DataAttachment": {
+      "Type": "AWS::EC2::VolumeAttachment",
+      "Properties": {
+        "Device": "/dev/sdf",
+        "InstanceId": {
+          "Ref": "Instance"
+        },
+        "VolumeId": {
+          "Ref": "DataVolume"
+        }
+      }
+    },
+    "PublicIp": {
+      "Type": "AWS::EC2::EIP",
+      "Properties": {
+        "Domain": "vpc",
+        "Tags": [
+          {
+            "Key": "Project",
+            "Value": "subway"
+          }
+        ]
+      },
+      "DependsOn": "GatewayAttachment"
+    },
+    "PublicIpAssociation": {
+      "Type": "AWS::EC2::EIPAssociation",
+      "Properties": {
+        "InstanceId": {
+          "Ref": "Instance"
+        },
+        "AllocationId": {
+          "Fn::GetAtt": [
+            "PublicIp",
+            "AllocationId"
+          ]
+        }
+      }
+    },
+    "GithubProvider": {
+      "Type": "AWS::IAM::OIDCProvider",
+      "Properties": {
+        "Url": "https://token.actions.githubusercontent.com",
+        "ClientIdList": [
+          "sts.amazonaws.com"
+        ],
+        "Tags": [
+          {
+            "Key": "Project",
+            "Value": "subway"
+          }
+        ]
+      }
+    },
+    "DeployDocument": {
+      "Type": "AWS::SSM::Document",
+      "Properties": {
+        "DocumentType": "Command",
+        "Name": "subway-deploy",
+        "Content": {
+          "schemaVersion": "2.2",
+          "description": "Deploy immutable Subway images; shell command text cannot be supplied by callers.",
+          "parameters": {
+            "CommitSha": {
+              "type": "String",
+              "allowedPattern": "^[0-9a-f]{40}$",
+              "description": "Git commit SHA / immutable ECR image tag"
+            }
+          },
+          "mainSteps": [
+            {
+              "action": "aws:runShellScript",
+              "name": "Deploy",
+              "inputs": {
+                "timeoutSeconds": "1800",
+                "runCommand": [
+                  "/usr/local/bin/subway-deploy {{ CommitSha }}"
+                ]
+              }
+            }
+          ]
+        },
+        "Tags": [
+          {
+            "Key": "Project",
+            "Value": "subway"
+          }
+        ]
+      }
+    },
+    "GithubRole": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "RoleName": "subway-github-deploy",
+        "MaxSessionDuration": 3600,
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Federated": {
+                  "Ref": "GithubProvider"
+                }
+              },
+              "Action": "sts:AssumeRoleWithWebIdentity",
+              "Condition": {
+                "StringEquals": {
+                  "token.actions.githubusercontent.com:aud": "sts.amazonaws.com",
+                  "token.actions.githubusercontent.com:sub": "repo:yeonsung-cloud-mlops@323049364/subway@1379279774:ref:refs/heads/main"
+                }
+              }
+            }
+          ]
+        },
+        "Policies": [
+          {
+            "PolicyName": "SubwayImagePublishAndDeploy",
+            "PolicyDocument": {
+              "Version": "2012-10-17",
+              "Statement": [
+                {
+                  "Effect": "Allow",
+                  "Action": [
+                    "ecr:GetAuthorizationToken"
+                  ],
+                  "Resource": "*"
+                },
+                {
+                  "Effect": "Allow",
+                  "Action": [
+                    "ecr:BatchCheckLayerAvailability",
+                    "ecr:CompleteLayerUpload",
+                    "ecr:InitiateLayerUpload",
+                    "ecr:PutImage",
+                    "ecr:UploadLayerPart",
+                    "ecr:BatchGetImage",
+                    "ecr:GetDownloadUrlForLayer",
+                    "ecr:DescribeImages"
+                  ],
+                  "Resource": [
+                    {
+                      "Fn::GetAtt": [
+                        "BackendRepository",
+                        "Arn"
+                      ]
+                    },
+                    {
+                      "Fn::GetAtt": [
+                        "FrontendRepository",
+                        "Arn"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Effect": "Allow",
+                  "Action": [
+                    "ssm:SendCommand"
+                  ],
+                  "Resource": [
+                    {
+                      "Fn::Sub": "arn:${AWS::Partition}:ssm:${AWS::Region}:${AWS::AccountId}:document/${DeployDocument}"
+                    },
+                    {
+                      "Fn::Sub": "arn:${AWS::Partition}:ec2:${AWS::Region}:${AWS::AccountId}:instance/${Instance}"
+                    }
+                  ]
+                },
+                {
+                  "Effect": "Allow",
+                  "Action": [
+                    "ssm:GetCommandInvocation"
+                  ],
+                  "Resource": "*",
+                  "Condition": {
+                    "StringEquals": {
+                      "aws:RequestedRegion": {
+                        "Ref": "AWS::Region"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "Tags": [
+          {
+            "Key": "Project",
+            "Value": "subway"
+          }
+        ]
+      }
+    }
+  },
+  "Outputs": {
+    "RoleArn": {
+      "Value": {
+        "Fn::GetAtt": [
+          "GithubRole",
+          "Arn"
+        ]
+      }
+    },
+    "InstanceId": {
+      "Value": {
+        "Ref": "Instance"
+      }
+    },
+    "PublicIp": {
+      "Value": {
+        "Ref": "PublicIp"
+      }
+    },
+    "ServiceUrl": {
+      "Value": {
+        "Fn::Sub": "http://${PublicIp}"
+      }
+    },
+    "BackupBucket": {
+      "Value": {
+        "Ref": "BackupBucket"
+      }
+    },
+    "DataVolumeId": {
+      "Value": {
+        "Ref": "DataVolume"
+      }
+    },
+    "DeployDocument": {
+      "Value": {
+        "Ref": "DeployDocument"
+      }
+    }
+  }
+}

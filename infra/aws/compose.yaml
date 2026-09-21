@@ -1,0 +1,52 @@
+name: subway-production
+x-logging: &logging
+  driver: json-file
+  options: {max-size: "10m", max-file: "3"}
+services:
+  backend:
+    image: ${BACKEND_IMAGE:?required}
+    environment: {SQLITE_PATH: /app/var/subway.sqlite3, TZ: Asia/Seoul}
+    volumes: [/srv/subway/data:/app/var]
+    restart: unless-stopped
+    init: true
+    mem_limit: 420m
+    security_opt: ["no-new-privileges:true"]
+    logging: *logging
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=5)"]
+      interval: 10s
+      timeout: 5s
+      start_period: 90s
+      retries: 9
+  frontend:
+    image: ${FRONTEND_IMAGE:?required}
+    environment: {METRO_API_URL: "http://backend:8000"}
+    restart: unless-stopped
+    init: true
+    mem_limit: 220m
+    security_opt: ["no-new-privileges:true"]
+    depends_on:
+      backend: {condition: service_healthy}
+    logging: *logging
+    healthcheck:
+      test: [CMD, node, -e, "fetch('http://127.0.0.1:3000').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 10s
+      timeout: 5s
+      start_period: 20s
+      retries: 6
+  nginx:
+    image: nginx:stable-alpine
+    ports: ["80:8080"]
+    volumes: [/opt/subway/nginx.conf:/etc/nginx/conf.d/default.conf:ro]
+    restart: unless-stopped
+    mem_limit: 64m
+    security_opt: ["no-new-privileges:true"]
+    depends_on:
+      backend: {condition: service_healthy}
+      frontend: {condition: service_healthy}
+    logging: *logging
+    healthcheck:
+      test: [CMD, wget, -q, -O, /dev/null, "http://127.0.0.1:8080/nginx-health"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
