@@ -1,0 +1,77 @@
+[
+  {
+    "departure_at": "2026-09-21T08:15:00+09:00",
+    "estimated_arrival_at": "2026-09-21T09:38:00+09:00",
+    "estimated_minutes": 83.0,
+    "transfer_count": 2,
+    "route_strategy": "estimated_fastest",
+    "legs": [
+      {
+        "line": 8,
+        "service": "일반",
+        "from_station": "암사",
+        "to_station": "석촌"
+      },
+      {
+        "line": 9,
+        "service": "급행",
+        "from_station": "석촌",
+        "to_station": "김포공항"
+      },
+      {
+        "line": 9,
+        "service": "일반",
+        "from_station": "김포공항",
+        "to_station": "개화"
+      }
+    ]
+  },
+  {
+    "departure_at": "2026-09-21T18:00:00+09:00",
+    "estimated_arrival_at": "2026-09-21T19:22:20+09:00",
+    "estimated_minutes": 82.333,
+    "transfer_count": 2,
+    "route_strategy": "estimated_fastest",
+    "legs": [
+      {
+        "line": 8,
+        "service": "일반",
+        "from_station": "암사",
+        "to_station": "석촌"
+      },
+      {
+        "line": 9,
+        "service": "급행",
+        "from_station": "석촌",
+        "to_station": "김포공항"
+      },
+      {
+        "line": 9,
+        "service": "일반",
+        "from_station": "김포공항",
+        "to_station": "개화"
+      }
+    ]
+  },
+  {
+    "departure_at": "2026-09-21T08:15:00+09:00",
+    "estimated_arrival_at": "2026-09-21T09:51:10+09:00",
+    "estimated_minutes": 96.167,
+    "transfer_count": 1,
+    "route_strategy": "fewest_transfers",
+    "legs": [
+      {
+        "line": 8,
+        "service": "일반",
+        "from_station": "암사",
+        "to_station": "석촌"
+      },
+      {
+        "line": 9,
+        "service": "일반",
+        "from_station": "석촌",
+        "to_station": "개화"
+      }
+    ]
+  }
+]

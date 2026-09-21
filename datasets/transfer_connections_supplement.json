@@ -1,0 +1,11 @@
+{
+  "checked_on": "2026-09-21",
+  "source_url": "https://mediahub.seoul.go.kr/archives/1209700",
+  "source_title": "서울시 내 손안에 서울: 9호선 3단계 개통 및 석촌·올림픽공원 환승역 안내",
+  "connections": [
+    {"station": "석촌", "lines": [8, 9]},
+    {"station": "올림픽공원", "lines": [5, 9]}
+  ],
+  "walking_minutes_assumption": 5.0,
+  "note": "공식 자료로 환승 연결만 확인. 상세 환승 CSV에 없는 연결을 보완하며 보행시간·문 위치는 실측값이 아님."
+}

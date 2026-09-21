@@ -128,3 +128,39 @@ def test_snapshot_has_connected_trains_and_explicit_age(journey):
     for s in r["steps"]:
         if s["kind"] == "ride":
             assert s["forecast_at"] >= s["start_at"] and s["forecast_at"] < s["end_at"]
+
+
+@pytest.mark.parametrize("hour,minute", [(8, 15), (18, 0)])
+def test_amsa_gaehwa_can_use_seokchon_express_and_gimpo_local(journey, hour, minute):
+    r = journey.predict("암사", "개화", datetime(2026, 9, 21, hour, minute))
+    assert r["transfer_count"] == 2
+    assert [
+        (leg["line"], leg["service"], leg["from_station"], leg["to_station"])
+        for leg in r["legs"]
+    ] == [
+        (8, "일반", "암사", "석촌"),
+        (9, "급행", "석촌", "김포공항"),
+        (9, "일반", "김포공항", "개화"),
+    ]
+    transfer = next(s for s in r["steps"] if s["kind"] == "transfer")
+    assert transfer["time_basis"] == "assumed_5_minutes"
+    assert transfer["door_guidance"]["status"] == "unavailable"
+    assert r["status"] == "complete"
+
+
+def test_amsa_gaehwa_fewest_transfers_can_stay_on_local(journey):
+    r = journey.predict(
+        "암사", "개화", datetime(2026, 9, 21, 8, 15), strategy="fewest_transfers"
+    )
+    assert r["transfer_count"] == 1
+    assert [(leg["line"], leg["service"]) for leg in r["legs"]] == [
+        (8, "일반"),
+        (9, "일반"),
+    ]
+
+
+def test_olympic_park_missing_interchange_is_restored_both_ways(journey):
+    for a, b in [("5:2556", "9:4136"), ("9:4136", "5:2556")]:
+        assert any(
+            e["kind"] == "transfer" and e["to_id"] == b for e in journey.graph[a]
+        )

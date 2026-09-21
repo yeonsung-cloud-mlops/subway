@@ -166,3 +166,17 @@ def test_weekday_trains_are_not_used_on_sunday(tmp_path):
     r = router(tmp_path, [("weekday", "일반", [("A", H, H), ("C", H + 120, H + 130)])])
     with pytest.raises(PredictionError):
         search(r, ["A"], {"C"}, datetime(2026, 9, 27, 8, tzinfo=KST))
+
+
+def test_equal_arrival_keeps_later_platform_arrival_with_fewer_boardings(tmp_path):
+    r = router(
+        tmp_path,
+        [
+            ("a", "일반", [("A", H, H), ("Y", H + 60, H + 60)]),
+            ("b", "일반", [("Y", H + 120, H + 120), ("B", H + 180, H + 180)]),
+            ("direct", "일반", [("A", H + 60, H + 60), ("B", H + 240, H + 240)]),
+            ("last", "일반", [("B", H + 360, H + 360), ("C", H + 480, H + 480)]),
+        ],
+    )
+    edges, _ = search(r, ["A"], {"C"}, AT)
+    assert [e["schedule"]["train_no"] for e in edges] == ["direct", "last"]

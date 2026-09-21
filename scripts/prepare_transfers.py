@@ -48,6 +48,31 @@ def main():
                 "source_route_ids": [x for x, _ in rows],
             }
         )
+    # A detailed door/walking survey is not a complete interchange topology.
+    supplement = json.loads(
+        (ROOT / "datasets/transfer_connections_supplement.json").read_text()
+    )
+    known = {(e["from_id"], e["to_id"]) for e in edges}
+    for connection in supplement["connections"]:
+        ids = [
+            lookup[(str(line), connection["station"])] for line in connection["lines"]
+        ]
+        for a, b in [ids, list(reversed(ids))]:
+            if (a, b) not in known:
+                edges.append(
+                    {
+                        "from_id": a,
+                        "to_id": b,
+                        "walking_minutes": supplement["walking_minutes_assumption"],
+                        "time_basis": "assumed_5_minutes",
+                        "connection_basis": "official_interchange_confirmation",
+                        "connection_source_url": supplement["source_url"],
+                        "source_route_ids": [],
+                        "note": "환승 연결은 공식 확인, 보행시간 5분은 가정이며 문 위치 자료는 없습니다.",
+                    }
+                )
+                known.add((a, b))
+    edges.sort(key=lambda e: (e["from_id"], e["to_id"]))
     (ROOT / "datasets/transfers.json").write_text(
         json.dumps(edges, ensure_ascii=False, indent=2)
     )

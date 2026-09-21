@@ -87,6 +87,8 @@ def search(
         prev[state] = (parent, edge)
         heapq.heappush(heap, (cost, next(serial), state, at, boards))
 
+    # Keep boarding counts as separate labels: a later platform arrival with fewer
+    # changes can catch the same onward train and win the final arrival-time tie.
     # Platform states are ready-to-board; onboard states keep train identity, allowing dwell without reboarding.
     for station in starts:
         offer(("platform", station, 0), departure, 0)
@@ -105,7 +107,7 @@ def search(
             edge = connections.get(following)
             if edge and edge["dep"] >= at:
                 offer(
-                    ("train", following, boards if fewest else 1),
+                    ("train", following, boards),
                     edge["arr"],
                     boards,
                     state,
@@ -113,7 +115,7 @@ def search(
                 )
             # Same-line train change: explicit minimum platform movement assumption.
             offer(
-                ("platform", station, boards if fewest else 1),
+                ("platform", station, boards),
                 at + timedelta(minutes=1),
                 boards,
                 state,
@@ -124,7 +126,7 @@ def search(
                 edge = connections[key]
                 if edge["dep"] >= at:
                     offer(
-                        ("train", key, boards + 1 if fewest else 1),
+                        ("train", key, boards + 1),
                         edge["arr"],
                         boards + 1,
                         state,
@@ -143,7 +145,7 @@ def search(
             arrival = at + timedelta(minutes=edge["minutes"])
             if arrival <= horizon:
                 offer(
-                    ("platform", edge["to_id"], boards if fewest else int(boards > 0)),
+                    ("platform", edge["to_id"], boards),
                     arrival,
                     boards,
                     state,

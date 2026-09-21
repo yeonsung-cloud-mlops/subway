@@ -730,6 +730,16 @@
     ]
   },
   {
+    "from_id": "5:2556",
+    "to_id": "9:4136",
+    "walking_minutes": 5.0,
+    "time_basis": "assumed_5_minutes",
+    "connection_basis": "official_interchange_confirmation",
+    "connection_source_url": "https://mediahub.seoul.go.kr/archives/1209700",
+    "source_route_ids": [],
+    "note": "환승 연결은 공식 확인, 보행시간 5분은 가정이며 문 위치 자료는 없습니다."
+  },
+  {
     "from_id": "5:2558",
     "to_id": "3:342",
     "walking_minutes": 1.483,
@@ -976,6 +986,16 @@
     ]
   },
   {
+    "from_id": "8:2816",
+    "to_id": "9:4133",
+    "walking_minutes": 5.0,
+    "time_basis": "assumed_5_minutes",
+    "connection_basis": "official_interchange_confirmation",
+    "connection_source_url": "https://mediahub.seoul.go.kr/archives/1209700",
+    "source_route_ids": [],
+    "note": "환승 연결은 공식 확인, 보행시간 5분은 가정이며 문 위치 자료는 없습니다."
+  },
+  {
     "from_id": "8:2818",
     "to_id": "3:340",
     "walking_minutes": 1.483,
@@ -1058,5 +1078,25 @@
       "781",
       "782"
     ]
+  },
+  {
+    "from_id": "9:4133",
+    "to_id": "8:2816",
+    "walking_minutes": 5.0,
+    "time_basis": "assumed_5_minutes",
+    "connection_basis": "official_interchange_confirmation",
+    "connection_source_url": "https://mediahub.seoul.go.kr/archives/1209700",
+    "source_route_ids": [],
+    "note": "환승 연결은 공식 확인, 보행시간 5분은 가정이며 문 위치 자료는 없습니다."
+  },
+  {
+    "from_id": "9:4136",
+    "to_id": "5:2556",
+    "walking_minutes": 5.0,
+    "time_basis": "assumed_5_minutes",
+    "connection_basis": "official_interchange_confirmation",
+    "connection_source_url": "https://mediahub.seoul.go.kr/archives/1209700",
+    "source_route_ids": [],
+    "note": "환승 연결은 공식 확인, 보행시간 5분은 가정이며 문 위치 자료는 없습니다."
   }
 ]
