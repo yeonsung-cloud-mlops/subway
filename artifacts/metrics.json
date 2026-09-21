@@ -1,0 +1,73 @@
+{
+  "target": "survey_period_train_average_not_car_ground_truth",
+  "periods": [
+    "20240331",
+    "20240630",
+    "20241231",
+    "20250331",
+    "20250630",
+    "20250930",
+    "20251130",
+    "20260331",
+    "20260630"
+  ],
+  "validation_period": "20260331",
+  "test_period": "20260630",
+  "validation_candidates": [
+    {
+      "alpha": 0.1,
+      "n": 9605,
+      "positive_targets": 9605,
+      "mae_pp": 2.7190410354362844,
+      "rmse_pp": 3.9547802728470094
+    },
+    {
+      "alpha": 0.25,
+      "n": 9605,
+      "positive_targets": 9605,
+      "mae_pp": 2.442926629725486,
+      "rmse_pp": 3.58054257026153
+    },
+    {
+      "alpha": 0.5,
+      "n": 9605,
+      "positive_targets": 9605,
+      "mae_pp": 2.3536150279155135,
+      "rmse_pp": 3.4402175041016547
+    },
+    {
+      "alpha": 0.75,
+      "n": 9605,
+      "positive_targets": 9605,
+      "mae_pp": 2.281076138330111,
+      "rmse_pp": 3.3142261436019975
+    },
+    {
+      "alpha": 1.0,
+      "n": 9605,
+      "positive_targets": 9605,
+      "mae_pp": 2.238415607945957,
+      "rmse_pp": 3.243432173743054
+    }
+  ],
+  "selected_alpha": 1.0,
+  "test": {
+    "n": 9605,
+    "positive_targets": 9605,
+    "mae_pp": 3.21650489870421,
+    "rmse_pp": 4.8383793727240025
+  },
+  "test_previous_snapshot_baseline": {
+    "n": 9605,
+    "positive_targets": 9605,
+    "mae_pp": 3.21650489870421,
+    "rmse_pp": 4.8383793727240025
+  },
+  "excluded_nonpositive_or_missing": 3661,
+  "car_accuracy": null,
+  "limitations": [
+    "Snapshots are published aggregates, not independent daily observations.",
+    "Zero may indicate no service; excluded rather than treated as empty train.",
+    "No car labels: location weights are scenario assumptions, not learned."
+  ]
+}

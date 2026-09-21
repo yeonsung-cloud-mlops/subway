@@ -1,0 +1,490 @@
+{
+  "201|내선": {
+    "transfer_board_cars": [
+      1
+    ],
+    "access_cars": []
+  },
+  "201|외선": {
+    "transfer_board_cars": [
+      1
+    ],
+    "access_cars": []
+  },
+  "202|내선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "202|외선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "203|내선": {
+    "transfer_board_cars": [
+      1
+    ],
+    "access_cars": []
+  },
+  "203|외선": {
+    "transfer_board_cars": [
+      1
+    ],
+    "access_cars": []
+  },
+  "204|내선": {
+    "transfer_board_cars": [
+      4
+    ],
+    "access_cars": []
+  },
+  "204|외선": {
+    "transfer_board_cars": [
+      4
+    ],
+    "access_cars": []
+  },
+  "205|내선": {
+    "transfer_board_cars": [
+      9
+    ],
+    "access_cars": []
+  },
+  "205|외선": {
+    "transfer_board_cars": [
+      9
+    ],
+    "access_cars": []
+  },
+  "206|내선": {
+    "transfer_board_cars": [
+      10
+    ],
+    "access_cars": []
+  },
+  "206|외선": {
+    "transfer_board_cars": [
+      10
+    ],
+    "access_cars": []
+  },
+  "207|내선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "207|외선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "208|내선": {
+    "transfer_board_cars": [
+      8
+    ],
+    "access_cars": [
+      2,
+      3
+    ]
+  },
+  "208|외선": {
+    "transfer_board_cars": [
+      8
+    ],
+    "access_cars": [
+      7
+    ]
+  },
+  "209|내선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "209|외선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "210|내선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "210|외선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "211|내선": {
+    "transfer_board_cars": [
+      10
+    ],
+    "access_cars": []
+  },
+  "211|외선": {
+    "transfer_board_cars": [
+      10
+    ],
+    "access_cars": []
+  },
+  "212|내선": {
+    "transfer_board_cars": [
+      3
+    ],
+    "access_cars": []
+  },
+  "212|외선": {
+    "transfer_board_cars": [
+      3
+    ],
+    "access_cars": []
+  },
+  "213|내선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "213|외선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "214|내선": {
+    "transfer_board_cars": [],
+    "access_cars": [
+      9
+    ]
+  },
+  "214|외선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "215|내선": {
+    "transfer_board_cars": [],
+    "access_cars": [
+      1
+    ]
+  },
+  "215|외선": {
+    "transfer_board_cars": [],
+    "access_cars": [
+      10
+    ]
+  },
+  "216|내선": {
+    "transfer_board_cars": [
+      10
+    ],
+    "access_cars": [
+      5
+    ]
+  },
+  "216|외선": {
+    "transfer_board_cars": [
+      10
+    ],
+    "access_cars": []
+  },
+  "217|내선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "217|외선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "218|내선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "218|외선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "219|내선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "219|외선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "220|내선": {
+    "transfer_board_cars": [
+      6
+    ],
+    "access_cars": []
+  },
+  "220|외선": {
+    "transfer_board_cars": [
+      6
+    ],
+    "access_cars": []
+  },
+  "221|내선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "221|외선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "222|내선": {
+    "transfer_board_cars": [
+      6
+    ],
+    "access_cars": []
+  },
+  "222|외선": {
+    "transfer_board_cars": [
+      6
+    ],
+    "access_cars": []
+  },
+  "223|내선": {
+    "transfer_board_cars": [
+      1
+    ],
+    "access_cars": []
+  },
+  "223|외선": {
+    "transfer_board_cars": [
+      1
+    ],
+    "access_cars": []
+  },
+  "224|내선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "224|외선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "225|내선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "225|외선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "226|내선": {
+    "transfer_board_cars": [
+      6
+    ],
+    "access_cars": [
+      3,
+      8
+    ]
+  },
+  "226|외선": {
+    "transfer_board_cars": [
+      6
+    ],
+    "access_cars": [
+      3,
+      8
+    ]
+  },
+  "227|내선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "227|외선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "228|내선": {
+    "transfer_board_cars": [],
+    "access_cars": [
+      2,
+      8
+    ]
+  },
+  "228|외선": {
+    "transfer_board_cars": [],
+    "access_cars": [
+      2,
+      5,
+      6,
+      8
+    ]
+  },
+  "229|내선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "229|외선": {
+    "transfer_board_cars": [],
+    "access_cars": [
+      5,
+      6
+    ]
+  },
+  "230|내선": {
+    "transfer_board_cars": [
+      5
+    ],
+    "access_cars": []
+  },
+  "230|외선": {
+    "transfer_board_cars": [
+      5
+    ],
+    "access_cars": []
+  },
+  "231|내선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "231|외선": {
+    "transfer_board_cars": [],
+    "access_cars": [
+      8
+    ]
+  },
+  "232|내선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "232|외선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "233|내선": {
+    "transfer_board_cars": [
+      7
+    ],
+    "access_cars": []
+  },
+  "233|외선": {
+    "transfer_board_cars": [
+      7
+    ],
+    "access_cars": []
+  },
+  "234|내선": {
+    "transfer_board_cars": [
+      7
+    ],
+    "access_cars": [
+      4
+    ]
+  },
+  "234|외선": {
+    "transfer_board_cars": [
+      7
+    ],
+    "access_cars": [
+      4,
+      5,
+      7
+    ]
+  },
+  "235|내선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "235|외선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "236|내선": {
+    "transfer_board_cars": [
+      7
+    ],
+    "access_cars": []
+  },
+  "236|외선": {
+    "transfer_board_cars": [
+      7
+    ],
+    "access_cars": []
+  },
+  "237|내선": {
+    "transfer_board_cars": [
+      8
+    ],
+    "access_cars": []
+  },
+  "237|외선": {
+    "transfer_board_cars": [
+      8
+    ],
+    "access_cars": []
+  },
+  "238|내선": {
+    "transfer_board_cars": [
+      9
+    ],
+    "access_cars": [
+      7
+    ]
+  },
+  "238|외선": {
+    "transfer_board_cars": [
+      9
+    ],
+    "access_cars": [
+      4
+    ]
+  },
+  "239|내선": {
+    "transfer_board_cars": [
+      8
+    ],
+    "access_cars": [
+      4,
+      7
+    ]
+  },
+  "239|외선": {
+    "transfer_board_cars": [
+      8
+    ],
+    "access_cars": [
+      4,
+      7
+    ]
+  },
+  "240|내선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "240|외선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "241|내선": {
+    "transfer_board_cars": [],
+    "access_cars": [
+      2,
+      9
+    ]
+  },
+  "241|외선": {
+    "transfer_board_cars": [],
+    "access_cars": [
+      2,
+      9
+    ]
+  },
+  "242|내선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "242|외선": {
+    "transfer_board_cars": [],
+    "access_cars": []
+  },
+  "243|내선": {
+    "transfer_board_cars": [
+      4
+    ],
+    "access_cars": [
+      4,
+      7
+    ]
+  },
+  "243|외선": {
+    "transfer_board_cars": [
+      4
+    ],
+    "access_cars": [
+      4,
+      7
+    ]
+  }
+}

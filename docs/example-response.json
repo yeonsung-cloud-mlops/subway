@@ -1,0 +1,117 @@
+{
+  "model_version": "survey-ewma-location-scenario-v1",
+  "prediction_kind": "unvalidated_car_scenario",
+  "line": 2,
+  "from_station": "사당",
+  "to_station": "방배",
+  "direction": "외선",
+  "requested_at": "2026-09-21T08:15:00+09:00",
+  "service_date": "2026-09-21",
+  "daytype": "평일",
+  "holiday": null,
+  "time_bin": "08:00",
+  "train_mean_congestion_pct": 127.282,
+  "cars": [
+    {
+      "car": 1,
+      "estimated_congestion_pct": 105.27,
+      "scenario_range_pct": [
+        94.264,
+        127.282
+      ]
+    },
+    {
+      "car": 2,
+      "estimated_congestion_pct": 117.277,
+      "scenario_range_pct": [
+        112.275,
+        127.282
+      ]
+    },
+    {
+      "car": 3,
+      "estimated_congestion_pct": 127.839,
+      "scenario_range_pct": [
+        127.282,
+        128.117
+      ]
+    },
+    {
+      "car": 4,
+      "estimated_congestion_pct": 124.157,
+      "scenario_range_pct": [
+        122.594,
+        127.282
+      ]
+    },
+    {
+      "car": 5,
+      "estimated_congestion_pct": 136.422,
+      "scenario_range_pct": [
+        127.282,
+        140.991
+      ]
+    },
+    {
+      "car": 6,
+      "estimated_congestion_pct": 156.447,
+      "scenario_range_pct": [
+        127.282,
+        171.029
+      ]
+    },
+    {
+      "car": 7,
+      "estimated_congestion_pct": 148.138,
+      "scenario_range_pct": [
+        127.282,
+        158.566
+      ]
+    },
+    {
+      "car": 8,
+      "estimated_congestion_pct": 134.161,
+      "scenario_range_pct": [
+        127.282,
+        137.6
+      ]
+    },
+    {
+      "car": 9,
+      "estimated_congestion_pct": 117.826,
+      "scenario_range_pct": [
+        113.098,
+        127.282
+      ]
+    },
+    {
+      "car": 10,
+      "estimated_congestion_pct": 105.287,
+      "scenario_range_pct": [
+        94.289,
+        127.282
+      ]
+    }
+  ],
+  "location_features": {
+    "transfer_board_cars": [
+      6
+    ],
+    "access_cars": [
+      3,
+      8
+    ]
+  },
+  "scenario_strength": 0.2,
+  "range_kind": "sensitivity_strength_0_to_0.3_not_confidence_interval",
+  "evidence": {
+    "trained_through": "20260630",
+    "profile_last_period": "20260630",
+    "profile_snapshot_count": 9,
+    "car_ground_truth_count": 0
+  },
+  "warnings": [
+    "칸별 값은 실측 검증되지 않은 위치 기반 시나리오입니다.",
+    "출발역·방향의 30분 조사평균 기반이며 다음 열차 또는 도착/출발 순간의 실측값이 아닙니다."
+  ]
+}

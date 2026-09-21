@@ -1,0 +1,16 @@
+.venv*/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+.env.*
+!.env.example
+*.sqlite*
+*.db*
+node_modules/
+.next/
+data_review/
+car_congestion_review/
+electricity_data_review_20260921/
+energy_efficiency_review/
+.DS_Store
