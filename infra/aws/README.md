@@ -12,6 +12,12 @@
 - 등록 완료 Secrets: `AWS_ROLE_ARN`, `AWS_INSTANCE_ID`. 활성화 변수: `AWS_DEPLOY_ENABLED=true`.
 - 앱의 현재 배포 성공 여부와 SHA는 Actions 실행 결과 및 서버의 `/srv/subway/deployed-commit`에서 확인합니다.
 
+### 최초 배포 검증
+
+[Actions 실행 35579690939](https://github.com/yeonsung-cloud-mlops/subway/actions/runs/35579690939)에서 `ec663c455cba30cafdd2510d0a7e090d29c66f20` 배포 성공. 백엔드 61개·브라우저 14개 테스트 통과, OIDC 역할 인증·ECR 게시·SSM 배포를 실제 검증했습니다. 공인 IP를 통한 화면/API 문서/역/원본 조회/전체 경로 예측/잘못된 입력 처리도 통과했습니다.
+
+원본 파일 24개와 승하차 원문 597,970행을 적재했습니다. EC2에서 세 컨테이너 healthy, SQLite 약 707MiB, 사용 가능 RAM 약 426MiB를 확인했습니다(초기 검증 시점의 순간 측정값). 최초 배포에는 기존 DB가 없어 배포 전 백업은 생성되지 않았으며, 다음 배포부터 백업·복구 경로가 적용됩니다.
+
 ## 리소스와 비용
 
 - 전용 VPC / 퍼블릭 서브넷 / 인터넷 게이트웨이. NAT Gateway, ALB, RDS 없음.

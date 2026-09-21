@@ -11,10 +11,27 @@
   "data_volume_id": "vol-07ed76669e46e570c",
   "security_group_id": "sg-01b04b88bf7112176",
   "backup_bucket": "subway-production-backupbucket-lsac5g4l1nn0",
-  "ecr_repositories": ["subway/backend", "subway/frontend"],
+  "ecr_repositories": [
+    "subway/backend",
+    "subway/frontend"
+  ],
   "github_role_arn": "arn:aws:iam::410618141864:role/subway-github-deploy",
   "ssm_document": "subway-deploy",
-  "github_secret_names": ["AWS_ROLE_ARN", "AWS_INSTANCE_ID"],
-  "github_variable": {"AWS_DEPLOY_ENABLED": "true"},
-  "workflow_url": "https://github.com/yeonsung-cloud-mlops/subway/actions/workflows/deploy.yml"
+  "github_secret_names": [
+    "AWS_ROLE_ARN",
+    "AWS_INSTANCE_ID"
+  ],
+  "github_variable": {
+    "AWS_DEPLOY_ENABLED": "true"
+  },
+  "workflow_url": "https://github.com/yeonsung-cloud-mlops/subway/actions/workflows/deploy.yml",
+  "initial_validation": {
+    "commit": "ec663c455cba30cafdd2510d0a7e090d29c66f20",
+    "workflow_run": "https://github.com/yeonsung-cloud-mlops/subway/actions/runs/35579690939",
+    "backend_tests_passed": 61,
+    "browser_tests_passed": 14,
+    "public_ip_smoke_test": "passed",
+    "original_files_loaded": 24,
+    "ridership_records": 597970
+  }
 }
