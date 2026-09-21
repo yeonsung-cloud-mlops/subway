@@ -53,6 +53,7 @@ export default function JourneyExperience({ journey }: { journey: Journey }) {
         <section className="route-schematic" aria-label="이동 경로 노선도">
           <h3>이동 경로</h3>
           <p className="helper">구간을 누르거나 가리켜 보세요</p>
+          <p className="route-crowding-key">열차 평균 · 초록 0 → 빨강 200%+</p>
           <div className="route-track">
             {journey.steps.map((s, i) =>
               s.kind === "transfer" ? (
@@ -63,6 +64,7 @@ export default function JourneyExperience({ journey }: { journey: Journey }) {
                     <small>
                       {s.from_line} → {s.to_line}호선 환승
                     </small>
+
                   </span>
                 </div>
               ) : (
@@ -91,6 +93,27 @@ export default function JourneyExperience({ journey }: { journey: Journey }) {
                       {s.line}호선 {s.service}
                       {s.train_change_wait_minutes > 0 ? " · 열차 변경" : ""}
                     </small>
+                    <span className="map-crowding">
+                      <span
+                        className="map-crowding-scale"
+                        data-missing={!s.forecast}
+                        aria-hidden="true"
+                      >
+                        {s.forecast && (
+                          <span
+                            className="map-crowding-marker"
+                            style={{
+                              left: `${Math.max(0, Math.min(200, s.forecast.train_mean_congestion_pct)) / 2}%`,
+                            }}
+                          />
+                        )}
+                      </span>
+                      <span className="map-crowding-value">
+                        {s.forecast
+                          ? `${s.forecast.train_mean_congestion_pct.toFixed(1)}%`
+                          : "자료 없음"}
+                      </span>
+                    </span>
                   </span>
                   {hover === i && (
                     <span className="map-tooltip" role="tooltip">
