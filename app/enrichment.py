@@ -206,7 +206,7 @@ class Guidance:
         a, b = first["from_id"], last["to_id"]
         result["endpoint_facilities"] = {
             "departure": self.amenities[a],
-            "arrival": self.amenities[b],
+            "arrival": self.amenities[result.get("arrival_station_id", b)],
         }
         result["departure_boarding_guidance"] = self.access_advice(first, a)
         result["arrival_alighting_guidance"] = self.access_advice(last, b)

@@ -62,3 +62,9 @@
 교대 환승 예시: 하차 10호차 4번 문, 승차 7호차 4번 문. 원본 응답은 `docs/journey-enrichment-example.json`, 비교 기록은 `artifacts/scheduled_route_examples.json`에 저장했다. 이 숫자는 실제 해당일 운행을 검증한 결과가 아니다.
 
 검증은 급행 추월, 환승 놓침, 동일 열차 정차, 단축 운행 후 열차 변경, 심야 영업일, 주말 구분, 최소 환승, 연결 없음, 칸별 평균 보존 및 문·시설 API를 포함한다. 로컬 테스트 실행: `.venv/bin/python -m pytest -q`. UI 검증은 `ENRICHMENT_API_URL`을 새 백엔드 주소로 설정하여 `npm --prefix frontend test -- enrichment.spec.ts`로 실행한다.
+
+## 도착역의 호선 선택 (2026-09-21 보완)
+
+목적지 역에서 요청한 호선까지 걸어서 이동하면 여정을 종료한다. 그 호선 열차를 다시 타고 돌아오도록 요구하지 않는다. 예: 2호선 삼성 → 8호선 잠실은 2호선으로 잠실까지 탑승하고, 마지막 역내 이동 후 **8호선 잠실 도착**, 열차 환승 0회로 표시한다.
+
+마지막 역내 이동은 기존 API 호환을 위해 `kind=transfer`를 유지하되 `purpose=destination_access`, `counts_as_transfer=false`로 구별한다. 보행시간은 소요시간에 포함하고 대기시간은 추가하지 않는다. `to_line`, `arrival_station_id`, `destination_access_minutes`를 반환하며 도착 편의시설은 요청한 호선 기준으로 제공한다. 실제 탑승 leg와 하차 문 안내는 타고 온 열차 호선을 유지한다. 프론트엔드는 마지막 역내 이동을 환승 노드로 표시하지 않고 지정 호선을 도착 노드에 표시한다.

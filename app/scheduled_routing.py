@@ -99,7 +99,7 @@ def search(
             continue
         onboard = state[0] == "train"
         station = connections[state[1]]["to_id"] if onboard else state[1]
-        if station in targets and onboard:
+        if station in targets and boards > 0:
             end = state
             break
         if onboard:

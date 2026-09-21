@@ -22,6 +22,8 @@ export type RideStep = {
 export type TransferStep = {
   door_guidance?: DoorGuidance;
   kind: "transfer";
+  purpose?: "interchange" | "destination_access";
+  counts_as_transfer?: boolean;
   from_station: string;
   to_station: string;
   from_line: number;
@@ -31,6 +33,9 @@ export type TransferStep = {
   estimated_minutes: number;
 };
 export type Journey = {
+  to_line?: number;
+  arrival_station_id?: string;
+  destination_access_minutes?: number;
   timetable?: {
     status: string;
     as_of?: string;

@@ -183,6 +183,17 @@ class JourneyModel:
             edges, timing = search(
                 self, starts, targets, departure, allow_express, strategy
             )
+        # Walking to a requested platform at the destination is not another train change.
+        last_ride_index = max(
+            i for i, edge in enumerate(edges) if edge["kind"] == "ride"
+        )
+        for i, edge in enumerate(edges):
+            if edge["kind"] == "transfer":
+                edge["purpose"] = (
+                    "destination_access" if i > last_ride_index else "interchange"
+                )
+                if edge["purpose"] == "destination_access":
+                    edge["minutes"] = edge["transfer"]["walking_minutes"]
         cursor = departure
         steps = []
         legs = []
@@ -193,11 +204,13 @@ class JourneyModel:
             minutes = edge["minutes"]
             end = cursor + timedelta(minutes=minutes)
             if edge["kind"] == "transfer":
-                transfer_count += 1
+                transfer_count += edge["purpose"] != "destination_access"
                 leg = None
                 steps.append(
                     {
                         "kind": "transfer",
+                        "purpose": edge["purpose"],
+                        "counts_as_transfer": edge["purpose"] != "destination_access",
                         "from_station": self.stations[edge["from_id"]]["name"],
                         "to_station": self.stations[edge["to_id"]]["name"],
                         "from_line": self.stations[edge["from_id"]]["line"],
@@ -205,7 +218,9 @@ class JourneyModel:
                         "start_at": cursor.isoformat(),
                         "end_at": end.isoformat(),
                         "estimated_minutes": round(minutes, 3),
-                        "waiting_minutes_assumption": 0 if use_timetable else 3,
+                        "waiting_minutes_assumption": 0
+                        if use_timetable or edge["purpose"] == "destination_access"
+                        else 3,
                         "timing_basis": edge.get("timing_basis", "assumed"),
                         **edge["transfer"],
                     }
@@ -319,6 +334,16 @@ class JourneyModel:
             "inference_mode": "on_request",
             "from_station": origin,
             "to_station": destination,
+            "to_line": self.stations[edges[-1]["to_id"]]["line"],
+            "arrival_station_id": edges[-1]["to_id"],
+            "destination_access_minutes": round(
+                sum(
+                    e["minutes"]
+                    for e in edges
+                    if e.get("purpose") == "destination_access"
+                ),
+                3,
+            ),
             "departure_at": departure.isoformat(),
             "estimated_arrival_at": cursor.isoformat(),
             "estimated_minutes": round((cursor - departure).total_seconds() / 60, 3),

@@ -164,3 +164,34 @@ def test_olympic_park_missing_interchange_is_restored_both_ways(journey):
         assert any(
             e["kind"] == "transfer" and e["to_id"] == b for e in journey.graph[a]
         )
+
+
+@pytest.mark.parametrize("use_timetable", [True, False])
+def test_destination_platform_walk_is_arrival_not_transfer(journey, use_timetable):
+    r = journey.predict(
+        "삼성",
+        "잠실",
+        datetime(2026, 9, 21, 8, 15),
+        from_line=2,
+        to_line=8,
+        use_timetable=use_timetable,
+    )
+    assert r["to_line"] == 8
+    assert r["transfer_count"] == 0
+    assert len(r["legs"]) == 1 and r["legs"][0]["line"] == 2
+    assert r["legs"][0]["to_station"] == "잠실"
+    end = r["steps"][-1]
+    assert end["kind"] == "transfer" and end["purpose"] == "destination_access"
+    assert end["counts_as_transfer"] is False
+    assert end["from_line"] == 2 and end["to_line"] == 8
+    assert r["destination_access_minutes"] > 0
+    assert r["endpoint_facilities"]["arrival"]["line"] == 8
+    assert r["estimated_arrival_at"] == end["end_at"]
+
+
+def test_arrival_on_same_line_has_no_destination_walk(journey):
+    r = journey.predict(
+        "삼성", "잠실", datetime(2026, 9, 21, 8, 15), from_line=2, to_line=2
+    )
+    assert r["to_line"] == 2 and r["destination_access_minutes"] == 0
+    assert all(s.get("purpose") != "destination_access" for s in r["steps"])
