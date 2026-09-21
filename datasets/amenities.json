@@ -1,0 +1,6607 @@
+{
+  "1:150": {
+    "station_id": "1:150",
+    "station_name": "서울역",
+    "line": 1,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": true,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "1:151": {
+    "station_id": "1:151",
+    "station_name": "시청",
+    "line": 1,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "1:152": {
+    "station_id": "1:152",
+    "station_name": "종각",
+    "line": 1,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "1:153": {
+    "station_id": "1:153",
+    "station_name": "종로3가",
+    "line": 1,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실 인접",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "1:154": {
+    "station_id": "1:154",
+    "station_name": "종로5가",
+    "line": 1,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "1:155": {
+    "station_id": "1:155",
+    "station_name": "동대문",
+    "line": 1,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실  인접",
+        "fare_area": "비운임",
+        "type": "모유수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "1:159": {
+    "station_id": "1:159",
+    "station_name": "동묘앞",
+    "line": 1,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "1:156": {
+    "station_id": "1:156",
+    "station_name": "신설동",
+    "line": 1,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "1:157": {
+    "station_id": "1:157",
+    "station_name": "제기동",
+    "line": 1,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "1:158": {
+    "station_id": "1:158",
+    "station_name": "청량리",
+    "line": 1,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:211": {
+    "station_id": "2:211",
+    "station_name": "성수",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "1번출구방면 게이트 안쪽",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "2:212": {
+    "station_id": "2:212",
+    "station_name": "건대입구",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:213": {
+    "station_id": "2:213",
+    "station_name": "구의",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:214": {
+    "station_id": "2:214",
+    "station_name": "강변",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "2번출구방면 게이트 안쪽",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "2:215": {
+    "station_id": "2:215",
+    "station_name": "잠실나루",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:216": {
+    "station_id": "2:216",
+    "station_name": "잠실",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": true,
+      "무인민원발급기": false,
+      "환전키오스크": true,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 8호선 연결통로방면 게이트 옆",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "2:217": {
+    "station_id": "2:217",
+    "station_name": "잠실새내",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:218": {
+    "station_id": "2:218",
+    "station_name": "종합운동장",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": true,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:219": {
+    "station_id": "2:219",
+    "station_name": "삼성",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": true,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 아이센터 옆",
+        "fare_area": "비운임",
+        "type": "모유수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "2:220": {
+    "station_id": "2:220",
+    "station_name": "선릉",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": true,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:221": {
+    "station_id": "2:221",
+    "station_name": "역삼",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": true,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:222": {
+    "station_id": "2:222",
+    "station_name": "강남",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": true,
+      "무인민원발급기": false,
+      "환전키오스크": true,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실  앞",
+        "fare_area": "운임",
+        "type": "모유수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "2:223": {
+    "station_id": "2:223",
+    "station_name": "교대",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:224": {
+    "station_id": "2:224",
+    "station_name": "서초",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:225": {
+    "station_id": "2:225",
+    "station_name": "방배",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:226": {
+    "station_id": "2:226",
+    "station_name": "사당",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:227": {
+    "station_id": "2:227",
+    "station_name": "낙성대",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:228": {
+    "station_id": "2:228",
+    "station_name": "서울대입구",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:229": {
+    "station_id": "2:229",
+    "station_name": "봉천",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:230": {
+    "station_id": "2:230",
+    "station_name": "신림",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실 방면 게이트 옆",
+        "fare_area": "운임",
+        "type": "모유수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "2:231": {
+    "station_id": "2:231",
+    "station_name": "신대방",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:232": {
+    "station_id": "2:232",
+    "station_name": "구로디지털단지",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:233": {
+    "station_id": "2:233",
+    "station_name": "대림",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "2F 고객안전실  인접",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "2:234": {
+    "station_id": "2:234",
+    "station_name": "신도림",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:235": {
+    "station_id": "2:235",
+    "station_name": "문래",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:236": {
+    "station_id": "2:236",
+    "station_name": "영등포구청",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실  인접",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "2:237": {
+    "station_id": "2:237",
+    "station_name": "당산",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:238": {
+    "station_id": "2:238",
+    "station_name": "합정",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:239": {
+    "station_id": "2:239",
+    "station_name": "홍대입구",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": true,
+      "무인민원발급기": false,
+      "환전키오스크": true,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:240": {
+    "station_id": "2:240",
+    "station_name": "신촌",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": true,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실  인접",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "2:241": {
+    "station_id": "2:241",
+    "station_name": "이대",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": true,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:242": {
+    "station_id": "2:242",
+    "station_name": "아현",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:243": {
+    "station_id": "2:243",
+    "station_name": "충정로",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:201": {
+    "station_id": "2:201",
+    "station_name": "시청",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실 인접",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "2:202": {
+    "station_id": "2:202",
+    "station_name": "을지로입구",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": true,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:203": {
+    "station_id": "2:203",
+    "station_name": "을지로3가",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": true,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:204": {
+    "station_id": "2:204",
+    "station_name": "을지로4가",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:205": {
+    "station_id": "2:205",
+    "station_name": "동대문역사문화공원",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": true,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:206": {
+    "station_id": "2:206",
+    "station_name": "신당",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:207": {
+    "station_id": "2:207",
+    "station_name": "상왕십리",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:208": {
+    "station_id": "2:208",
+    "station_name": "왕십리",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:209": {
+    "station_id": "2:209",
+    "station_name": "한양대",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:210": {
+    "station_id": "2:210",
+    "station_name": "뚝섬",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:244": {
+    "station_id": "2:244",
+    "station_name": "용답",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:245": {
+    "station_id": "2:245",
+    "station_name": "신답",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:250": {
+    "station_id": "2:250",
+    "station_name": "용두",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:246": {
+    "station_id": "2:246",
+    "station_name": "신설동",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실  내부",
+        "fare_area": "운임",
+        "type": "모유수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "2:247": {
+    "station_id": "2:247",
+    "station_name": "도림천",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:248": {
+    "station_id": "2:248",
+    "station_name": "양천구청",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:249": {
+    "station_id": "2:249",
+    "station_name": "신정네거리",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "2:260": {
+    "station_id": "2:260",
+    "station_name": "까치산",
+    "line": 2,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": true,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": false,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": []
+  },
+  "3:309": {
+    "station_id": "3:309",
+    "station_name": "지축",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "3:310": {
+    "station_id": "3:310",
+    "station_name": "구파발",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실  인접",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "3:311": {
+    "station_id": "3:311",
+    "station_name": "연신내",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "3:312": {
+    "station_id": "3:312",
+    "station_name": "불광",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "3:313": {
+    "station_id": "3:313",
+    "station_name": "녹번",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "3:314": {
+    "station_id": "3:314",
+    "station_name": "홍제",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "3:315": {
+    "station_id": "3:315",
+    "station_name": "무악재",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "3:316": {
+    "station_id": "3:316",
+    "station_name": "독립문",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실  내부",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "3:317": {
+    "station_id": "3:317",
+    "station_name": "경복궁",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": true,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "3:318": {
+    "station_id": "3:318",
+    "station_name": "안국",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": true,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "3:319": {
+    "station_id": "3:319",
+    "station_name": "종로3가",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": []
+  },
+  "3:320": {
+    "station_id": "3:320",
+    "station_name": "을지로3가",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "3:321": {
+    "station_id": "3:321",
+    "station_name": "충무로",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": false,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "3:322": {
+    "station_id": "3:322",
+    "station_name": "동대입구",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "3:323": {
+    "station_id": "3:323",
+    "station_name": "약수",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "3:324": {
+    "station_id": "3:324",
+    "station_name": "금호",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "3:325": {
+    "station_id": "3:325",
+    "station_name": "옥수",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B3 고객안전실방면 게이트 옆",
+        "fare_area": "운임",
+        "type": "모유수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "3:326": {
+    "station_id": "3:326",
+    "station_name": "압구정",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": true,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "3:327": {
+    "station_id": "3:327",
+    "station_name": "신사",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": true,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "3:328": {
+    "station_id": "3:328",
+    "station_name": "잠원",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "3:329": {
+    "station_id": "3:329",
+    "station_name": "고속터미널",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 9호선 환승게이트 옆",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "3:330": {
+    "station_id": "3:330",
+    "station_name": "교대",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "3:331": {
+    "station_id": "3:331",
+    "station_name": "남부터미널",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "3:332": {
+    "station_id": "3:332",
+    "station_name": "양재",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": true,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 ③,④방면 출구 옆",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "3:333": {
+    "station_id": "3:333",
+    "station_name": "매봉",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "3:334": {
+    "station_id": "3:334",
+    "station_name": "도곡",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": false,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실  앞",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "3:335": {
+    "station_id": "3:335",
+    "station_name": "대치",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "3:336": {
+    "station_id": "3:336",
+    "station_name": "학여울",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "3:337": {
+    "station_id": "3:337",
+    "station_name": "대청",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "3:338": {
+    "station_id": "3:338",
+    "station_name": "일원",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "3:339": {
+    "station_id": "3:339",
+    "station_name": "수서",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": true,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "3:340": {
+    "station_id": "3:340",
+    "station_name": "가락시장",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "3:341": {
+    "station_id": "3:341",
+    "station_name": "경찰병원",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "3:342": {
+    "station_id": "3:342",
+    "station_name": "오금",
+    "line": 3,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "4:409": {
+    "station_id": "4:409",
+    "station_name": "불암산",
+    "line": 4,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "4:410": {
+    "station_id": "4:410",
+    "station_name": "상계",
+    "line": 4,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "4:411": {
+    "station_id": "4:411",
+    "station_name": "노원",
+    "line": 4,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "2F 고객안전실  앞",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "4:412": {
+    "station_id": "4:412",
+    "station_name": "창동",
+    "line": 4,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "4:413": {
+    "station_id": "4:413",
+    "station_name": "쌍문",
+    "line": 4,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "4:414": {
+    "station_id": "4:414",
+    "station_name": "수유",
+    "line": 4,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "4:415": {
+    "station_id": "4:415",
+    "station_name": "미아",
+    "line": 4,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "4:416": {
+    "station_id": "4:416",
+    "station_name": "미아사거리",
+    "line": 4,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실 내부",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "4:417": {
+    "station_id": "4:417",
+    "station_name": "길음",
+    "line": 4,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실  인접",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "4:418": {
+    "station_id": "4:418",
+    "station_name": "성신여대입구",
+    "line": 4,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "4:419": {
+    "station_id": "4:419",
+    "station_name": "한성대입구",
+    "line": 4,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "4:420": {
+    "station_id": "4:420",
+    "station_name": "혜화",
+    "line": 4,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "4:421": {
+    "station_id": "4:421",
+    "station_name": "동대문",
+    "line": 4,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": true,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "4:422": {
+    "station_id": "4:422",
+    "station_name": "동대문역사문화공원",
+    "line": 4,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실  내부",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "4:423": {
+    "station_id": "4:423",
+    "station_name": "충무로",
+    "line": 4,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": true,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "4:424": {
+    "station_id": "4:424",
+    "station_name": "명동",
+    "line": 4,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": true,
+      "무인민원발급기": false,
+      "환전키오스크": true,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "4:425": {
+    "station_id": "4:425",
+    "station_name": "회현",
+    "line": 4,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": true,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "4:426": {
+    "station_id": "4:426",
+    "station_name": "서울역",
+    "line": 4,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": true,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실  인접",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "4:427": {
+    "station_id": "4:427",
+    "station_name": "숙대입구",
+    "line": 4,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "4:428": {
+    "station_id": "4:428",
+    "station_name": "삼각지",
+    "line": 4,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "4:429": {
+    "station_id": "4:429",
+    "station_name": "신용산",
+    "line": 4,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "4:430": {
+    "station_id": "4:430",
+    "station_name": "이촌",
+    "line": 4,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "2F 고객안전실  인접",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "4:431": {
+    "station_id": "4:431",
+    "station_name": "동작",
+    "line": 4,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "4:432": {
+    "station_id": "4:432",
+    "station_name": "총신대입구",
+    "line": 4,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "4:433": {
+    "station_id": "4:433",
+    "station_name": "사당",
+    "line": 4,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실  내부",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "4:434": {
+    "station_id": "4:434",
+    "station_name": "남태령",
+    "line": 4,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2511": {
+    "station_id": "5:2511",
+    "station_name": "방화",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2512": {
+    "station_id": "5:2512",
+    "station_name": "개화산",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2513": {
+    "station_id": "5:2513",
+    "station_name": "김포공항",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": true,
+      "무인민원발급기": false,
+      "환전키오스크": true,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실 내부",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "5:2514": {
+    "station_id": "5:2514",
+    "station_name": "송정",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2515": {
+    "station_id": "5:2515",
+    "station_name": "마곡",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2516": {
+    "station_id": "5:2516",
+    "station_name": "발산",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2517": {
+    "station_id": "5:2517",
+    "station_name": "우장산",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실 앞",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "5:2518": {
+    "station_id": "5:2518",
+    "station_name": "화곡",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2519": {
+    "station_id": "5:2519",
+    "station_name": "까치산",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실 인접",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "5:2520": {
+    "station_id": "5:2520",
+    "station_name": "신정",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2521": {
+    "station_id": "5:2521",
+    "station_name": "목동",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실 내부",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "5:2522": {
+    "station_id": "5:2522",
+    "station_name": "오목교",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2523": {
+    "station_id": "5:2523",
+    "station_name": "양평",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2524": {
+    "station_id": "5:2524",
+    "station_name": "영등포구청",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B4 고객안전실 내부",
+        "fare_area": "비운임",
+        "type": "모유수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "5:2525": {
+    "station_id": "5:2525",
+    "station_name": "영등포시장",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2526": {
+    "station_id": "5:2526",
+    "station_name": "신길",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B3 고객안전실 내부",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "5:2527": {
+    "station_id": "5:2527",
+    "station_name": "여의도",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": true,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 대합실중앙 안내센터 내부",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "5:2528": {
+    "station_id": "5:2528",
+    "station_name": "여의나루",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 대합실 게이트 외부",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "5:2529": {
+    "station_id": "5:2529",
+    "station_name": "마포",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2530": {
+    "station_id": "5:2530",
+    "station_name": "공덕",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실 내부",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "5:2531": {
+    "station_id": "5:2531",
+    "station_name": "애오개",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2532": {
+    "station_id": "5:2532",
+    "station_name": "충정로",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실 내부",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "5:2533": {
+    "station_id": "5:2533",
+    "station_name": "서대문",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2534": {
+    "station_id": "5:2534",
+    "station_name": "광화문",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": true,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실 인접",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "5:2535": {
+    "station_id": "5:2535",
+    "station_name": "종로3가",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": true,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2536": {
+    "station_id": "5:2536",
+    "station_name": "을지로4가",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2537": {
+    "station_id": "5:2537",
+    "station_name": "동대문역사문화공원",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실 인접",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "5:2538": {
+    "station_id": "5:2538",
+    "station_name": "청구",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실 내부",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "5:2539": {
+    "station_id": "5:2539",
+    "station_name": "신금호",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2540": {
+    "station_id": "5:2540",
+    "station_name": "행당",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2541": {
+    "station_id": "5:2541",
+    "station_name": "왕십리",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실 내부",
+        "fare_area": "비운임",
+        "type": "모유수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "5:2542": {
+    "station_id": "5:2542",
+    "station_name": "마장",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2543": {
+    "station_id": "5:2543",
+    "station_name": "답십리",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실 인접",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "5:2544": {
+    "station_id": "5:2544",
+    "station_name": "장한평",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2545": {
+    "station_id": "5:2545",
+    "station_name": "군자",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": true,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실 내부",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "5:2546": {
+    "station_id": "5:2546",
+    "station_name": "아차산",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": true,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실 내부",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "5:2547": {
+    "station_id": "5:2547",
+    "station_name": "광나루",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2548": {
+    "station_id": "5:2548",
+    "station_name": "천호",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실 내부",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "5:2549": {
+    "station_id": "5:2549",
+    "station_name": "강동",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B3 고객안전실 내부",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "5:2550": {
+    "station_id": "5:2550",
+    "station_name": "길동",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2551": {
+    "station_id": "5:2551",
+    "station_name": "굽은다리",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2552": {
+    "station_id": "5:2552",
+    "station_name": "명일",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2553": {
+    "station_id": "5:2553",
+    "station_name": "고덕",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실 인접",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "5:2554": {
+    "station_id": "5:2554",
+    "station_name": "상일동",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2562": {
+    "station_id": "5:2562",
+    "station_name": "강일",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 (나)고객안전실 인접",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "5:2563": {
+    "station_id": "5:2563",
+    "station_name": "미사",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실 앞",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "5:2564": {
+    "station_id": "5:2564",
+    "station_name": "하남풍산",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실 옆",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "5:2565": {
+    "station_id": "5:2565",
+    "station_name": "하남시청",
+    "line": 5,
+    "status": "unavailable",
+    "as_of": "2025-03-20",
+    "features": {},
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실 인접",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "5:2566": {
+    "station_id": "5:2566",
+    "station_name": "하남검단산",
+    "line": 5,
+    "status": "unavailable",
+    "as_of": "2025-03-20",
+    "features": {},
+    "nursing_rooms": [
+      {
+        "location": "B1 게이트 옆",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "5:2555": {
+    "station_id": "5:2555",
+    "station_name": "둔촌동",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2556": {
+    "station_id": "5:2556",
+    "station_name": "올림픽공원",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실 내부",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "5:2557": {
+    "station_id": "5:2557",
+    "station_name": "방이",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2558": {
+    "station_id": "5:2558",
+    "station_name": "오금",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2559": {
+    "station_id": "5:2559",
+    "station_name": "개롱",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "5:2560": {
+    "station_id": "5:2560",
+    "station_name": "거여",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실 인접",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "5:2561": {
+    "station_id": "5:2561",
+    "station_name": "마천",
+    "line": 5,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "6:2612": {
+    "station_id": "6:2612",
+    "station_name": "역촌",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "6:2613": {
+    "station_id": "6:2613",
+    "station_name": "불광",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실 인접",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "6:2614": {
+    "station_id": "6:2614",
+    "station_name": "독바위",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "6:2615": {
+    "station_id": "6:2615",
+    "station_name": "연신내",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "6:2616": {
+    "station_id": "6:2616",
+    "station_name": "구산",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "6:2611": {
+    "station_id": "6:2611",
+    "station_name": "응암",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실 앞",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "6:2617": {
+    "station_id": "6:2617",
+    "station_name": "새절",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "6:2618": {
+    "station_id": "6:2618",
+    "station_name": "증산",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "6:2619": {
+    "station_id": "6:2619",
+    "station_name": "디지털미디어시티",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "6:2620": {
+    "station_id": "6:2620",
+    "station_name": "월드컵경기장",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실 인접",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "6:2621": {
+    "station_id": "6:2621",
+    "station_name": "마포구청",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "6:2622": {
+    "station_id": "6:2622",
+    "station_name": "망원",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "6:2623": {
+    "station_id": "6:2623",
+    "station_name": "합정",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실 내부",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "6:2624": {
+    "station_id": "6:2624",
+    "station_name": "상수",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "6:2625": {
+    "station_id": "6:2625",
+    "station_name": "광흥창",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "6:2626": {
+    "station_id": "6:2626",
+    "station_name": "대흥",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실 내부",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "6:2627": {
+    "station_id": "6:2627",
+    "station_name": "공덕",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": []
+  },
+  "6:2628": {
+    "station_id": "6:2628",
+    "station_name": "효창공원앞",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": false,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "6:2629": {
+    "station_id": "6:2629",
+    "station_name": "삼각지",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B3 고객안전실 인접",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "6:2630": {
+    "station_id": "6:2630",
+    "station_name": "녹사평",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "6:2631": {
+    "station_id": "6:2631",
+    "station_name": "이태원",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": true,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실 내부",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "6:2632": {
+    "station_id": "6:2632",
+    "station_name": "한강진",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "6:2633": {
+    "station_id": "6:2633",
+    "station_name": "버티고개",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "6:2634": {
+    "station_id": "6:2634",
+    "station_name": "약수",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실 인접",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "6:2635": {
+    "station_id": "6:2635",
+    "station_name": "청구",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": []
+  },
+  "6:2636": {
+    "station_id": "6:2636",
+    "station_name": "신당",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "6:2637": {
+    "station_id": "6:2637",
+    "station_name": "동묘앞",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실 앞",
+        "fare_area": "운임",
+        "type": "모유수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "6:2638": {
+    "station_id": "6:2638",
+    "station_name": "창신",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "6:2639": {
+    "station_id": "6:2639",
+    "station_name": "보문",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "6:2640": {
+    "station_id": "6:2640",
+    "station_name": "안암",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실 내부",
+        "fare_area": "운임",
+        "type": "모유수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "6:2641": {
+    "station_id": "6:2641",
+    "station_name": "고려대",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "6:2642": {
+    "station_id": "6:2642",
+    "station_name": "월곡",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "6:2643": {
+    "station_id": "6:2643",
+    "station_name": "상월곡",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실 인접",
+        "fare_area": "운임",
+        "type": "모유수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "6:2644": {
+    "station_id": "6:2644",
+    "station_name": "돌곶이",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "6:2645": {
+    "station_id": "6:2645",
+    "station_name": "석계",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "6:2646": {
+    "station_id": "6:2646",
+    "station_name": "태릉입구",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": []
+  },
+  "6:2647": {
+    "station_id": "6:2647",
+    "station_name": "화랑대",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "6:2648": {
+    "station_id": "6:2648",
+    "station_name": "봉화산",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "6:2649": {
+    "station_id": "6:2649",
+    "station_name": "신내",
+    "line": 6,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2711": {
+    "station_id": "7:2711",
+    "station_name": "장암",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2712": {
+    "station_id": "7:2712",
+    "station_name": "도봉산",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2713": {
+    "station_id": "7:2713",
+    "station_name": "수락산",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실 내부",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "7:2714": {
+    "station_id": "7:2714",
+    "station_name": "마들",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2715": {
+    "station_id": "7:2715",
+    "station_name": "노원",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실 내부",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "7:2716": {
+    "station_id": "7:2716",
+    "station_name": "중계",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2717": {
+    "station_id": "7:2717",
+    "station_name": "하계",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실 인접",
+        "fare_area": "비운임",
+        "type": "모유수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "7:2718": {
+    "station_id": "7:2718",
+    "station_name": "공릉",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2719": {
+    "station_id": "7:2719",
+    "station_name": "태릉입구",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B3 고객안전실 내부",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "7:2720": {
+    "station_id": "7:2720",
+    "station_name": "먹골",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2721": {
+    "station_id": "7:2721",
+    "station_name": "중화",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2722": {
+    "station_id": "7:2722",
+    "station_name": "상봉",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실 내부",
+        "fare_area": "비운임",
+        "type": "모유수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "7:2723": {
+    "station_id": "7:2723",
+    "station_name": "면목",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2724": {
+    "station_id": "7:2724",
+    "station_name": "사가정",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": true,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2725": {
+    "station_id": "7:2725",
+    "station_name": "용마산",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2726": {
+    "station_id": "7:2726",
+    "station_name": "중곡",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2727": {
+    "station_id": "7:2727",
+    "station_name": "군자",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": []
+  },
+  "7:2728": {
+    "station_id": "7:2728",
+    "station_name": "어린이대공원",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실 내부",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "7:2729": {
+    "station_id": "7:2729",
+    "station_name": "건대입구",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2730": {
+    "station_id": "7:2730",
+    "station_name": "자양",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "2F ①,④출구방면 게이트 안쪽",
+        "fare_area": "운임",
+        "type": "모유수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "7:2731": {
+    "station_id": "7:2731",
+    "station_name": "청담",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2732": {
+    "station_id": "7:2732",
+    "station_name": "강남구청",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2733": {
+    "station_id": "7:2733",
+    "station_name": "학동",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2734": {
+    "station_id": "7:2734",
+    "station_name": "논현",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실 내부",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "7:2735": {
+    "station_id": "7:2735",
+    "station_name": "반포",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2736": {
+    "station_id": "7:2736",
+    "station_name": "고속터미널",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": true,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실 내부",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "7:2737": {
+    "station_id": "7:2737",
+    "station_name": "내방",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2738": {
+    "station_id": "7:2738",
+    "station_name": "이수",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B3 고객안전실 내부",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "7:2739": {
+    "station_id": "7:2739",
+    "station_name": "남성",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2740": {
+    "station_id": "7:2740",
+    "station_name": "숭실대입구",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2741": {
+    "station_id": "7:2741",
+    "station_name": "상도",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2742": {
+    "station_id": "7:2742",
+    "station_name": "장승배기",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2743": {
+    "station_id": "7:2743",
+    "station_name": "신대방삼거리",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2744": {
+    "station_id": "7:2744",
+    "station_name": "보라매",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2745": {
+    "station_id": "7:2745",
+    "station_name": "신풍",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2746": {
+    "station_id": "7:2746",
+    "station_name": "대림",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": true,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실 내부",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "7:2747": {
+    "station_id": "7:2747",
+    "station_name": "남구로",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": false,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2748": {
+    "station_id": "7:2748",
+    "station_name": "가산디지털단지",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": true,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실 내부",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "7:2749": {
+    "station_id": "7:2749",
+    "station_name": "철산",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2750": {
+    "station_id": "7:2750",
+    "station_name": "광명사거리",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실 내부",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "7:2751": {
+    "station_id": "7:2751",
+    "station_name": "천왕",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "7:2752": {
+    "station_id": "7:2752",
+    "station_name": "온수",
+    "line": 7,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실 내부",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "8:2810": {
+    "station_id": "8:2810",
+    "station_name": "암사역사공원",
+    "line": 8,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": false,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 고객안전실 옆",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "8:2811": {
+    "station_id": "8:2811",
+    "station_name": "암사",
+    "line": 8,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "8:2812": {
+    "station_id": "8:2812",
+    "station_name": "천호",
+    "line": 8,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": []
+  },
+  "8:2813": {
+    "station_id": "8:2813",
+    "station_name": "강동구청",
+    "line": 8,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "8:2814": {
+    "station_id": "8:2814",
+    "station_name": "몽촌토성",
+    "line": 8,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실 내부",
+        "fare_area": "운임",
+        "type": "모유수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "8:2815": {
+    "station_id": "8:2815",
+    "station_name": "잠실",
+    "line": 8,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실 내부",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "8:2816": {
+    "station_id": "8:2816",
+    "station_name": "석촌",
+    "line": 8,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "8:2817": {
+    "station_id": "8:2817",
+    "station_name": "송파",
+    "line": 8,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "8:2818": {
+    "station_id": "8:2818",
+    "station_name": "가락시장",
+    "line": 8,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 승강지원단 옆",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "8:2819": {
+    "station_id": "8:2819",
+    "station_name": "문정",
+    "line": 8,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "8:2820": {
+    "station_id": "8:2820",
+    "station_name": "장지",
+    "line": 8,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B1 화장실 옆",
+        "fare_area": "비운임",
+        "type": "모유수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "8:2821": {
+    "station_id": "8:2821",
+    "station_name": "복정",
+    "line": 8,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "8:2828": {
+    "station_id": "8:2828",
+    "station_name": "남위례",
+    "line": 8,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "2층 게이트 옆",
+        "fare_area": "비운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "8:2822": {
+    "station_id": "8:2822",
+    "station_name": "산성",
+    "line": 8,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": true,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "8:2823": {
+    "station_id": "8:2823",
+    "station_name": "남한산성입구",
+    "line": 8,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실 내부",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "8:2824": {
+    "station_id": "8:2824",
+    "station_name": "단대오거리",
+    "line": 8,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": true,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "8:2825": {
+    "station_id": "8:2825",
+    "station_name": "신흥",
+    "line": 8,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "8:2826": {
+    "station_id": "8:2826",
+    "station_name": "수진",
+    "line": 8,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "8:2827": {
+    "station_id": "8:2827",
+    "station_name": "모란",
+    "line": 8,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": true,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": [
+      {
+        "location": "B2 고객안전실 내부",
+        "fare_area": "운임",
+        "type": "가족수유실",
+        "as_of": "2025-09-24"
+      }
+    ]
+  },
+  "9:4101": {
+    "station_id": "9:4101",
+    "station_name": "개화",
+    "line": 9,
+    "status": "unavailable",
+    "as_of": "2025-03-20",
+    "features": {},
+    "nursing_rooms": []
+  },
+  "9:4102": {
+    "station_id": "9:4102",
+    "station_name": "김포공항",
+    "line": 9,
+    "status": "unavailable",
+    "as_of": "2025-03-20",
+    "features": {},
+    "nursing_rooms": []
+  },
+  "9:4103": {
+    "station_id": "9:4103",
+    "station_name": "공항시장",
+    "line": 9,
+    "status": "unavailable",
+    "as_of": "2025-03-20",
+    "features": {},
+    "nursing_rooms": []
+  },
+  "9:4104": {
+    "station_id": "9:4104",
+    "station_name": "신방화",
+    "line": 9,
+    "status": "unavailable",
+    "as_of": "2025-03-20",
+    "features": {},
+    "nursing_rooms": []
+  },
+  "9:4105": {
+    "station_id": "9:4105",
+    "station_name": "마곡나루",
+    "line": 9,
+    "status": "unavailable",
+    "as_of": "2025-03-20",
+    "features": {},
+    "nursing_rooms": []
+  },
+  "9:4106": {
+    "station_id": "9:4106",
+    "station_name": "양천향교",
+    "line": 9,
+    "status": "unavailable",
+    "as_of": "2025-03-20",
+    "features": {},
+    "nursing_rooms": []
+  },
+  "9:4107": {
+    "station_id": "9:4107",
+    "station_name": "가양",
+    "line": 9,
+    "status": "unavailable",
+    "as_of": "2025-03-20",
+    "features": {},
+    "nursing_rooms": []
+  },
+  "9:4108": {
+    "station_id": "9:4108",
+    "station_name": "증미",
+    "line": 9,
+    "status": "unavailable",
+    "as_of": "2025-03-20",
+    "features": {},
+    "nursing_rooms": []
+  },
+  "9:4109": {
+    "station_id": "9:4109",
+    "station_name": "등촌",
+    "line": 9,
+    "status": "unavailable",
+    "as_of": "2025-03-20",
+    "features": {},
+    "nursing_rooms": []
+  },
+  "9:4110": {
+    "station_id": "9:4110",
+    "station_name": "염창",
+    "line": 9,
+    "status": "unavailable",
+    "as_of": "2025-03-20",
+    "features": {},
+    "nursing_rooms": []
+  },
+  "9:4111": {
+    "station_id": "9:4111",
+    "station_name": "신목동",
+    "line": 9,
+    "status": "unavailable",
+    "as_of": "2025-03-20",
+    "features": {},
+    "nursing_rooms": []
+  },
+  "9:4112": {
+    "station_id": "9:4112",
+    "station_name": "선유도",
+    "line": 9,
+    "status": "unavailable",
+    "as_of": "2025-03-20",
+    "features": {},
+    "nursing_rooms": []
+  },
+  "9:4113": {
+    "station_id": "9:4113",
+    "station_name": "당산",
+    "line": 9,
+    "status": "unavailable",
+    "as_of": "2025-03-20",
+    "features": {},
+    "nursing_rooms": []
+  },
+  "9:4114": {
+    "station_id": "9:4114",
+    "station_name": "국회의사당",
+    "line": 9,
+    "status": "unavailable",
+    "as_of": "2025-03-20",
+    "features": {},
+    "nursing_rooms": []
+  },
+  "9:4115": {
+    "station_id": "9:4115",
+    "station_name": "여의도",
+    "line": 9,
+    "status": "unavailable",
+    "as_of": "2025-03-20",
+    "features": {},
+    "nursing_rooms": []
+  },
+  "9:4116": {
+    "station_id": "9:4116",
+    "station_name": "샛강",
+    "line": 9,
+    "status": "unavailable",
+    "as_of": "2025-03-20",
+    "features": {},
+    "nursing_rooms": []
+  },
+  "9:4117": {
+    "station_id": "9:4117",
+    "station_name": "노량진",
+    "line": 9,
+    "status": "unavailable",
+    "as_of": "2025-03-20",
+    "features": {},
+    "nursing_rooms": []
+  },
+  "9:4118": {
+    "station_id": "9:4118",
+    "station_name": "노들",
+    "line": 9,
+    "status": "unavailable",
+    "as_of": "2025-03-20",
+    "features": {},
+    "nursing_rooms": []
+  },
+  "9:4119": {
+    "station_id": "9:4119",
+    "station_name": "흑석",
+    "line": 9,
+    "status": "unavailable",
+    "as_of": "2025-03-20",
+    "features": {},
+    "nursing_rooms": []
+  },
+  "9:4120": {
+    "station_id": "9:4120",
+    "station_name": "동작",
+    "line": 9,
+    "status": "unavailable",
+    "as_of": "2025-03-20",
+    "features": {},
+    "nursing_rooms": []
+  },
+  "9:4121": {
+    "station_id": "9:4121",
+    "station_name": "구반포",
+    "line": 9,
+    "status": "unavailable",
+    "as_of": "2025-03-20",
+    "features": {},
+    "nursing_rooms": []
+  },
+  "9:4122": {
+    "station_id": "9:4122",
+    "station_name": "신반포",
+    "line": 9,
+    "status": "unavailable",
+    "as_of": "2025-03-20",
+    "features": {},
+    "nursing_rooms": []
+  },
+  "9:4123": {
+    "station_id": "9:4123",
+    "station_name": "고속터미널",
+    "line": 9,
+    "status": "unavailable",
+    "as_of": "2025-03-20",
+    "features": {},
+    "nursing_rooms": []
+  },
+  "9:4124": {
+    "station_id": "9:4124",
+    "station_name": "사평",
+    "line": 9,
+    "status": "unavailable",
+    "as_of": "2025-03-20",
+    "features": {},
+    "nursing_rooms": []
+  },
+  "9:4125": {
+    "station_id": "9:4125",
+    "station_name": "신논현",
+    "line": 9,
+    "status": "unavailable",
+    "as_of": "2025-03-20",
+    "features": {},
+    "nursing_rooms": []
+  },
+  "9:4126": {
+    "station_id": "9:4126",
+    "station_name": "언주",
+    "line": 9,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": []
+  },
+  "9:4127": {
+    "station_id": "9:4127",
+    "station_name": "선정릉",
+    "line": 9,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": false
+    },
+    "nursing_rooms": []
+  },
+  "9:4128": {
+    "station_id": "9:4128",
+    "station_name": "삼성중앙",
+    "line": 9,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": []
+  },
+  "9:4129": {
+    "station_id": "9:4129",
+    "station_name": "봉은사",
+    "line": 9,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": []
+  },
+  "9:4130": {
+    "station_id": "9:4130",
+    "station_name": "종합운동장",
+    "line": 9,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": []
+  },
+  "9:4131": {
+    "station_id": "9:4131",
+    "station_name": "삼전",
+    "line": 9,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": []
+  },
+  "9:4132": {
+    "station_id": "9:4132",
+    "station_name": "석촌고분",
+    "line": 9,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": []
+  },
+  "9:4133": {
+    "station_id": "9:4133",
+    "station_name": "석촌",
+    "line": 9,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": []
+  },
+  "9:4134": {
+    "station_id": "9:4134",
+    "station_name": "송파나루",
+    "line": 9,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": []
+  },
+  "9:4135": {
+    "station_id": "9:4135",
+    "station_name": "한성백제",
+    "line": 9,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": []
+  },
+  "9:4136": {
+    "station_id": "9:4136",
+    "station_name": "올림픽공원",
+    "line": 9,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": []
+  },
+  "9:4137": {
+    "station_id": "9:4137",
+    "station_name": "둔촌오륜",
+    "line": 9,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": []
+  },
+  "9:4138": {
+    "station_id": "9:4138",
+    "station_name": "중앙보훈병원",
+    "line": 9,
+    "status": "available",
+    "as_of": "2025-03-20",
+    "features": {
+      "문화공간": false,
+      "휠체어리프트": false,
+      "만남의장소": false,
+      "환승주차장": false,
+      "자전거보관소": false,
+      "엘리베이터": true,
+      "티러기지": false,
+      "무인민원발급기": false,
+      "환전키오스크": false,
+      "수유실": true
+    },
+    "nursing_rooms": []
+  }
+}

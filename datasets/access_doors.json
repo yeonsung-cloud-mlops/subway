@@ -1,0 +1,2614 @@
+{
+  "1:159": [
+    {
+      "toward_station": "신설동",
+      "car": 9,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "신설동 방면9-1"
+    },
+    {
+      "toward_station": "신설동",
+      "car": 6,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "신설동 방면6-2"
+    },
+    {
+      "toward_station": "동대문",
+      "car": 5,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "동대문 방면5-4"
+    },
+    {
+      "toward_station": "동대문",
+      "car": 2,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "동대문 방면2-4"
+    }
+  ],
+  "1:150": [
+    {
+      "toward_station": "남영",
+      "car": 2,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "남영 방면2-3"
+    },
+    {
+      "toward_station": "시청",
+      "car": 9,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "시청 방면9-3"
+    }
+  ],
+  "2:250": [
+    {
+      "toward_station": "신설동",
+      "car": 2,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "신설동 방면2-4"
+    },
+    {
+      "toward_station": "신답",
+      "car": 3,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "신답 방면3-1"
+    }
+  ],
+  "2:208": [
+    {
+      "toward_station": "상왕십리",
+      "car": 7,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "상왕십리 방면7-1"
+    },
+    {
+      "toward_station": "한양대",
+      "car": 2,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "한양대 방면2-3"
+    },
+    {
+      "toward_station": "한양대",
+      "car": 3,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "한양대 방면3-1"
+    }
+  ],
+  "2:214": [
+    {
+      "toward_station": "잠실나루",
+      "car": 9,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "잠실나루 방면 9-1"
+    }
+  ],
+  "2:215": [
+    {
+      "toward_station": "강변",
+      "car": 10,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "강변 방면10-1"
+    },
+    {
+      "toward_station": "잠실",
+      "car": 1,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "잠실 방면1-4"
+    }
+  ],
+  "2:216": [
+    {
+      "toward_station": "잠실새내",
+      "car": 5,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "잠실새내 방면5-3"
+    }
+  ],
+  "2:226": [
+    {
+      "toward_station": "방배",
+      "car": 3,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "방배 방면3-3"
+    },
+    {
+      "toward_station": "방배",
+      "car": 8,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "방배 방면8-1"
+    },
+    {
+      "toward_station": "낙성대",
+      "car": 3,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "낙성대 방면3-3"
+    },
+    {
+      "toward_station": "낙성대",
+      "car": 8,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "낙성대 방면8-1"
+    }
+  ],
+  "2:228": [
+    {
+      "toward_station": "봉천",
+      "car": 8,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "봉천 방면 8-4, 낙성대 방면 2-4"
+    },
+    {
+      "toward_station": "낙성대",
+      "car": 2,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "봉천 방면 8-4, 낙성대 방면 2-4"
+    },
+    {
+      "toward_station": "봉천",
+      "car": 6,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "봉천방면 6-2, 낙성대 방면 5-3"
+    },
+    {
+      "toward_station": "낙성대",
+      "car": 5,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "봉천방면 6-2, 낙성대 방면 5-3"
+    },
+    {
+      "toward_station": "봉천",
+      "car": 2,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "봉천 방면 2-4, 낙성대 방면 8-4"
+    },
+    {
+      "toward_station": "낙성대",
+      "car": 8,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "봉천 방면 2-4, 낙성대 방면 8-4"
+    }
+  ],
+  "2:229": [
+    {
+      "toward_station": "서울대입구",
+      "car": 5,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "서울대입구 방면5-3"
+    },
+    {
+      "toward_station": "서울대입구",
+      "car": 6,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "서울대입구 방면6-2"
+    }
+  ],
+  "2:231": [
+    {
+      "toward_station": "신림",
+      "car": 4,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "신림방면4-3"
+    },
+    {
+      "toward_station": "신림",
+      "car": 8,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "신림 방면8-3"
+    },
+    {
+      "toward_station": "구로디지털",
+      "car": 3,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "구로디지털 방면3-1"
+    },
+    {
+      "toward_station": "구로디지털",
+      "car": 7,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "구로디지털 방면7-1"
+    }
+  ],
+  "2:234": [
+    {
+      "toward_station": "대림",
+      "car": 7,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "대림 방면7-3"
+    },
+    {
+      "toward_station": "문래",
+      "car": 4,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "문래 방면4-1"
+    },
+    {
+      "toward_station": "대림",
+      "car": 4,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "대림 방면4-2"
+    },
+    {
+      "toward_station": "대림",
+      "car": 5,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "대림 방면5-1"
+    }
+  ],
+  "2:238": [
+    {
+      "toward_station": "당산",
+      "car": 4,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "당산 방면4-1"
+    },
+    {
+      "toward_station": "홍대입구",
+      "car": 7,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "홍대입구 방면7-3"
+    }
+  ],
+  "2:239": [
+    {
+      "toward_station": "신촌",
+      "car": 7,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "신촌 방면7-3, 합정 방면4-2"
+    },
+    {
+      "toward_station": "합정",
+      "car": 4,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "신촌 방면7-3, 합정 방면4-2"
+    },
+    {
+      "toward_station": "합정",
+      "car": 4,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "합정 방면4-1, 신촌 방면7-4"
+    },
+    {
+      "toward_station": "신촌",
+      "car": 7,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "합정 방면4-1, 신촌 방면7-4"
+    }
+  ],
+  "2:241": [
+    {
+      "toward_station": "아현",
+      "car": 9,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "아현 방면9-3, 신촌 방면2-2"
+    },
+    {
+      "toward_station": "신촌",
+      "car": 2,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "아현 방면9-3, 신촌 방면2-2"
+    },
+    {
+      "toward_station": "신촌",
+      "car": 2,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "신촌 방면2-2, 아현 방면9-3"
+    },
+    {
+      "toward_station": "아현",
+      "car": 9,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "신촌 방면2-2, 아현 방면9-3"
+    },
+    {
+      "toward_station": "아현",
+      "car": 2,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "아현 방면2-2, 신촌 방면9-3"
+    },
+    {
+      "toward_station": "신촌",
+      "car": 9,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "아현 방면2-2, 신촌 방면9-3"
+    },
+    {
+      "toward_station": "신촌",
+      "car": 9,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "신촌 방면9-3, 아현 방면2-2"
+    },
+    {
+      "toward_station": "아현",
+      "car": 2,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "신촌 방면9-3, 아현 방면2-2"
+    }
+  ],
+  "2:243": [
+    {
+      "toward_station": "시청",
+      "car": 7,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "시청 방면7-1, 아현 방면4-4"
+    },
+    {
+      "toward_station": "아현",
+      "car": 4,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "시청 방면7-1, 아현 방면4-4"
+    },
+    {
+      "toward_station": "아현",
+      "car": 4,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "아현 방면4-4, 시청 방면7-1"
+    },
+    {
+      "toward_station": "시청",
+      "car": 7,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "아현 방면4-4, 시청 방면7-1"
+    }
+  ],
+  "3:316": [
+    {
+      "toward_station": "무악재",
+      "car": 4,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "무악재 방면4-4, 경복궁 방면7-1"
+    },
+    {
+      "toward_station": "경복궁",
+      "car": 7,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "무악재 방면4-4, 경복궁 방면7-1"
+    },
+    {
+      "toward_station": "무악재",
+      "car": 7,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "무악재 방면7-4, 경복궁 방면4-1"
+    },
+    {
+      "toward_station": "경복궁",
+      "car": 4,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "무악재 방면7-4, 경복궁 방면4-1"
+    }
+  ],
+  "3:317": [
+    {
+      "toward_station": "안국",
+      "car": 9,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "안국 방면9-1, 독립문 방면2-4"
+    },
+    {
+      "toward_station": "독립문",
+      "car": 2,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "안국 방면9-1, 독립문 방면2-4"
+    },
+    {
+      "toward_station": "독립문",
+      "car": 2,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "독립문 방면2-4, 안국 방면9-1"
+    },
+    {
+      "toward_station": "안국",
+      "car": 9,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "독립문 방면2-4, 안국 방면9-1"
+    },
+    {
+      "toward_station": "안국",
+      "car": 3,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "안국 방면3-2, 독립문 방면8-3"
+    },
+    {
+      "toward_station": "독립문",
+      "car": 8,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "안국 방면3-2, 독립문 방면8-3"
+    }
+  ],
+  "3:318": [
+    {
+      "toward_station": "종로3가",
+      "car": 7,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "종로3가 방면7-2, 경복궁 방면4-3"
+    },
+    {
+      "toward_station": "경복궁",
+      "car": 4,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "종로3가 방면7-2, 경복궁 방면4-3"
+    },
+    {
+      "toward_station": "경복궁",
+      "car": 4,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "경복궁 방면4-3, 종로3가 방면7-2"
+    },
+    {
+      "toward_station": "종로3가",
+      "car": 7,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "경복궁 방면4-3, 종로3가 방면7-2"
+    },
+    {
+      "toward_station": "종로3가",
+      "car": 4,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "종로3가 방면4-4, 경복궁 방면7-1"
+    },
+    {
+      "toward_station": "경복궁",
+      "car": 7,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "종로3가 방면4-4, 경복궁 방면7-1"
+    },
+    {
+      "toward_station": "경복궁",
+      "car": 7,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "경복궁 방면7-1, 종로3가 방면4-4"
+    },
+    {
+      "toward_station": "종로3가",
+      "car": 4,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "경복궁 방면7-1, 종로3가 방면4-4"
+    }
+  ],
+  "3:320": [
+    {
+      "toward_station": "종로3가",
+      "car": 4,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "종로3가 방면4-2, 충무로 방면7-4"
+    },
+    {
+      "toward_station": "충무로",
+      "car": 7,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "종로3가 방면4-2, 충무로 방면7-4"
+    },
+    {
+      "toward_station": "충무로",
+      "car": 4,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "충무로 방면4-3, 종로3가 방면7-2"
+    },
+    {
+      "toward_station": "종로3가",
+      "car": 7,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "충무로 방면4-3, 종로3가 방면7-2"
+    }
+  ],
+  "3:329": [
+    {
+      "toward_station": "잠원",
+      "car": 2,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "잠원 방면2-3"
+    },
+    {
+      "toward_station": "잠원",
+      "car": 4,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "잠원 방면4-3"
+    },
+    {
+      "toward_station": "잠원",
+      "car": 7,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "잠원 방면7-2"
+    },
+    {
+      "toward_station": "잠원",
+      "car": 9,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "잠원 방면9-2"
+    },
+    {
+      "toward_station": "교대",
+      "car": 2,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "교대 방면2-3"
+    },
+    {
+      "toward_station": "교대",
+      "car": 4,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "교대 방면4-3"
+    },
+    {
+      "toward_station": "교대",
+      "car": 7,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "교대 방면7-2"
+    },
+    {
+      "toward_station": "교대",
+      "car": 9,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "교대 방면9-2"
+    }
+  ],
+  "3:330": [
+    {
+      "toward_station": "고속터미널",
+      "car": 3,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "고속터미널 방면3-2, 남부터미널 방면8-3"
+    },
+    {
+      "toward_station": "남부터미널",
+      "car": 8,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "고속터미널 방면3-2, 남부터미널 방면8-3"
+    }
+  ],
+  "3:334": [
+    {
+      "toward_station": "매봉",
+      "car": 4,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "매봉 방면4-1"
+    },
+    {
+      "toward_station": "매봉",
+      "car": 7,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "매봉 방면7-4"
+    },
+    {
+      "toward_station": "대치",
+      "car": 4,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "대치 방면4-1"
+    },
+    {
+      "toward_station": "대치",
+      "car": 7,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "대치 방면7-4"
+    }
+  ],
+  "3:335": [
+    {
+      "toward_station": "도곡",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "도곡 방면1-1, 학여울 방면10-4"
+    },
+    {
+      "toward_station": "학여울",
+      "car": 10,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "도곡 방면1-1, 학여울 방면10-4"
+    },
+    {
+      "toward_station": "도곡",
+      "car": 10,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "도곡 방면10-4, 학여울 방면1-1"
+    },
+    {
+      "toward_station": "학여울",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "도곡 방면10-4, 학여울 방면1-1"
+    }
+  ],
+  "3:339": [
+    {
+      "toward_station": "일원",
+      "car": 9,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "일원 방면9-3"
+    },
+    {
+      "toward_station": "가락시장",
+      "car": 2,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "가락시장 방면2-2"
+    }
+  ],
+  "3:341": [
+    {
+      "toward_station": "가락시장",
+      "car": 2,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "가락시장 방면2-1"
+    },
+    {
+      "toward_station": "가락시장",
+      "car": 6,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "가락시장 방면6-2"
+    },
+    {
+      "toward_station": "가락시장",
+      "car": 7,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "가락시장 방면7-4"
+    },
+    {
+      "toward_station": "오금",
+      "car": 4,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "오금 방면4-1"
+    },
+    {
+      "toward_station": "오금",
+      "car": 5,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "오금 방면5-3"
+    },
+    {
+      "toward_station": "오금",
+      "car": 9,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "오금 방면9-4"
+    }
+  ],
+  "3:342": [
+    {
+      "toward_station": "경찰병원",
+      "car": 2,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "경찰병원 방면2-2"
+    },
+    {
+      "toward_station": "경찰병원",
+      "car": 4,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "경찰병원 방면4-2"
+    },
+    {
+      "toward_station": "경찰병원",
+      "car": 7,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "경찰병원 방면7-1"
+    },
+    {
+      "toward_station": "오금",
+      "car": 4,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "오금 방면4-4"
+    },
+    {
+      "toward_station": "오금",
+      "car": 7,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "오금 방면7-3"
+    },
+    {
+      "toward_station": "오금",
+      "car": 9,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "오금 방면9-3"
+    }
+  ],
+  "3:340": [
+    {
+      "toward_station": "수서",
+      "car": 4,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "수서 방면4-4"
+    },
+    {
+      "toward_station": "수서",
+      "car": 6,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "수서 방면6-3"
+    },
+    {
+      "toward_station": "수서",
+      "car": 8,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "수서 방면8-3"
+    },
+    {
+      "toward_station": "수서",
+      "car": 10,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "수서 방면10-1"
+    },
+    {
+      "toward_station": "경찰병원",
+      "car": 2,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "경찰병원 방면2-1"
+    },
+    {
+      "toward_station": "경찰병원",
+      "car": 3,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "경찰병원 방면3-2"
+    },
+    {
+      "toward_station": "경찰병원",
+      "car": 5,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "경찰병원 방면5-2"
+    },
+    {
+      "toward_station": "경찰병원",
+      "car": 7,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "경찰병원 방면7-1"
+    }
+  ],
+  "4:409": [
+    {
+      "toward_station": "별내별가람",
+      "car": 3,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "별내별가람 방면3-1"
+    }
+  ],
+  "4:410": [
+    {
+      "toward_station": "노원",
+      "car": 2,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "노원 방면2-1"
+    }
+  ],
+  "4:411": [
+    {
+      "toward_station": "상계",
+      "car": 7,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "상계방면 7-2"
+    },
+    {
+      "toward_station": "창동",
+      "car": 2,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "창동 방면2-4"
+    }
+  ],
+  "4:421": [
+    {
+      "toward_station": "동대문역사문화공원",
+      "car": 7,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "동대문역사문화공원 방면7-4"
+    },
+    {
+      "toward_station": "혜화",
+      "car": 4,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "혜화 방면4-1"
+    },
+    {
+      "toward_station": "동대문역사문화공원",
+      "car": 3,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "동대문역사문화공원 방면3-3"
+    },
+    {
+      "toward_station": "혜화",
+      "car": 8,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "혜화 방면8-2"
+    }
+  ],
+  "4:422": [
+    {
+      "toward_station": "충무로",
+      "car": 8,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "충무로 방면8-3"
+    },
+    {
+      "toward_station": "동대문",
+      "car": 3,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "동대문 방면3-1"
+    },
+    {
+      "toward_station": "동대문",
+      "car": 6,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "동대문 방면6-3"
+    },
+    {
+      "toward_station": "충무로",
+      "car": 5,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "충무로 방면5-2"
+    },
+    {
+      "toward_station": "충무로",
+      "car": 2,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "충무로 방면2-4"
+    },
+    {
+      "toward_station": "동대문",
+      "car": 9,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "동대문 방면9-1"
+    }
+  ],
+  "4:423": [
+    {
+      "toward_station": "동대문역사문화공원",
+      "car": 4,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "동대문역사문화공원 방면4-2"
+    },
+    {
+      "toward_station": "명동",
+      "car": 6,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "명동 방면6-3"
+    },
+    {
+      "toward_station": "동대문역사문화공원",
+      "car": 6,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "동대문역사문화공원 방면6-3"
+    },
+    {
+      "toward_station": "명동",
+      "car": 5,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "명동 방면5-2"
+    },
+    {
+      "toward_station": "동대문역사문화공원",
+      "car": 5,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "동대문역사문화공원 방면5-2"
+    },
+    {
+      "toward_station": "동대문역사문화공원",
+      "car": 7,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "동대문역사문화공원 방면7-2"
+    },
+    {
+      "toward_station": "동대문역사문화공원",
+      "car": 4,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "대합실(동대문역사문화공원 방면4-2)"
+    },
+    {
+      "toward_station": "동대문역사문화공원",
+      "car": 6,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "대합실(동대문역사문화공원 방면6-3)"
+    },
+    {
+      "toward_station": "명동",
+      "car": 5,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "대합실(명동 방면5-2)"
+    },
+    {
+      "toward_station": "명동",
+      "car": 7,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "대합실(명동 방면7-2)"
+    },
+    {
+      "toward_station": "동대입구",
+      "car": 5,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "환승통로(동대입구 방면5-2)"
+    },
+    {
+      "toward_station": "을지로3가",
+      "car": 6,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "환승통로(을지로3가 방면6-3)"
+    }
+  ],
+  "4:424": [
+    {
+      "toward_station": "회현",
+      "car": 10,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "회현 방면10-4"
+    },
+    {
+      "toward_station": "충무로",
+      "car": 10,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "충무로 방면10-4"
+    },
+    {
+      "toward_station": "회현",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "회현 방면1-1"
+    }
+  ],
+  "4:425": [
+    {
+      "toward_station": "서울역",
+      "car": 10,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "서울역 방면10-4"
+    },
+    {
+      "toward_station": "명동",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "명동 방면1-1"
+    },
+    {
+      "toward_station": "명동",
+      "car": 6,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "명동 방면6-4"
+    },
+    {
+      "toward_station": "서울역",
+      "car": 4,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "서울역 방면4-4"
+    },
+    {
+      "toward_station": "서울역",
+      "car": 1,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "서울역 방면1-4"
+    },
+    {
+      "toward_station": "명동",
+      "car": 9,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "명동 방면9-4"
+    }
+  ],
+  "4:426": [
+    {
+      "toward_station": "숙대입구",
+      "car": 10,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "환승통로(숙대입구 방면10-4)"
+    },
+    {
+      "toward_station": "회현",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "환승통로(회현 방면1-1)"
+    }
+  ],
+  "4:433": [
+    {
+      "toward_station": "남태령",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "남태령 방면1-1"
+    }
+  ],
+  "4:434": [
+    {
+      "toward_station": "선바위",
+      "car": 3,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "선바위 방면3-2"
+    },
+    {
+      "toward_station": "사당",
+      "car": 8,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "사당 방면8-3"
+    }
+  ],
+  "5:2513": [
+    {
+      "toward_station": "개화산",
+      "car": 3,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "개화산 방면3-4"
+    },
+    {
+      "toward_station": "송정",
+      "car": 3,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "송정 방면3-4"
+    },
+    {
+      "toward_station": "개화산",
+      "car": 5,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "개화산 방면5-4"
+    },
+    {
+      "toward_station": "송정",
+      "car": 5,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "송정 방면5-4"
+    }
+  ],
+  "5:2519": [
+    {
+      "toward_station": "화곡",
+      "car": 2,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "화곡 방면2-3"
+    },
+    {
+      "toward_station": "신정",
+      "car": 7,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "신정 방면7-2"
+    },
+    {
+      "toward_station": "화곡",
+      "car": 7,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "화곡 방면7-3"
+    },
+    {
+      "toward_station": "신정",
+      "car": 2,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "신정 방면2-2"
+    }
+  ],
+  "5:2520": [
+    {
+      "toward_station": "까치산",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "까치산 방면1-1"
+    },
+    {
+      "toward_station": "목동",
+      "car": 8,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "목동 방면8-4"
+    }
+  ],
+  "5:2522": [
+    {
+      "toward_station": "목동",
+      "car": 6,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "목동 방면6-3"
+    },
+    {
+      "toward_station": "양평",
+      "car": 3,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "양평 방면3-2"
+    }
+  ],
+  "5:2524": [
+    {
+      "toward_station": "양평",
+      "car": 7,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "양평 방면7-2"
+    },
+    {
+      "toward_station": "영등포시장",
+      "car": 2,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "영등포시장 방면2-3"
+    }
+  ],
+  "5:2526": [
+    {
+      "toward_station": "영등포시장",
+      "car": 7,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "영등포시장 방면7-3"
+    },
+    {
+      "toward_station": "여의도",
+      "car": 2,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "여의도 방면2-2"
+    }
+  ],
+  "5:2530": [
+    {
+      "toward_station": "마포",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "마포 방면1-1, 애오개 방면8-4"
+    },
+    {
+      "toward_station": "애오개",
+      "car": 8,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "마포 방면1-1, 애오개 방면8-4"
+    }
+  ],
+  "5:2534": [
+    {
+      "toward_station": "서대문",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "서대문 방면1-1, 종로3가 방면8-4"
+    },
+    {
+      "toward_station": "종로3가",
+      "car": 8,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "서대문 방면1-1, 종로3가 방면8-4"
+    }
+  ],
+  "5:2535": [
+    {
+      "toward_station": "광화문",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "광화문 방면1-1, 을지로4가 방면8-4"
+    },
+    {
+      "toward_station": "을지로4가",
+      "car": 8,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "광화문 방면1-1, 을지로4가 방면8-4"
+    }
+  ],
+  "5:2536": [
+    {
+      "toward_station": "잠실",
+      "car": 4,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "환승통로(2호선 잠실 방면4-3)"
+    }
+  ],
+  "5:2539": [
+    {
+      "toward_station": "행당",
+      "car": 3,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "행당 방면3-4, 청구 방면5-3"
+    },
+    {
+      "toward_station": "청구",
+      "car": 5,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "행당 방면3-4, 청구 방면5-3"
+    }
+  ],
+  "5:2549": [
+    {
+      "toward_station": "천호",
+      "car": 8,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "천호 방면8-4"
+    },
+    {
+      "toward_station": "둔촌동",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "둔촌동 방면1-1"
+    }
+  ],
+  "5:2556": [
+    {
+      "toward_station": "둔촌동",
+      "car": 6,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "둔촌동 방면6-1"
+    },
+    {
+      "toward_station": "방이",
+      "car": 3,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "방이 방면3-4"
+    }
+  ],
+  "5:2561": [
+    {
+      "toward_station": "거여",
+      "car": 3,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "거여 방면3-1"
+    },
+    {
+      "toward_station": "마천",
+      "car": 6,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "마천 방면6-4"
+    }
+  ],
+  "6:2612": [
+    {
+      "toward_station": "불광",
+      "car": 4,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "불광 방면4-1"
+    }
+  ],
+  "6:2613": [
+    {
+      "toward_station": "독바위",
+      "car": 7,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "독바위 방면7-2"
+    },
+    {
+      "toward_station": "독바위",
+      "car": 2,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "독바위 방면2-2"
+    }
+  ],
+  "6:2614": [
+    {
+      "toward_station": "연신내",
+      "car": 3,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "연신내 방면3-2"
+    }
+  ],
+  "6:2615": [
+    {
+      "toward_station": "구산",
+      "car": 6,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "구산 방면6-1"
+    }
+  ],
+  "6:2616": [
+    {
+      "toward_station": "응암",
+      "car": 5,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "응암 방면5-4"
+    }
+  ],
+  "6:2617": [
+    {
+      "toward_station": "응암",
+      "car": 3,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "응암 방면3-4"
+    },
+    {
+      "toward_station": "증산",
+      "car": 3,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "증산 방면3-4"
+    }
+  ],
+  "6:2618": [
+    {
+      "toward_station": "새절",
+      "car": 3,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "새절 방면3-4"
+    },
+    {
+      "toward_station": "디지털미디어시티",
+      "car": 3,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "디지털미디어시티 방면3-3"
+    }
+  ],
+  "6:2619": [
+    {
+      "toward_station": "증산",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "증산 방면1-1"
+    },
+    {
+      "toward_station": "월드컵경기장",
+      "car": 8,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "월드컵경기장 방면8-4"
+    },
+    {
+      "toward_station": "월드컵경기장",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "월드컵경기장 방면1-1"
+    }
+  ],
+  "6:2623": [
+    {
+      "toward_station": "망원",
+      "car": 3,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "망원 방면3-3"
+    },
+    {
+      "toward_station": "상수",
+      "car": 6,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "상수 방면6-1"
+    }
+  ],
+  "6:2624": [
+    {
+      "toward_station": "합정",
+      "car": 3,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "합정 방면3-3, 광흥창 방면6-1"
+    },
+    {
+      "toward_station": "광흥창",
+      "car": 6,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "합정 방면3-3, 광흥창 방면6-1"
+    }
+  ],
+  "6:2625": [
+    {
+      "toward_station": "상수",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "상수 방면1-1, 대흥 방면8-4"
+    },
+    {
+      "toward_station": "대흥",
+      "car": 8,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "상수 방면1-1, 대흥 방면8-4"
+    },
+    {
+      "toward_station": "상수",
+      "car": 8,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "상수 방면8-4, 대흥 방면1-1"
+    },
+    {
+      "toward_station": "대흥",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "상수 방면8-4, 대흥 방면1-1"
+    }
+  ],
+  "6:2628": [
+    {
+      "toward_station": "공덕",
+      "car": 6,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "공덕 방면6-4, 삼각지 방면3-1"
+    },
+    {
+      "toward_station": "삼각지",
+      "car": 3,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "공덕 방면6-4, 삼각지 방면3-1"
+    }
+  ],
+  "6:2630": [
+    {
+      "toward_station": "삼각지",
+      "car": 3,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "삼각지 방면3-3, 이태원 방면6-2"
+    },
+    {
+      "toward_station": "이태원",
+      "car": 6,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "삼각지 방면3-3, 이태원 방면6-2"
+    },
+    {
+      "toward_station": "삼각지",
+      "car": 5,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "삼각지 방면5-4, 이태원 방면4-1"
+    },
+    {
+      "toward_station": "이태원",
+      "car": 4,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "삼각지 방면5-4, 이태원 방면4-1"
+    }
+  ],
+  "6:2636": [
+    {
+      "toward_station": "청구",
+      "car": 2,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "청구 방면2-2, 동묘앞 방면7-3"
+    },
+    {
+      "toward_station": "동묘앞",
+      "car": 7,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "청구 방면2-2, 동묘앞 방면7-3"
+    },
+    {
+      "toward_station": "청구",
+      "car": 6,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "청구 방면6-1, 동묘앞 방면3-4"
+    },
+    {
+      "toward_station": "동묘앞",
+      "car": 3,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "청구 방면6-1, 동묘앞 방면3-4"
+    }
+  ],
+  "6:2637": [
+    {
+      "toward_station": "신당",
+      "car": 7,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "신당 방면7-3, 창신 방면2-2"
+    },
+    {
+      "toward_station": "창신",
+      "car": 2,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "신당 방면7-3, 창신 방면2-2"
+    },
+    {
+      "toward_station": "신당",
+      "car": 2,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "신당 방면2-3, 창신 방면7-2"
+    },
+    {
+      "toward_station": "창신",
+      "car": 7,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "신당 방면2-3, 창신 방면7-2"
+    }
+  ],
+  "6:2641": [
+    {
+      "toward_station": "안암",
+      "car": 3,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "안암 방면3-4"
+    },
+    {
+      "toward_station": "월곡",
+      "car": 6,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "월곡 방면6-1"
+    }
+  ],
+  "6:2642": [
+    {
+      "toward_station": "고려대",
+      "car": 3,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "고려대 방면3-4"
+    },
+    {
+      "toward_station": "상월곡",
+      "car": 3,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "상월곡 방면3-3"
+    }
+  ],
+  "6:2645": [
+    {
+      "toward_station": "돌곶이",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "돌곶이 방면1-1"
+    },
+    {
+      "toward_station": "태릉입구",
+      "car": 8,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "태릉입구 방면8-4"
+    },
+    {
+      "toward_station": "돌곶이",
+      "car": 6,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "돌곶이 방면6-3"
+    },
+    {
+      "toward_station": "태릉입구",
+      "car": 3,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "태릉입구 방면3-2"
+    }
+  ],
+  "6:2646": [
+    {
+      "toward_station": "공릉",
+      "car": 8,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "환승통로(7호선 공릉 방면8-4)"
+    },
+    {
+      "toward_station": "먹골",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "환승통로(7호선 먹골 방면1-1)"
+    },
+    {
+      "toward_station": "석계",
+      "car": 8,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "환승통로(6호선 석계 방면8-4)"
+    },
+    {
+      "toward_station": "화랑대",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "환승통로(6호선 화랑대 방면1-1)"
+    }
+  ],
+  "6:2648": [
+    {
+      "toward_station": "화랑대",
+      "car": 8,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "화랑대 방면8-4"
+    },
+    {
+      "toward_station": "신내",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "신내 방면1-1"
+    }
+  ],
+  "6:2649": [
+    {
+      "toward_station": "봉화산",
+      "car": 7,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "신내, 봉화산 방면7-4"
+    }
+  ],
+  "7:2713": [
+    {
+      "toward_station": "도봉산",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "도봉산 방면 1-1"
+    }
+  ],
+  "7:2715": [
+    {
+      "toward_station": "마들",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "마들 방면1-1, 중계 방면8-4"
+    },
+    {
+      "toward_station": "중계",
+      "car": 8,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "마들 방면1-1, 중계 방면8-4"
+    }
+  ],
+  "7:2716": [
+    {
+      "toward_station": "노원",
+      "car": 3,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "노원 방면3-4, 하계 방면6-1"
+    },
+    {
+      "toward_station": "하계",
+      "car": 6,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "노원 방면3-4, 하계 방면6-1"
+    }
+  ],
+  "7:2718": [
+    {
+      "toward_station": "하계",
+      "car": 7,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "하계 방면7-3"
+    },
+    {
+      "toward_station": "태릉입구",
+      "car": 2,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "태릉입구 방면2-2"
+    }
+  ],
+  "7:2721": [
+    {
+      "toward_station": "먹골",
+      "car": 3,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "먹골 방면3-3"
+    },
+    {
+      "toward_station": "상봉",
+      "car": 6,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "상봉 방면6-1"
+    }
+  ],
+  "7:2729": [
+    {
+      "toward_station": "자양",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "환승통로(뚝섬유원지 방면1-1)"
+    },
+    {
+      "toward_station": "어린이대공원",
+      "car": 6,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "어린이대공원 방면6-4"
+    }
+  ],
+  "7:2736": [
+    {
+      "toward_station": "반포",
+      "car": 2,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "반포 방면2-4"
+    },
+    {
+      "toward_station": "내방",
+      "car": 7,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "내방 방면7-1"
+    },
+    {
+      "toward_station": "반포",
+      "car": 4,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "반포 방면4-4"
+    },
+    {
+      "toward_station": "내방",
+      "car": 5,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "내방 방면5-1"
+    },
+    {
+      "toward_station": "반포",
+      "car": 7,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "반포 방면7-1"
+    },
+    {
+      "toward_station": "내방",
+      "car": 2,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "내방 방면2-4"
+    }
+  ],
+  "7:2738": [
+    {
+      "toward_station": "내방",
+      "car": 3,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "내방 방면3-4"
+    },
+    {
+      "toward_station": "남성",
+      "car": 6,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "남성 방면6-1"
+    }
+  ],
+  "7:2742": [
+    {
+      "toward_station": "상도",
+      "car": 3,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "상도 방면3-3"
+    },
+    {
+      "toward_station": "신대방삼거리",
+      "car": 4,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "신대방삼거리 방면4-4"
+    }
+  ],
+  "7:2743": [
+    {
+      "toward_station": "장승배기",
+      "car": 3,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "장승배기 방면3-4"
+    },
+    {
+      "toward_station": "보라매",
+      "car": 3,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "보라매 방면3-4"
+    }
+  ],
+  "7:2746": [
+    {
+      "toward_station": "신풍",
+      "car": 8,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "신풍 방면8-4"
+    },
+    {
+      "toward_station": "남구로",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "남구로 방면1-1"
+    }
+  ],
+  "7:2752": [
+    {
+      "toward_station": "천왕",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "천왕 방면1-1"
+    },
+    {
+      "toward_station": "천왕",
+      "car": 8,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "천왕 방면8-4"
+    },
+    {
+      "toward_station": "까치울",
+      "car": 8,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "까치울 방면8-4"
+    },
+    {
+      "toward_station": "까치울",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "까치울 방면1-1"
+    }
+  ],
+  "8:2821": [
+    {
+      "toward_station": "장지",
+      "car": 5,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "장지 방면5-2, 남위례 방면2-2"
+    },
+    {
+      "toward_station": "남위례",
+      "car": 2,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "장지 방면5-2, 남위례 방면2-2"
+    }
+  ],
+  "8:2828": [
+    {
+      "toward_station": "산성",
+      "car": 5,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "산성 방면5-1"
+    }
+  ],
+  "8:2822": [
+    {
+      "toward_station": "남위례",
+      "car": 1,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "남위례 방면1-3"
+    },
+    {
+      "toward_station": "남한산성입구",
+      "car": 6,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "남한산성입구 방면6-2"
+    },
+    {
+      "toward_station": "남위례",
+      "car": 6,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "남위례 방면6-2"
+    },
+    {
+      "toward_station": "남한산성입구",
+      "car": 1,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "남한산성입구 방면1-3"
+    }
+  ],
+  "9:4126": [
+    {
+      "toward_station": "신논현",
+      "car": 3,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 신논현 방면 3-1 (중층 → 하선 3-1)"
+    },
+    {
+      "toward_station": "신논현",
+      "car": 3,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "신논현 방면 3-1 대합실 (하선 3-1 → 중층)"
+    },
+    {
+      "toward_station": "선정릉",
+      "car": 4,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 선정릉 방면 4-4 (중층 → 상선 4-4)"
+    },
+    {
+      "toward_station": "선정릉",
+      "car": 4,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "선정릉 방면 4-4 대합실 (상선 4-4 → 중층)"
+    },
+    {
+      "toward_station": "신논현",
+      "car": 5,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "신논현 방면 5-3 대합실 (하선 5-3 → 중층)"
+    },
+    {
+      "toward_station": "신논현",
+      "car": 5,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 신논현 방면 5-3 (중층 → 하선 5-3)"
+    },
+    {
+      "toward_station": "선정릉",
+      "car": 2,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "선정릉 방면 2-2 대합실 (상선 2-2 → 중층)"
+    },
+    {
+      "toward_station": "선정릉",
+      "car": 2,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 선정릉 방면 2-2 (중층 → 상선 2-2)"
+    }
+  ],
+  "9:4127": [
+    {
+      "toward_station": "언주",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 언주 방면 1-1 (대합실 → 하선 1-1)"
+    },
+    {
+      "toward_station": "언주",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "언주 방면 1-1 대합실 (하선 1-1 → 대합실)"
+    },
+    {
+      "toward_station": "삼성중앙",
+      "car": 6,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 삼성중앙 방면 6-4 (대합실 → 상선 6-4)"
+    },
+    {
+      "toward_station": "삼성중앙",
+      "car": 6,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "삼성중앙 방면 6-4 대합실 (상선 6-4 → 대합실)"
+    },
+    {
+      "toward_station": "언주",
+      "car": 4,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "언주 방면 4-2 대합실 (하선 4-2 → 대합실)"
+    },
+    {
+      "toward_station": "언주",
+      "car": 4,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 언주 방면 4-2 (대합실 → 하선 4-2)"
+    },
+    {
+      "toward_station": "삼성중앙",
+      "car": 3,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "삼성중앙 방면 3-3 대합실 (상선 3-3 → 대합실)"
+    },
+    {
+      "toward_station": "삼성중앙",
+      "car": 3,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 삼성중앙 방면 3-3 (대합실 → 상선 3-3)"
+    },
+    {
+      "toward_station": "언주",
+      "car": 5,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 언주 방면 5-4 (환승대합실 → 하선 5-4)"
+    },
+    {
+      "toward_station": "언주",
+      "car": 5,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "언주 방면 5-4 대합실 (하선 5-4 → 환승대합실)"
+    },
+    {
+      "toward_station": "삼성중앙",
+      "car": 2,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 삼성중앙 방면 2-1 (환승대합실 → 상선 2-1)"
+    },
+    {
+      "toward_station": "삼성중앙",
+      "car": 2,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "삼성중앙 방면 2-1 대합실 (상선 2-1 → 환승대합실)"
+    }
+  ],
+  "9:4128": [
+    {
+      "toward_station": "선정릉",
+      "car": 4,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "선정릉 방면 4-4 대합실 (하선 4-4  → 대합실)"
+    },
+    {
+      "toward_station": "선정릉",
+      "car": 4,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 선정릉 방면 4-4 (대합실 → 하선 4-4)"
+    },
+    {
+      "toward_station": "봉은사",
+      "car": 3,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "봉은사 방면 3-1 대합실 (상선 3-1 → 대합실)"
+    },
+    {
+      "toward_station": "봉은사",
+      "car": 3,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 봉은사 방면 3-1 (대합실 → 상선 3-1)"
+    }
+  ],
+  "9:4129": [
+    {
+      "toward_station": "삼성중앙",
+      "car": 2,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 삼성중앙 방면 2-4 (대합실 → 하선 2-4)"
+    },
+    {
+      "toward_station": "삼성중앙",
+      "car": 2,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "삼성중앙 방면 2-4 대합실 (하선 2-4 → 대합실)"
+    },
+    {
+      "toward_station": "종합운동장",
+      "car": 5,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 종합운동장 방면 5-1 (대합실 → 상선 5-1)"
+    },
+    {
+      "toward_station": "종합운동장",
+      "car": 5,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "종합운동장 방면 5-1 대합실 (상선 5-1 → 대합실)"
+    },
+    {
+      "toward_station": "삼성중앙",
+      "car": 5,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "삼성중앙 방면 5-1 대합실 (하선 5-1 → 대합실)"
+    },
+    {
+      "toward_station": "삼성중앙",
+      "car": 5,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 삼성중앙 방면 5-1 (대합실 → 하선 5-1)"
+    },
+    {
+      "toward_station": "종합운동장",
+      "car": 2,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "종합운동장 방면 2-4 대합실 (상선 2-4 → 대합실)"
+    },
+    {
+      "toward_station": "종합운동장",
+      "car": 2,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 종합운동장 방면 2-4 (대합실 → 상선 2-4)"
+    }
+  ],
+  "9:4130": [
+    {
+      "toward_station": "봉은사",
+      "car": 5,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 봉은사 방면 5-3 (환승대합실 → 하선 5-3)"
+    },
+    {
+      "toward_station": "봉은사",
+      "car": 5,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "봉은사 방면 5-3 대합실 (하선 5-3 → 환승대합실)"
+    },
+    {
+      "toward_station": "삼전",
+      "car": 6,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 삼전 방면 6-1 (환승대합실 → 상선 6-1)"
+    },
+    {
+      "toward_station": "삼전",
+      "car": 6,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "삼전 방면 6-1 대합실 (상선 6-1 → 환승대합실)"
+    },
+    {
+      "toward_station": "봉은사",
+      "car": 2,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "봉은사 방면 2-1 대합실 (하선 2-1 → 환승대합실)"
+    },
+    {
+      "toward_station": "봉은사",
+      "car": 2,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 봉은사 방면 2-1 (환승대합실 → 하선 2-1)"
+    },
+    {
+      "toward_station": "삼전",
+      "car": 2,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "삼전 방면 2-3 대합실 (상선 2-3 → 환승대합실)"
+    },
+    {
+      "toward_station": "삼전",
+      "car": 2,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 삼전 방면 2-3 (환승대합실 → 상선 2-3)"
+    }
+  ],
+  "9:4131": [
+    {
+      "toward_station": "종합운동장",
+      "car": 2,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 종합운동장 방면 2-4 (대합실 → 하선 2-4)"
+    },
+    {
+      "toward_station": "종합운동장",
+      "car": 2,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "종합운동장 방면 2-4 대합실 (하선 2-4 → 대합실)"
+    },
+    {
+      "toward_station": "석촌고분",
+      "car": 5,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 석촌고분 방면 5-1 (대합실 → 상선 5-1)"
+    },
+    {
+      "toward_station": "석촌고분",
+      "car": 5,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "석촌고분 방면 5-1 대합실 (상선 5-1 → 대합실)"
+    },
+    {
+      "toward_station": "종합운동장",
+      "car": 5,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "종합운동장 방면 5-3 대합실 (하선 5-3 → 대합실)"
+    },
+    {
+      "toward_station": "종합운동장",
+      "car": 5,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 종합운동장 방면 5-3 (대합실 → 하선 5-3)"
+    },
+    {
+      "toward_station": "석촌고분",
+      "car": 2,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "석촌고분 방면 2-2 대합실 (상선 2-2 → 대합실)"
+    },
+    {
+      "toward_station": "석촌고분",
+      "car": 2,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 석촌고분 방면 2-2 (대합실 → 상선 2-2)"
+    }
+  ],
+  "9:4132": [
+    {
+      "toward_station": "석촌",
+      "car": 5,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "석촌 방면 5-2 대합실 (상선 5-2 → 대합실)"
+    },
+    {
+      "toward_station": "삼전",
+      "car": 5,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "삼전 방면 5-1 대합실 (하선 5-1 → 대합실)"
+    }
+  ],
+  "9:4133": [
+    {
+      "toward_station": "송파나루",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "송파나루 방면 1-1 대합실 (상선 1-1 → 대합실)"
+    },
+    {
+      "toward_station": "석촌고분",
+      "car": 3,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "8호선 승강장(송파) 석촌고분 방면 3-3 (8호선 승강장(송파) → 하선 3-3)"
+    },
+    {
+      "toward_station": "송파나루",
+      "car": 4,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "송파나루 방면 4-2 8호선 승강장(송파) (상선 4-2 → 8호선 승강장(송파))"
+    },
+    {
+      "toward_station": "석촌고분",
+      "car": 6,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "석촌고분 방면 6-1 대합실 (하선 6-1 → 중층 대합실)"
+    },
+    {
+      "toward_station": "석촌고분",
+      "car": 6,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 석촌고분 방면 6-4 (중층 대합실(잠실) → 하선 6-4)"
+    },
+    {
+      "toward_station": "송파나루",
+      "car": 1,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "송파나루 방면 1-1 대합실 (상선 1-1 → 중층 대합실(잠실))"
+    }
+  ],
+  "9:4134": [
+    {
+      "toward_station": "한성백제",
+      "car": 5,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "한성백제 방면 5-3 대합실 (상선 5-3 → 대합실)"
+    },
+    {
+      "toward_station": "한성백제",
+      "car": 2,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "한성백제 방면 2-3 대합실 (상선 2-3 → 대합실)"
+    }
+  ],
+  "9:4135": [
+    {
+      "toward_station": "둔촌오륜",
+      "car": 5,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 둔촌오륜 방면 5-4 (대합실 → 상선 5-4)"
+    },
+    {
+      "toward_station": "올림픽공원",
+      "car": 3,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "올림픽공원 방면 3-1 대합실 (상선 3-1 → 대합실)"
+    }
+  ],
+  "9:4136": [
+    {
+      "toward_station": "둔촌오륜",
+      "car": 6,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 둔촌오륜 방면 6-3 (대합실 → 상선 6-3)"
+    },
+    {
+      "toward_station": "둔촌오륜",
+      "car": 6,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "둔촌오륜 방면 6-3 대합실 (상선 6-3 → 대합실)"
+    },
+    {
+      "toward_station": "둔촌오륜",
+      "car": 3,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "둔촌오륜 방면 3-3 대합실 (상선 3-3 → 환승 대합실)"
+    },
+    {
+      "toward_station": "둔촌오륜",
+      "car": 3,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 둔촌오륜 방면 3-3 (환승 대합실 → 상선 3-3)"
+    }
+  ],
+  "9:4137": [
+    {
+      "toward_station": "올림픽공원",
+      "car": 2,
+      "door": 1,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 올림픽공원 방면 2-1 (대합실 → 하선 2-1)"
+    },
+    {
+      "toward_station": "중앙보훈병원",
+      "car": 5,
+      "door": 4,
+      "facility": "에스컬레이터",
+      "location_text": "중앙보훈병원 방면 5-4 대합실 (상선 5-4 → 대합실)"
+    },
+    {
+      "toward_station": "올림픽공원",
+      "car": 5,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "올림픽공원 방면 5-2 대합실 (하선 5-2 → 대합실)"
+    },
+    {
+      "toward_station": "중앙보훈병원",
+      "car": 2,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 중앙보훈병원 방면 2-3 (대합실 → 상선 2-3)"
+    }
+  ],
+  "9:4138": [
+    {
+      "toward_station": "둔촌오륜",
+      "car": 5,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "둔촌오륜 방면 5-3 대합실 (하선 5-3 → 대합실)"
+    },
+    {
+      "toward_station": "둔촌오륜",
+      "car": 5,
+      "door": 3,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 둔촌오륜 방면 5-3 (대합실 → 하선 5-3)"
+    },
+    {
+      "toward_station": "종점",
+      "car": 2,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "종점 방면 2-2 대합실 (상선 2-2 → 대합실)"
+    },
+    {
+      "toward_station": "종점",
+      "car": 2,
+      "door": 2,
+      "facility": "에스컬레이터",
+      "location_text": "대합실 종점 방면 2-2 (대합실 → 상선 2-2)"
+    }
+  ]
+}

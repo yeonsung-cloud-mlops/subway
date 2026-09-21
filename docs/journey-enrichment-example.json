@@ -1,0 +1,1607 @@
+{
+  "timetable": {
+    "status": "snapshot",
+    "as_of": "2025-09-30",
+    "checked_on": "2026-09-21",
+    "source": "OA-22522",
+    "current_service_verified": false,
+    "matched_ride_segments": 7,
+    "fallback_ride_segments": 0,
+    "route_search_basis": "time_expanded_earliest_arrival",
+    "search_horizon_hours": 6,
+    "same_platform_change_minutes": 1,
+    "transfer_walk_basis": "official_direction_averages_or_labeled_fallback"
+  },
+  "model_version": "metro-all-ewma-location-scenario-v2",
+  "prediction_kind": "unvalidated_journey_car_scenario",
+  "inference_mode": "on_request",
+  "from_station": "사당",
+  "to_station": "압구정",
+  "departure_at": "2026-09-21T08:15:00+09:00",
+  "estimated_arrival_at": "2026-09-21T08:36:00+09:00",
+  "estimated_minutes": 21.0,
+  "route_strategy": "estimated_fastest",
+  "transfer_count": 1,
+  "ride_segments": 7,
+  "predicted_segments": 7,
+  "status": "complete",
+  "available_segment_weighted_mean_pct": 84.23,
+  "legs": [
+    {
+      "line": 2,
+      "service": "일반",
+      "from_station": "사당",
+      "to_station": "교대",
+      "car_count": 10,
+      "step_indices": [
+        0,
+        1,
+        2
+      ],
+      "predicted_segments": 3,
+      "total_segments": 3,
+      "coverage": 1.0,
+      "cars": [
+        {
+          "car": 1,
+          "estimated_mean_congestion_pct": 109.651,
+          "estimated_peak_congestion_pct": 113.81
+        },
+        {
+          "car": 2,
+          "estimated_mean_congestion_pct": 124.271,
+          "estimated_peak_congestion_pct": 128.984
+        },
+        {
+          "car": 3,
+          "estimated_mean_congestion_pct": 136.479,
+          "estimated_peak_congestion_pct": 141.655
+        },
+        {
+          "car": 4,
+          "estimated_mean_congestion_pct": 124.281,
+          "estimated_peak_congestion_pct": 128.995
+        },
+        {
+          "car": 5,
+          "estimated_mean_congestion_pct": 109.996,
+          "estimated_peak_congestion_pct": 114.168
+        },
+        {
+          "car": 6,
+          "estimated_mean_congestion_pct": 110.017,
+          "estimated_peak_congestion_pct": 114.189
+        },
+        {
+          "car": 7,
+          "estimated_mean_congestion_pct": 124.971,
+          "estimated_peak_congestion_pct": 129.71
+        },
+        {
+          "car": 8,
+          "estimated_mean_congestion_pct": 144.877,
+          "estimated_peak_congestion_pct": 150.371
+        },
+        {
+          "car": 9,
+          "estimated_mean_congestion_pct": 161.908,
+          "estimated_peak_congestion_pct": 168.048
+        },
+        {
+          "car": 10,
+          "estimated_mean_congestion_pct": 171.704,
+          "estimated_peak_congestion_pct": 178.216
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "service": "일반",
+      "from_station": "교대",
+      "to_station": "압구정",
+      "car_count": 10,
+      "step_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "predicted_segments": 4,
+      "total_segments": 4,
+      "coverage": 1.0,
+      "cars": [
+        {
+          "car": 1,
+          "estimated_mean_congestion_pct": 40.863,
+          "estimated_peak_congestion_pct": 42.668
+        },
+        {
+          "car": 2,
+          "estimated_mean_congestion_pct": 49.877,
+          "estimated_peak_congestion_pct": 52.081
+        },
+        {
+          "car": 3,
+          "estimated_mean_congestion_pct": 57.411,
+          "estimated_peak_congestion_pct": 59.947
+        },
+        {
+          "car": 4,
+          "estimated_mean_congestion_pct": 50.09,
+          "estimated_peak_congestion_pct": 52.303
+        },
+        {
+          "car": 5,
+          "estimated_mean_congestion_pct": 43.451,
+          "estimated_peak_congestion_pct": 45.371
+        },
+        {
+          "car": 6,
+          "estimated_mean_congestion_pct": 50.09,
+          "estimated_peak_congestion_pct": 52.303
+        },
+        {
+          "car": 7,
+          "estimated_mean_congestion_pct": 57.411,
+          "estimated_peak_congestion_pct": 59.947
+        },
+        {
+          "car": 8,
+          "estimated_mean_congestion_pct": 49.877,
+          "estimated_peak_congestion_pct": 52.081
+        },
+        {
+          "car": 9,
+          "estimated_mean_congestion_pct": 40.863,
+          "estimated_peak_congestion_pct": 42.668
+        },
+        {
+          "car": 10,
+          "estimated_mean_congestion_pct": 38.486,
+          "estimated_peak_congestion_pct": 40.186
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "kind": "ride",
+      "line": 2,
+      "service": "일반",
+      "from_station": "사당",
+      "to_station": "방배",
+      "start_at": "2026-09-21T08:15:00+09:00",
+      "forecast_at": "2026-09-21T08:16:30+09:00",
+      "end_at": "2026-09-21T08:19:00+09:00",
+      "estimated_minutes": 4.0,
+      "ride_minutes": 2.5,
+      "train_change_wait_minutes": 0,
+      "waiting_minutes": 1.5,
+      "dwell_minutes": 0,
+      "timing_basis": "official_snapshot",
+      "schedule": {
+        "trip_id": "2|DAY|2077|0|IN|신도림|성수",
+        "train_no": "2077",
+        "destination": "성수",
+        "source_rows": [
+          159025,
+          157471
+        ]
+      },
+      "schedule_unavailable_reason": null,
+      "status": "available",
+      "unavailable_reason": null,
+      "forecast": {
+        "model_version": "metro-all-ewma-location-scenario-v2",
+        "prediction_kind": "unvalidated_car_scenario",
+        "inference_mode": "on_request",
+        "line": 2,
+        "service": "일반",
+        "segment_id": "2:226:225:일반",
+        "from_station": "사당",
+        "to_station": "방배",
+        "direction": "외선",
+        "requested_at": "2026-09-21T08:16:30+09:00",
+        "service_date": "2026-09-21",
+        "daytype": "평일",
+        "holiday": null,
+        "time_bin": "08:00",
+        "interpolation_fraction": 0.55,
+        "train_mean_congestion_pct": 136.814,
+        "car_count": 10,
+        "cars": [
+          {
+            "car": 1,
+            "estimated_congestion_pct": 113.81,
+            "scenario_range_pct": [
+              102.307,
+              136.814
+            ]
+          },
+          {
+            "car": 2,
+            "estimated_congestion_pct": 128.984,
+            "scenario_range_pct": [
+              125.068,
+              136.814
+            ]
+          },
+          {
+            "car": 3,
+            "estimated_congestion_pct": 141.655,
+            "scenario_range_pct": [
+              136.814,
+              144.075
+            ]
+          },
+          {
+            "car": 4,
+            "estimated_congestion_pct": 128.995,
+            "scenario_range_pct": [
+              125.085,
+              136.814
+            ]
+          },
+          {
+            "car": 5,
+            "estimated_congestion_pct": 114.168,
+            "scenario_range_pct": [
+              102.844,
+              136.814
+            ]
+          },
+          {
+            "car": 6,
+            "estimated_congestion_pct": 114.189,
+            "scenario_range_pct": [
+              102.876,
+              136.814
+            ]
+          },
+          {
+            "car": 7,
+            "estimated_congestion_pct": 129.71,
+            "scenario_range_pct": [
+              126.158,
+              136.814
+            ]
+          },
+          {
+            "car": 8,
+            "estimated_congestion_pct": 150.371,
+            "scenario_range_pct": [
+              136.814,
+              157.15
+            ]
+          },
+          {
+            "car": 9,
+            "estimated_congestion_pct": 168.048,
+            "scenario_range_pct": [
+              136.814,
+              183.665
+            ]
+          },
+          {
+            "car": 10,
+            "estimated_congestion_pct": 178.216,
+            "scenario_range_pct": [
+              136.814,
+              198.917
+            ]
+          }
+        ],
+        "location_features": {
+          "access_cars": [
+            3,
+            8
+          ],
+          "destination_access_cars": [],
+          "transfer_board_cars": [],
+          "transfer_alight_cars": [
+            10
+          ],
+          "boarding_door_points": [
+            {
+              "toward_station": "방배",
+              "car": 3,
+              "door": 3,
+              "facility": "에스컬레이터",
+              "location_text": "방배 방면3-3"
+            },
+            {
+              "toward_station": "방배",
+              "car": 8,
+              "door": 1,
+              "facility": "에스컬레이터",
+              "location_text": "방배 방면8-1"
+            }
+          ],
+          "alighting_door_points": [],
+          "incoming_transfer_routes": [],
+          "outgoing_transfer_routes": [
+            {
+              "source_route_id": "86",
+              "alight": {
+                "car": 10,
+                "door": 4,
+                "label": "10호차 4번 문"
+              },
+              "board": {
+                "car": 7,
+                "door": 4,
+                "label": "7호차 4번 문"
+              },
+              "from_direction": "강남 방면",
+              "to_direction": "고속터미널 방면",
+              "walking_time": "02:24"
+            }
+          ],
+          "exit_mapping_status": "unavailable_escalator_access_proxy_only",
+          "allocation_basis": "route_conditioned_door_attraction_scenario",
+          "note": "각 탑승 구간의 출입 접근·환승 문 인접 칸 선호 가정입니다. 특정 출구별 최단 문 매핑과 실제 승객 OD 비율은 없으며, 계수는 학습되지 않았습니다."
+        },
+        "scenario_strength": 0.2,
+        "range_kind": "sensitivity_strength_0_to_0.3_not_confidence_interval",
+        "evidence": {
+          "available_after": "2026-06-30",
+          "profile_last_period": "20260630",
+          "profile_snapshot_count": 9,
+          "next_profile_last_period": "20260630",
+          "car_ground_truth_count": 0
+        },
+        "warnings": [
+          "칸별 값은 실측 검증되지 않은 위치 기반 시나리오입니다.",
+          "조사평균 시간 패턴을 요청 시점에 추론한 값이며 실제 도착 열차 또는 순간 재차인원은 아닙니다."
+        ]
+      }
+    },
+    {
+      "kind": "ride",
+      "line": 2,
+      "service": "일반",
+      "from_station": "방배",
+      "to_station": "서초",
+      "start_at": "2026-09-21T08:19:00+09:00",
+      "forecast_at": "2026-09-21T08:19:30+09:00",
+      "end_at": "2026-09-21T08:21:30+09:00",
+      "estimated_minutes": 2.5,
+      "ride_minutes": 2.5,
+      "train_change_wait_minutes": 0,
+      "waiting_minutes": 0,
+      "dwell_minutes": 0.5,
+      "timing_basis": "official_snapshot",
+      "schedule": {
+        "trip_id": "2|DAY|2077|0|IN|신도림|성수",
+        "train_no": "2077",
+        "destination": "성수",
+        "source_rows": [
+          157471,
+          155917
+        ]
+      },
+      "schedule_unavailable_reason": null,
+      "status": "available",
+      "unavailable_reason": null,
+      "forecast": {
+        "model_version": "metro-all-ewma-location-scenario-v2",
+        "prediction_kind": "unvalidated_car_scenario",
+        "inference_mode": "on_request",
+        "line": 2,
+        "service": "일반",
+        "segment_id": "2:225:224:일반",
+        "from_station": "방배",
+        "to_station": "서초",
+        "direction": "외선",
+        "requested_at": "2026-09-21T08:19:30+09:00",
+        "service_date": "2026-09-21",
+        "daytype": "평일",
+        "holiday": null,
+        "time_bin": "08:00",
+        "interpolation_fraction": 0.65,
+        "train_mean_congestion_pct": 131.86,
+        "car_count": 10,
+        "cars": [
+          {
+            "car": 1,
+            "estimated_congestion_pct": 109.688,
+            "scenario_range_pct": [
+              98.603,
+              131.86
+            ]
+          },
+          {
+            "car": 2,
+            "estimated_congestion_pct": 124.313,
+            "scenario_range_pct": [
+              120.539,
+              131.86
+            ]
+          },
+          {
+            "car": 3,
+            "estimated_congestion_pct": 136.525,
+            "scenario_range_pct": [
+              131.86,
+              138.857
+            ]
+          },
+          {
+            "car": 4,
+            "estimated_congestion_pct": 124.323,
+            "scenario_range_pct": [
+              120.555,
+              131.86
+            ]
+          },
+          {
+            "car": 5,
+            "estimated_congestion_pct": 110.033,
+            "scenario_range_pct": [
+              99.12,
+              131.86
+            ]
+          },
+          {
+            "car": 6,
+            "estimated_congestion_pct": 110.054,
+            "scenario_range_pct": [
+              99.151,
+              131.86
+            ]
+          },
+          {
+            "car": 7,
+            "estimated_congestion_pct": 125.013,
+            "scenario_range_pct": [
+              121.589,
+              131.86
+            ]
+          },
+          {
+            "car": 8,
+            "estimated_congestion_pct": 144.926,
+            "scenario_range_pct": [
+              131.86,
+              151.459
+            ]
+          },
+          {
+            "car": 9,
+            "estimated_congestion_pct": 161.962,
+            "scenario_range_pct": [
+              131.86,
+              177.014
+            ]
+          },
+          {
+            "car": 10,
+            "estimated_congestion_pct": 171.762,
+            "scenario_range_pct": [
+              131.86,
+              191.713
+            ]
+          }
+        ],
+        "location_features": {
+          "access_cars": [
+            3,
+            8
+          ],
+          "destination_access_cars": [],
+          "transfer_board_cars": [],
+          "transfer_alight_cars": [
+            10
+          ],
+          "boarding_door_points": [
+            {
+              "toward_station": "방배",
+              "car": 3,
+              "door": 3,
+              "facility": "에스컬레이터",
+              "location_text": "방배 방면3-3"
+            },
+            {
+              "toward_station": "방배",
+              "car": 8,
+              "door": 1,
+              "facility": "에스컬레이터",
+              "location_text": "방배 방면8-1"
+            }
+          ],
+          "alighting_door_points": [],
+          "incoming_transfer_routes": [],
+          "outgoing_transfer_routes": [
+            {
+              "source_route_id": "86",
+              "alight": {
+                "car": 10,
+                "door": 4,
+                "label": "10호차 4번 문"
+              },
+              "board": {
+                "car": 7,
+                "door": 4,
+                "label": "7호차 4번 문"
+              },
+              "from_direction": "강남 방면",
+              "to_direction": "고속터미널 방면",
+              "walking_time": "02:24"
+            }
+          ],
+          "exit_mapping_status": "unavailable_escalator_access_proxy_only",
+          "allocation_basis": "route_conditioned_door_attraction_scenario",
+          "note": "각 탑승 구간의 출입 접근·환승 문 인접 칸 선호 가정입니다. 특정 출구별 최단 문 매핑과 실제 승객 OD 비율은 없으며, 계수는 학습되지 않았습니다."
+        },
+        "scenario_strength": 0.2,
+        "range_kind": "sensitivity_strength_0_to_0.3_not_confidence_interval",
+        "evidence": {
+          "available_after": "2026-06-30",
+          "profile_last_period": "20260630",
+          "profile_snapshot_count": 9,
+          "next_profile_last_period": "20260630",
+          "car_ground_truth_count": 0
+        },
+        "warnings": [
+          "칸별 값은 실측 검증되지 않은 위치 기반 시나리오입니다.",
+          "조사평균 시간 패턴을 요청 시점에 추론한 값이며 실제 도착 열차 또는 순간 재차인원은 아닙니다."
+        ]
+      }
+    },
+    {
+      "kind": "ride",
+      "line": 2,
+      "service": "일반",
+      "from_station": "서초",
+      "to_station": "교대",
+      "start_at": "2026-09-21T08:21:30+09:00",
+      "forecast_at": "2026-09-21T08:22:00+09:00",
+      "end_at": "2026-09-21T08:23:00+09:00",
+      "estimated_minutes": 1.5,
+      "ride_minutes": 1.5,
+      "train_change_wait_minutes": 0,
+      "waiting_minutes": 0,
+      "dwell_minutes": 0.5,
+      "timing_basis": "official_snapshot",
+      "schedule": {
+        "trip_id": "2|DAY|2077|0|IN|신도림|성수",
+        "train_no": "2077",
+        "destination": "성수",
+        "source_rows": [
+          155917,
+          154363
+        ]
+      },
+      "schedule_unavailable_reason": null,
+      "status": "available",
+      "unavailable_reason": null,
+      "forecast": {
+        "model_version": "metro-all-ewma-location-scenario-v2",
+        "prediction_kind": "unvalidated_car_scenario",
+        "inference_mode": "on_request",
+        "line": 2,
+        "service": "일반",
+        "segment_id": "2:224:223:일반",
+        "from_station": "서초",
+        "to_station": "교대",
+        "direction": "외선",
+        "requested_at": "2026-09-21T08:22:00+09:00",
+        "service_date": "2026-09-21",
+        "daytype": "평일",
+        "holiday": null,
+        "time_bin": "08:00",
+        "interpolation_fraction": 0.7333,
+        "train_mean_congestion_pct": 123.409,
+        "car_count": 10,
+        "cars": [
+          {
+            "car": 1,
+            "estimated_congestion_pct": 102.659,
+            "scenario_range_pct": [
+              92.283,
+              123.409
+            ]
+          },
+          {
+            "car": 2,
+            "estimated_congestion_pct": 116.346,
+            "scenario_range_pct": [
+              112.814,
+              123.409
+            ]
+          },
+          {
+            "car": 3,
+            "estimated_congestion_pct": 127.775,
+            "scenario_range_pct": [
+              123.409,
+              129.958
+            ]
+          },
+          {
+            "car": 4,
+            "estimated_congestion_pct": 116.356,
+            "scenario_range_pct": [
+              112.829,
+              123.409
+            ]
+          },
+          {
+            "car": 5,
+            "estimated_congestion_pct": 102.982,
+            "scenario_range_pct": [
+              92.768,
+              123.409
+            ]
+          },
+          {
+            "car": 6,
+            "estimated_congestion_pct": 103.001,
+            "scenario_range_pct": [
+              92.797,
+              123.409
+            ]
+          },
+          {
+            "car": 7,
+            "estimated_congestion_pct": 117.001,
+            "scenario_range_pct": [
+              113.797,
+              123.409
+            ]
+          },
+          {
+            "car": 8,
+            "estimated_congestion_pct": 135.638,
+            "scenario_range_pct": [
+              123.409,
+              141.752
+            ]
+          },
+          {
+            "car": 9,
+            "estimated_congestion_pct": 151.583,
+            "scenario_range_pct": [
+              123.409,
+              165.669
+            ]
+          },
+          {
+            "car": 10,
+            "estimated_congestion_pct": 160.754,
+            "scenario_range_pct": [
+              123.409,
+              179.427
+            ]
+          }
+        ],
+        "location_features": {
+          "access_cars": [
+            3,
+            8
+          ],
+          "destination_access_cars": [],
+          "transfer_board_cars": [],
+          "transfer_alight_cars": [
+            10
+          ],
+          "boarding_door_points": [
+            {
+              "toward_station": "방배",
+              "car": 3,
+              "door": 3,
+              "facility": "에스컬레이터",
+              "location_text": "방배 방면3-3"
+            },
+            {
+              "toward_station": "방배",
+              "car": 8,
+              "door": 1,
+              "facility": "에스컬레이터",
+              "location_text": "방배 방면8-1"
+            }
+          ],
+          "alighting_door_points": [],
+          "incoming_transfer_routes": [],
+          "outgoing_transfer_routes": [
+            {
+              "source_route_id": "86",
+              "alight": {
+                "car": 10,
+                "door": 4,
+                "label": "10호차 4번 문"
+              },
+              "board": {
+                "car": 7,
+                "door": 4,
+                "label": "7호차 4번 문"
+              },
+              "from_direction": "강남 방면",
+              "to_direction": "고속터미널 방면",
+              "walking_time": "02:24"
+            }
+          ],
+          "exit_mapping_status": "unavailable_escalator_access_proxy_only",
+          "allocation_basis": "route_conditioned_door_attraction_scenario",
+          "note": "각 탑승 구간의 출입 접근·환승 문 인접 칸 선호 가정입니다. 특정 출구별 최단 문 매핑과 실제 승객 OD 비율은 없으며, 계수는 학습되지 않았습니다."
+        },
+        "scenario_strength": 0.2,
+        "range_kind": "sensitivity_strength_0_to_0.3_not_confidence_interval",
+        "evidence": {
+          "available_after": "2026-06-30",
+          "profile_last_period": "20260630",
+          "profile_snapshot_count": 9,
+          "next_profile_last_period": "20260630",
+          "car_ground_truth_count": 0
+        },
+        "warnings": [
+          "칸별 값은 실측 검증되지 않은 위치 기반 시나리오입니다.",
+          "조사평균 시간 패턴을 요청 시점에 추론한 값이며 실제 도착 열차 또는 순간 재차인원은 아닙니다."
+        ]
+      }
+    },
+    {
+      "kind": "transfer",
+      "from_station": "교대",
+      "to_station": "교대",
+      "from_line": 2,
+      "to_line": 3,
+      "start_at": "2026-09-21T08:23:00+09:00",
+      "end_at": "2026-09-21T08:25:24+09:00",
+      "estimated_minutes": 2.4,
+      "waiting_minutes_assumption": 0,
+      "timing_basis": "source_walking_average",
+      "from_id": "2:223",
+      "to_id": "3:330",
+      "walking_minutes": 2.4,
+      "time_basis": "mean_of_directional_source_routes",
+      "source_route_ids": [
+        "85",
+        "86",
+        "87",
+        "88"
+      ],
+      "door_guidance": {
+        "status": "available",
+        "routes": [
+          {
+            "source_route_id": "86",
+            "alight": {
+              "car": 10,
+              "door": 4,
+              "label": "10호차 4번 문"
+            },
+            "board": {
+              "car": 7,
+              "door": 4,
+              "label": "7호차 4번 문"
+            },
+            "from_direction": "강남 방면",
+            "to_direction": "고속터미널 방면",
+            "walking_time": "02:24"
+          }
+        ],
+        "source": "OA-22521",
+        "as_of": "2025-03-17",
+        "note": "진행 방면이 일치하는 공식 환승 승하차 문 위치입니다."
+      }
+    },
+    {
+      "kind": "ride",
+      "line": 3,
+      "service": "일반",
+      "from_station": "교대",
+      "to_station": "고속터미널",
+      "start_at": "2026-09-21T08:25:24+09:00",
+      "forecast_at": "2026-09-21T08:27:30+09:00",
+      "end_at": "2026-09-21T08:29:30+09:00",
+      "estimated_minutes": 4.1,
+      "ride_minutes": 2.0,
+      "train_change_wait_minutes": 0,
+      "waiting_minutes": 2.1,
+      "dwell_minutes": 0,
+      "timing_basis": "official_snapshot",
+      "schedule": {
+        "trip_id": "3|DAY|3100|0|UP|오금|구파발",
+        "train_no": "3100",
+        "destination": "구파발",
+        "source_rows": [
+          216970,
+          215853
+        ]
+      },
+      "schedule_unavailable_reason": null,
+      "status": "available",
+      "unavailable_reason": null,
+      "forecast": {
+        "model_version": "metro-all-ewma-location-scenario-v2",
+        "prediction_kind": "unvalidated_car_scenario",
+        "inference_mode": "on_request",
+        "line": 3,
+        "service": "일반",
+        "segment_id": "3:330:329:일반",
+        "from_station": "교대",
+        "to_station": "고속터미널",
+        "direction": "상선",
+        "requested_at": "2026-09-21T08:27:30+09:00",
+        "service_date": "2026-09-21",
+        "daytype": "평일",
+        "holiday": null,
+        "time_bin": "08:00",
+        "interpolation_fraction": 0.9167,
+        "train_mean_congestion_pct": 45.252,
+        "car_count": 10,
+        "cars": [
+          {
+            "car": 1,
+            "estimated_congestion_pct": 38.65,
+            "scenario_range_pct": [
+              35.35,
+              45.252
+            ]
+          },
+          {
+            "car": 2,
+            "estimated_congestion_pct": 47.177,
+            "scenario_range_pct": [
+              45.252,
+              48.139
+            ]
+          },
+          {
+            "car": 3,
+            "estimated_congestion_pct": 54.303,
+            "scenario_range_pct": [
+              45.252,
+              58.828
+            ]
+          },
+          {
+            "car": 4,
+            "estimated_congestion_pct": 47.378,
+            "scenario_range_pct": [
+              45.252,
+              48.441
+            ]
+          },
+          {
+            "car": 5,
+            "estimated_congestion_pct": 41.099,
+            "scenario_range_pct": [
+              39.023,
+              45.252
+            ]
+          },
+          {
+            "car": 6,
+            "estimated_congestion_pct": 47.378,
+            "scenario_range_pct": [
+              45.252,
+              48.441
+            ]
+          },
+          {
+            "car": 7,
+            "estimated_congestion_pct": 54.303,
+            "scenario_range_pct": [
+              45.252,
+              58.828
+            ]
+          },
+          {
+            "car": 8,
+            "estimated_congestion_pct": 47.177,
+            "scenario_range_pct": [
+              45.252,
+              48.139
+            ]
+          },
+          {
+            "car": 9,
+            "estimated_congestion_pct": 38.65,
+            "scenario_range_pct": [
+              35.35,
+              45.252
+            ]
+          },
+          {
+            "car": 10,
+            "estimated_congestion_pct": 36.402,
+            "scenario_range_pct": [
+              31.978,
+              45.252
+            ]
+          }
+        ],
+        "location_features": {
+          "access_cars": [
+            3
+          ],
+          "destination_access_cars": [],
+          "transfer_board_cars": [
+            7
+          ],
+          "transfer_alight_cars": [],
+          "boarding_door_points": [
+            {
+              "toward_station": "고속터미널",
+              "car": 3,
+              "door": 2,
+              "facility": "에스컬레이터",
+              "location_text": "고속터미널 방면3-2, 남부터미널 방면8-3"
+            }
+          ],
+          "alighting_door_points": [],
+          "incoming_transfer_routes": [
+            {
+              "source_route_id": "86",
+              "alight": {
+                "car": 10,
+                "door": 4,
+                "label": "10호차 4번 문"
+              },
+              "board": {
+                "car": 7,
+                "door": 4,
+                "label": "7호차 4번 문"
+              },
+              "from_direction": "강남 방면",
+              "to_direction": "고속터미널 방면",
+              "walking_time": "02:24"
+            }
+          ],
+          "outgoing_transfer_routes": [],
+          "exit_mapping_status": "unavailable_escalator_access_proxy_only",
+          "allocation_basis": "route_conditioned_door_attraction_scenario",
+          "note": "각 탑승 구간의 출입 접근·환승 문 인접 칸 선호 가정입니다. 특정 출구별 최단 문 매핑과 실제 승객 OD 비율은 없으며, 계수는 학습되지 않았습니다."
+        },
+        "scenario_strength": 0.2,
+        "range_kind": "sensitivity_strength_0_to_0.3_not_confidence_interval",
+        "evidence": {
+          "available_after": "2026-06-30",
+          "profile_last_period": "20260630",
+          "profile_snapshot_count": 9,
+          "next_profile_last_period": "20260630",
+          "car_ground_truth_count": 0
+        },
+        "warnings": [
+          "칸별 값은 실측 검증되지 않은 위치 기반 시나리오입니다.",
+          "조사평균 시간 패턴을 요청 시점에 추론한 값이며 실제 도착 열차 또는 순간 재차인원은 아닙니다."
+        ]
+      }
+    },
+    {
+      "kind": "ride",
+      "line": 3,
+      "service": "일반",
+      "from_station": "고속터미널",
+      "to_station": "잠원",
+      "start_at": "2026-09-21T08:29:30+09:00",
+      "forecast_at": "2026-09-21T08:30:00+09:00",
+      "end_at": "2026-09-21T08:31:30+09:00",
+      "estimated_minutes": 2.0,
+      "ride_minutes": 2.0,
+      "train_change_wait_minutes": 0,
+      "waiting_minutes": 0,
+      "dwell_minutes": 0.5,
+      "timing_basis": "official_snapshot",
+      "schedule": {
+        "trip_id": "3|DAY|3100|0|UP|오금|구파발",
+        "train_no": "3100",
+        "destination": "구파발",
+        "source_rows": [
+          215853,
+          214736
+        ]
+      },
+      "schedule_unavailable_reason": null,
+      "status": "available",
+      "unavailable_reason": null,
+      "forecast": {
+        "model_version": "metro-all-ewma-location-scenario-v2",
+        "prediction_kind": "unvalidated_car_scenario",
+        "inference_mode": "on_request",
+        "line": 3,
+        "service": "일반",
+        "segment_id": "3:329:328:일반",
+        "from_station": "고속터미널",
+        "to_station": "잠원",
+        "direction": "상선",
+        "requested_at": "2026-09-21T08:30:00+09:00",
+        "service_date": "2026-09-21",
+        "daytype": "평일",
+        "holiday": null,
+        "time_bin": "08:30",
+        "interpolation_fraction": 0.0,
+        "train_mean_congestion_pct": 48.721,
+        "car_count": 10,
+        "cars": [
+          {
+            "car": 1,
+            "estimated_congestion_pct": 41.614,
+            "scenario_range_pct": [
+              38.06,
+              48.721
+            ]
+          },
+          {
+            "car": 2,
+            "estimated_congestion_pct": 50.794,
+            "scenario_range_pct": [
+              48.721,
+              51.83
+            ]
+          },
+          {
+            "car": 3,
+            "estimated_congestion_pct": 58.466,
+            "scenario_range_pct": [
+              48.721,
+              63.339
+            ]
+          },
+          {
+            "car": 4,
+            "estimated_congestion_pct": 51.01,
+            "scenario_range_pct": [
+              48.721,
+              52.155
+            ]
+          },
+          {
+            "car": 5,
+            "estimated_congestion_pct": 44.25,
+            "scenario_range_pct": [
+              42.015,
+              48.721
+            ]
+          },
+          {
+            "car": 6,
+            "estimated_congestion_pct": 51.01,
+            "scenario_range_pct": [
+              48.721,
+              52.155
+            ]
+          },
+          {
+            "car": 7,
+            "estimated_congestion_pct": 58.466,
+            "scenario_range_pct": [
+              48.721,
+              63.339
+            ]
+          },
+          {
+            "car": 8,
+            "estimated_congestion_pct": 50.794,
+            "scenario_range_pct": [
+              48.721,
+              51.83
+            ]
+          },
+          {
+            "car": 9,
+            "estimated_congestion_pct": 41.614,
+            "scenario_range_pct": [
+              38.06,
+              48.721
+            ]
+          },
+          {
+            "car": 10,
+            "estimated_congestion_pct": 39.193,
+            "scenario_range_pct": [
+              34.43,
+              48.721
+            ]
+          }
+        ],
+        "location_features": {
+          "access_cars": [
+            3
+          ],
+          "destination_access_cars": [],
+          "transfer_board_cars": [
+            7
+          ],
+          "transfer_alight_cars": [],
+          "boarding_door_points": [
+            {
+              "toward_station": "고속터미널",
+              "car": 3,
+              "door": 2,
+              "facility": "에스컬레이터",
+              "location_text": "고속터미널 방면3-2, 남부터미널 방면8-3"
+            }
+          ],
+          "alighting_door_points": [],
+          "incoming_transfer_routes": [
+            {
+              "source_route_id": "86",
+              "alight": {
+                "car": 10,
+                "door": 4,
+                "label": "10호차 4번 문"
+              },
+              "board": {
+                "car": 7,
+                "door": 4,
+                "label": "7호차 4번 문"
+              },
+              "from_direction": "강남 방면",
+              "to_direction": "고속터미널 방면",
+              "walking_time": "02:24"
+            }
+          ],
+          "outgoing_transfer_routes": [],
+          "exit_mapping_status": "unavailable_escalator_access_proxy_only",
+          "allocation_basis": "route_conditioned_door_attraction_scenario",
+          "note": "각 탑승 구간의 출입 접근·환승 문 인접 칸 선호 가정입니다. 특정 출구별 최단 문 매핑과 실제 승객 OD 비율은 없으며, 계수는 학습되지 않았습니다."
+        },
+        "scenario_strength": 0.2,
+        "range_kind": "sensitivity_strength_0_to_0.3_not_confidence_interval",
+        "evidence": {
+          "available_after": "2026-06-30",
+          "profile_last_period": "20260630",
+          "profile_snapshot_count": 9,
+          "next_profile_last_period": "20260630",
+          "car_ground_truth_count": 0
+        },
+        "warnings": [
+          "칸별 값은 실측 검증되지 않은 위치 기반 시나리오입니다.",
+          "조사평균 시간 패턴을 요청 시점에 추론한 값이며 실제 도착 열차 또는 순간 재차인원은 아닙니다."
+        ]
+      }
+    },
+    {
+      "kind": "ride",
+      "line": 3,
+      "service": "일반",
+      "from_station": "잠원",
+      "to_station": "신사",
+      "start_at": "2026-09-21T08:31:30+09:00",
+      "forecast_at": "2026-09-21T08:32:00+09:00",
+      "end_at": "2026-09-21T08:33:30+09:00",
+      "estimated_minutes": 2.0,
+      "ride_minutes": 2.0,
+      "train_change_wait_minutes": 0,
+      "waiting_minutes": 0,
+      "dwell_minutes": 0.5,
+      "timing_basis": "official_snapshot",
+      "schedule": {
+        "trip_id": "3|DAY|3100|0|UP|오금|구파발",
+        "train_no": "3100",
+        "destination": "구파발",
+        "source_rows": [
+          214736,
+          213619
+        ]
+      },
+      "schedule_unavailable_reason": null,
+      "status": "available",
+      "unavailable_reason": null,
+      "forecast": {
+        "model_version": "metro-all-ewma-location-scenario-v2",
+        "prediction_kind": "unvalidated_car_scenario",
+        "inference_mode": "on_request",
+        "line": 3,
+        "service": "일반",
+        "segment_id": "3:328:327:일반",
+        "from_station": "잠원",
+        "to_station": "신사",
+        "direction": "상선",
+        "requested_at": "2026-09-21T08:32:00+09:00",
+        "service_date": "2026-09-21",
+        "daytype": "평일",
+        "holiday": null,
+        "time_bin": "08:30",
+        "interpolation_fraction": 0.0667,
+        "train_mean_congestion_pct": 49.955,
+        "car_count": 10,
+        "cars": [
+          {
+            "car": 1,
+            "estimated_congestion_pct": 42.668,
+            "scenario_range_pct": [
+              39.024,
+              49.955
+            ]
+          },
+          {
+            "car": 2,
+            "estimated_congestion_pct": 52.081,
+            "scenario_range_pct": [
+              49.955,
+              53.143
+            ]
+          },
+          {
+            "car": 3,
+            "estimated_congestion_pct": 59.947,
+            "scenario_range_pct": [
+              49.955,
+              64.943
+            ]
+          },
+          {
+            "car": 4,
+            "estimated_congestion_pct": 52.303,
+            "scenario_range_pct": [
+              49.955,
+              53.476
+            ]
+          },
+          {
+            "car": 5,
+            "estimated_congestion_pct": 45.371,
+            "scenario_range_pct": [
+              43.079,
+              49.955
+            ]
+          },
+          {
+            "car": 6,
+            "estimated_congestion_pct": 52.303,
+            "scenario_range_pct": [
+              49.955,
+              53.476
+            ]
+          },
+          {
+            "car": 7,
+            "estimated_congestion_pct": 59.947,
+            "scenario_range_pct": [
+              49.955,
+              64.943
+            ]
+          },
+          {
+            "car": 8,
+            "estimated_congestion_pct": 52.081,
+            "scenario_range_pct": [
+              49.955,
+              53.143
+            ]
+          },
+          {
+            "car": 9,
+            "estimated_congestion_pct": 42.668,
+            "scenario_range_pct": [
+              39.024,
+              49.955
+            ]
+          },
+          {
+            "car": 10,
+            "estimated_congestion_pct": 40.186,
+            "scenario_range_pct": [
+              35.302,
+              49.955
+            ]
+          }
+        ],
+        "location_features": {
+          "access_cars": [
+            3
+          ],
+          "destination_access_cars": [],
+          "transfer_board_cars": [
+            7
+          ],
+          "transfer_alight_cars": [],
+          "boarding_door_points": [
+            {
+              "toward_station": "고속터미널",
+              "car": 3,
+              "door": 2,
+              "facility": "에스컬레이터",
+              "location_text": "고속터미널 방면3-2, 남부터미널 방면8-3"
+            }
+          ],
+          "alighting_door_points": [],
+          "incoming_transfer_routes": [
+            {
+              "source_route_id": "86",
+              "alight": {
+                "car": 10,
+                "door": 4,
+                "label": "10호차 4번 문"
+              },
+              "board": {
+                "car": 7,
+                "door": 4,
+                "label": "7호차 4번 문"
+              },
+              "from_direction": "강남 방면",
+              "to_direction": "고속터미널 방면",
+              "walking_time": "02:24"
+            }
+          ],
+          "outgoing_transfer_routes": [],
+          "exit_mapping_status": "unavailable_escalator_access_proxy_only",
+          "allocation_basis": "route_conditioned_door_attraction_scenario",
+          "note": "각 탑승 구간의 출입 접근·환승 문 인접 칸 선호 가정입니다. 특정 출구별 최단 문 매핑과 실제 승객 OD 비율은 없으며, 계수는 학습되지 않았습니다."
+        },
+        "scenario_strength": 0.2,
+        "range_kind": "sensitivity_strength_0_to_0.3_not_confidence_interval",
+        "evidence": {
+          "available_after": "2026-06-30",
+          "profile_last_period": "20260630",
+          "profile_snapshot_count": 9,
+          "next_profile_last_period": "20260630",
+          "car_ground_truth_count": 0
+        },
+        "warnings": [
+          "칸별 값은 실측 검증되지 않은 위치 기반 시나리오입니다.",
+          "조사평균 시간 패턴을 요청 시점에 추론한 값이며 실제 도착 열차 또는 순간 재차인원은 아닙니다."
+        ]
+      }
+    },
+    {
+      "kind": "ride",
+      "line": 3,
+      "service": "일반",
+      "from_station": "신사",
+      "to_station": "압구정",
+      "start_at": "2026-09-21T08:33:30+09:00",
+      "forecast_at": "2026-09-21T08:34:00+09:00",
+      "end_at": "2026-09-21T08:36:00+09:00",
+      "estimated_minutes": 2.5,
+      "ride_minutes": 2.5,
+      "train_change_wait_minutes": 0,
+      "waiting_minutes": 0,
+      "dwell_minutes": 0.5,
+      "timing_basis": "official_snapshot",
+      "schedule": {
+        "trip_id": "3|DAY|3100|0|UP|오금|구파발",
+        "train_no": "3100",
+        "destination": "구파발",
+        "source_rows": [
+          213619,
+          212502
+        ]
+      },
+      "schedule_unavailable_reason": null,
+      "status": "available",
+      "unavailable_reason": null,
+      "forecast": {
+        "model_version": "metro-all-ewma-location-scenario-v2",
+        "prediction_kind": "unvalidated_car_scenario",
+        "inference_mode": "on_request",
+        "line": 3,
+        "service": "일반",
+        "segment_id": "3:327:326:일반",
+        "from_station": "신사",
+        "to_station": "압구정",
+        "direction": "상선",
+        "requested_at": "2026-09-21T08:34:00+09:00",
+        "service_date": "2026-09-21",
+        "daytype": "평일",
+        "holiday": null,
+        "time_bin": "08:30",
+        "interpolation_fraction": 0.1333,
+        "train_mean_congestion_pct": 47.519,
+        "car_count": 10,
+        "cars": [
+          {
+            "car": 1,
+            "estimated_congestion_pct": 40.587,
+            "scenario_range_pct": [
+              37.121,
+              47.519
+            ]
+          },
+          {
+            "car": 2,
+            "estimated_congestion_pct": 49.541,
+            "scenario_range_pct": [
+              47.519,
+              50.552
+            ]
+          },
+          {
+            "car": 3,
+            "estimated_congestion_pct": 57.024,
+            "scenario_range_pct": [
+              47.519,
+              61.776
+            ]
+          },
+          {
+            "car": 4,
+            "estimated_congestion_pct": 49.752,
+            "scenario_range_pct": [
+              47.519,
+              50.868
+            ]
+          },
+          {
+            "car": 5,
+            "estimated_congestion_pct": 43.159,
+            "scenario_range_pct": [
+              40.979,
+              47.519
+            ]
+          },
+          {
+            "car": 6,
+            "estimated_congestion_pct": 49.752,
+            "scenario_range_pct": [
+              47.519,
+              50.868
+            ]
+          },
+          {
+            "car": 7,
+            "estimated_congestion_pct": 57.024,
+            "scenario_range_pct": [
+              47.519,
+              61.776
+            ]
+          },
+          {
+            "car": 8,
+            "estimated_congestion_pct": 49.541,
+            "scenario_range_pct": [
+              47.519,
+              50.552
+            ]
+          },
+          {
+            "car": 9,
+            "estimated_congestion_pct": 40.587,
+            "scenario_range_pct": [
+              37.121,
+              47.519
+            ]
+          },
+          {
+            "car": 10,
+            "estimated_congestion_pct": 38.227,
+            "scenario_range_pct": [
+              33.58,
+              47.519
+            ]
+          }
+        ],
+        "location_features": {
+          "access_cars": [
+            3
+          ],
+          "destination_access_cars": [],
+          "transfer_board_cars": [
+            7
+          ],
+          "transfer_alight_cars": [],
+          "boarding_door_points": [
+            {
+              "toward_station": "고속터미널",
+              "car": 3,
+              "door": 2,
+              "facility": "에스컬레이터",
+              "location_text": "고속터미널 방면3-2, 남부터미널 방면8-3"
+            }
+          ],
+          "alighting_door_points": [],
+          "incoming_transfer_routes": [
+            {
+              "source_route_id": "86",
+              "alight": {
+                "car": 10,
+                "door": 4,
+                "label": "10호차 4번 문"
+              },
+              "board": {
+                "car": 7,
+                "door": 4,
+                "label": "7호차 4번 문"
+              },
+              "from_direction": "강남 방면",
+              "to_direction": "고속터미널 방면",
+              "walking_time": "02:24"
+            }
+          ],
+          "outgoing_transfer_routes": [],
+          "exit_mapping_status": "unavailable_escalator_access_proxy_only",
+          "allocation_basis": "route_conditioned_door_attraction_scenario",
+          "note": "각 탑승 구간의 출입 접근·환승 문 인접 칸 선호 가정입니다. 특정 출구별 최단 문 매핑과 실제 승객 OD 비율은 없으며, 계수는 학습되지 않았습니다."
+        },
+        "scenario_strength": 0.2,
+        "range_kind": "sensitivity_strength_0_to_0.3_not_confidence_interval",
+        "evidence": {
+          "available_after": "2026-06-30",
+          "profile_last_period": "20260630",
+          "profile_snapshot_count": 9,
+          "next_profile_last_period": "20260630",
+          "car_ground_truth_count": 0
+        },
+        "warnings": [
+          "칸별 값은 실측 검증되지 않은 위치 기반 시나리오입니다.",
+          "조사평균 시간 패턴을 요청 시점에 추론한 값이며 실제 도착 열차 또는 순간 재차인원은 아닙니다."
+        ]
+      }
+    }
+  ],
+  "warnings": [
+    "칸별 값은 실측 검증되지 않은 시나리오이며 환승 전후의 칸 번호는 서로 다른 열차를 뜻합니다.",
+    "요약 혼잡도는 예측 가능한 탑승 구간만 집계하며 도보·대기시간은 제외합니다.",
+    "연동 시간표는 2025-09-30 공개 파일입니다. 현재 운행 및 실시간 지연을 확인한 데이터가 아닙니다.",
+    "급행·일반 열차 출도착, 대기 및 환승 보행시간으로 공개 시간표 범위의 경로를 탐색했습니다.",
+    "6시간 이내 시간표 연결 경로만 제공하며, 동일 승강장 열차 변경에는 1분의 이동 여유를 가정합니다.",
+    "환승 보행시간은 공식 방향별 경로값 평균이며 열차 대기는 연결된 출발시각으로 계산합니다."
+  ],
+  "endpoint_facilities": {
+    "departure": {
+      "station_id": "2:226",
+      "station_name": "사당",
+      "line": 2,
+      "status": "available",
+      "as_of": "2025-03-20",
+      "features": {
+        "문화공간": true,
+        "휠체어리프트": false,
+        "만남의장소": true,
+        "환승주차장": false,
+        "자전거보관소": true,
+        "엘리베이터": true,
+        "티러기지": false,
+        "무인민원발급기": false,
+        "환전키오스크": false,
+        "수유실": false
+      },
+      "nursing_rooms": []
+    },
+    "arrival": {
+      "station_id": "3:326",
+      "station_name": "압구정",
+      "line": 3,
+      "status": "available",
+      "as_of": "2025-03-20",
+      "features": {
+        "문화공간": false,
+        "휠체어리프트": false,
+        "만남의장소": true,
+        "환승주차장": false,
+        "자전거보관소": true,
+        "엘리베이터": true,
+        "티러기지": false,
+        "무인민원발급기": false,
+        "환전키오스크": true,
+        "수유실": false
+      },
+      "nursing_rooms": []
+    }
+  },
+  "departure_boarding_guidance": {
+    "status": "available",
+    "kind": "escalator_nearby_doors",
+    "points": [
+      {
+        "toward_station": "방배",
+        "car": 3,
+        "door": 3,
+        "facility": "에스컬레이터",
+        "location_text": "방배 방면3-3"
+      },
+      {
+        "toward_station": "방배",
+        "car": 8,
+        "door": 1,
+        "facility": "에스컬레이터",
+        "location_text": "방배 방면8-1"
+      }
+    ],
+    "note": "승강장 연결 에스컬레이터 인접 문입니다. 특정 출구까지 최단 하차 위치를 보장하지 않습니다.",
+    "source": "OA-22486 / OA-22443",
+    "as_of": "2026-02-11 / 2026-01-31"
+  },
+  "arrival_alighting_guidance": {
+    "status": "unavailable",
+    "kind": "escalator_nearby_doors",
+    "points": [],
+    "note": "승강장 연결 에스컬레이터 인접 문입니다. 특정 출구까지 최단 하차 위치를 보장하지 않습니다.",
+    "source": "OA-22486 / OA-22443",
+    "as_of": "2026-02-11 / 2026-01-31"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "checked_on": "2026-09-21",
+  "timetable_as_of": "2025-09-30",
+  "current_service_verified": false,
+  "source_rows": 532832,
+  "unknown_weekday": 77233,
+  "outside_scope": 140435,
+  "imported_stops": 315164,
+  "trips": 11564,
+  "amenity_stations": 288,
+  "by_line": {
+    "1": 13885,
+    "2": 61861,
+    "3": 35793,
+    "4": 32031,
+    "5": 49984,
+    "6": 29635,
+    "7": 43039,
+    "8": 15106,
+    "9": 33830
+  },
+  "sha256": {
+    "timetable.csv.gz": "7ecb7f13189152d20045f2b353805cf706c1f148ebc2fb3be78275573bca2661",
+    "amenities.json": "4f5eac4f037a19ead9ea65cd7793deec1a0e882ec3572e75d3d6e64525dd5daf",
+    "access_doors.json": "3f4063fc8e291ddd5717ed1b88f91cc0b393e88e1532e9b9e219df24d0629f75"
+  }
+}

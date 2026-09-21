@@ -2,9 +2,9 @@
   "stations": 315,
   "segments": 640,
   "observations": 610209,
-  "source_files": 21,
+  "source_files": 24,
   "raw_records": 600744,
   "ridership_records": 597970,
-  "original_files_loaded": 21,
-  "database_bytes": 679129088
+  "original_files_loaded": 24,
+  "database_bytes": 740265984
 }

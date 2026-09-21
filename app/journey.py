@@ -7,7 +7,9 @@ from collections import defaultdict
 from datetime import datetime, time, timedelta
 
 from app.database import connect
+from app.enrichment import Guidance
 from app.model import KST, PredictionError
+from app.scheduled_routing import search
 
 ALIASES = {
     "건대": "건대입구",
@@ -21,6 +23,7 @@ ALIASES = {
 class JourneyModel:
     def __init__(self, model):
         self.model = model
+        self.guidance = Guidance(model)
         self.stations = {s["id"]: s for s in model.stations}
         self.graph = defaultdict(list)
         for s in model.segments():
@@ -146,6 +149,7 @@ class JourneyModel:
         strategy="estimated_fastest",
         allow_express=True,
         now=None,
+        use_timetable=True,
     ):
         origin, destination, edges = self.plan(
             origin, destination, from_line, to_line, strategy, allow_express
@@ -159,12 +163,33 @@ class JourneyModel:
             if departure.tzinfo is None
             else departure.astimezone(KST)
         )
+        timing = {
+            "status": "assumptions",
+            "matched_ride_segments": 0,
+            "fallback_ride_segments": sum(e["kind"] == "ride" for e in edges),
+        }
+        if use_timetable:
+            starts = [
+                s["id"]
+                for s in self.stations.values()
+                if s["name"] == origin and (from_line is None or s["line"] == from_line)
+            ]
+            targets = {
+                s["id"]
+                for s in self.stations.values()
+                if s["name"] == destination
+                and (to_line is None or s["line"] == to_line)
+            }
+            edges, timing = search(
+                self, starts, targets, departure, allow_express, strategy
+            )
         cursor = departure
         steps = []
         legs = []
         leg = None
         transfer_count = 0
-        for edge in edges:
+        allocation = self.guidance.allocation_features(edges)
+        for edge_index, edge in enumerate(edges):
             minutes = edge["minutes"]
             end = cursor + timedelta(minutes=minutes)
             if edge["kind"] == "transfer":
@@ -180,15 +205,25 @@ class JourneyModel:
                         "start_at": cursor.isoformat(),
                         "end_at": end.isoformat(),
                         "estimated_minutes": round(minutes, 3),
-                        "waiting_minutes_assumption": 3,
+                        "waiting_minutes_assumption": 0 if use_timetable else 3,
+                        "timing_basis": edge.get("timing_basis", "assumed"),
                         **edge["transfer"],
                     }
                 )
             else:
                 s = edge["segment"]
-                wait = edge.get("train_change_wait_minutes", 0)
-                forecast_at = cursor + timedelta(minutes=wait)
-                if wait:
+                changed_train = bool(edge.get("train_change_wait_minutes", 0))
+                wait = edge.get(
+                    "waiting_minutes",
+                    edge.get("train_change_wait_minutes", 0)
+                    + edge.get("fallback_wait_minutes", 0),
+                )
+                forecast_at = (
+                    datetime.fromisoformat(edge["scheduled_departure"])
+                    if edge.get("scheduled_departure")
+                    else cursor + timedelta(minutes=wait)
+                )
+                if changed_train:
                     leg = None
                     transfer_count += 1
                 if leg is None:
@@ -211,6 +246,7 @@ class JourneyModel:
                         strength,
                         line=s["line"],
                         service=s["service"],
+                        location_override=allocation[edge_index],
                     )
                     status = "available"
                     reason = None
@@ -230,7 +266,14 @@ class JourneyModel:
                         "end_at": end.isoformat(),
                         "estimated_minutes": round(minutes, 3),
                         "ride_minutes": round(minutes - wait, 3),
-                        "train_change_wait_minutes": wait,
+                        "train_change_wait_minutes": wait if changed_train else 0,
+                        "waiting_minutes": wait,
+                        "dwell_minutes": edge.get("dwell_minutes", 0),
+                        "timing_basis": edge.get("timing_basis", "assumed"),
+                        "schedule": edge.get("schedule"),
+                        "schedule_unavailable_reason": edge.get(
+                            "schedule_unavailable_reason"
+                        ),
                         "status": status,
                         "unavailable_reason": reason,
                         "forecast": forecast,
@@ -269,7 +312,8 @@ class JourneyModel:
         rides = [s for s in steps if s["kind"] == "ride"]
         valid = [s for s in rides if s["forecast"]]
         weight = sum(s["ride_minutes"] for s in valid)
-        return {
+        result = {
+            "timetable": timing,
             "model_version": self.model.artifact["version"],
             "prediction_kind": "unvalidated_journey_car_scenario",
             "inference_mode": "on_request",
@@ -304,3 +348,21 @@ class JourneyModel:
                 "요약 혼잡도는 예측 가능한 탑승 구간만 집계하며 도보·대기시간은 제외합니다.",
             ],
         }
+
+        self.guidance.attach(result)
+        if use_timetable:
+            result["warnings"] = [
+                w
+                for w in result["warnings"]
+                if not w.startswith("이동시간은")
+                and not w.startswith("환승 보행시간은")
+            ]
+            result["warnings"].extend(
+                [
+                    "연동 시간표는 2025-09-30 공개 파일입니다. 현재 운행 및 실시간 지연을 확인한 데이터가 아닙니다.",
+                    "급행·일반 열차 출도착, 대기 및 환승 보행시간으로 공개 시간표 범위의 경로를 탐색했습니다.",
+                    "6시간 이내 시간표 연결 경로만 제공하며, 동일 승강장 열차 변경에는 1분의 이동 여유를 가정합니다.",
+                    "환승 보행시간은 공식 방향별 경로값 평균이며 열차 대기는 연결된 출발시각으로 계산합니다.",
+                ]
+            )
+        return result

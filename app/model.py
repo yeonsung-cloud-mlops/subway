@@ -39,7 +39,16 @@ def time_context(at, now=None):
 
 
 def multipliers(loc, strength, car_count=10):
-    groups = [loc[x] for x in ["transfer_board_cars", "access_cars"] if loc[x]]
+    groups = [
+        loc[x]
+        for x in [
+            "transfer_board_cars",
+            "access_cars",
+            "transfer_alight_cars",
+            "destination_access_cars",
+        ]
+        if loc.get(x)
+    ]
     if not groups:
         return [1.0] * car_count
     weights = [
@@ -59,6 +68,9 @@ class Model:
         self.artifact = json.loads((root / "artifacts/model.json").read_text())
         self.db_path = db_path or root / "var/subway.sqlite3"
         seed_database(self.db_path)
+        from app.enrichment import seed_enrichment
+
+        seed_enrichment(self.db_path)
         with connect(self.db_path) as conn:
             self.stations = [
                 json.loads(r[0])
@@ -85,6 +97,7 @@ class Model:
         now=None,
         line=2,
         service="일반",
+        location_override=None,
     ):
         if not math.isfinite(strength) or not 0 <= strength <= 0.3:
             raise PredictionError("배분 강도는 0~0.3이어야 합니다.")
@@ -125,14 +138,22 @@ class Model:
             + (following["value"] if following else p["value"]) * fraction
         )
         count = seg["car_count"]
-        loc = seg["locations"]
+        loc = location_override if location_override is not None else seg["locations"]
         w = multipliers(loc, strength, count)
         high = multipliers(loc, 0.3, count)
         warnings = [
             "칸별 값은 실측 검증되지 않은 위치 기반 시나리오입니다.",
             "조사평균 시간 패턴을 요청 시점에 추론한 값이며 실제 도착 열차 또는 순간 재차인원은 아닙니다.",
         ]
-        if not loc["transfer_board_cars"] and not loc["access_cars"]:
+        if not any(
+            loc.get(k)
+            for k in [
+                "transfer_board_cars",
+                "access_cars",
+                "transfer_alight_cars",
+                "destination_access_cars",
+            ]
+        ):
             warnings.append(
                 "방향이 확인된 위치 자료가 없어 칸별 균등 배분을 사용했습니다."
             )

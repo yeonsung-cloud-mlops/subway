@@ -403,7 +403,7 @@ export default function SubwayApp() {
               <Info size={15} />
               <span>
                 공개 데이터가 있는 노선과 환승 경로를 지원합니다. 소요시간은
-                모델의 가정이며 실제 시간표와 다릅니다.
+                공개 시간표와 환승 보행시간 기준이며 실시간 지연은 반영하지 않습니다.
               </span>
             </p>
           </aside>

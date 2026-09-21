@@ -171,3 +171,20 @@ def test_journey_endpoint(client):
         ).status_code
         == 422
     )
+
+
+def test_station_enrichment_and_schedule_provenance(client):
+    c, _ = client
+    facilities = c.get("/v1/stations/2:226/facilities")
+    assert facilities.status_code == 200
+    assert facilities.json()["status"] == "available"
+    assert isinstance(facilities.json()["features"]["엘리베이터"], bool)
+    schedule = c.get("/v1/stations/2:226/timetable?week=DAY&limit=2").json()
+    assert (
+        schedule["as_of"] == "2025-09-30"
+        and schedule["current_service_verified"] is False
+    )
+    assert schedule["total"] > 2 and len(schedule["rows"]) == 2
+    assert all(row["source_row"] > 0 for row in schedule["rows"])
+    assert c.get("/v1/stations/2:226/timetable?week=INVALID").status_code == 422
+    assert c.get("/v1/stations/99:0/facilities").status_code == 404

@@ -1,0 +1,75 @@
+[
+  {
+    "from": "건대",
+    "to": "고터",
+    "minutes": 14.167,
+    "arrival": "2026-09-21T08:29:10+09:00",
+    "legs": [
+      {
+        "line": 7,
+        "service": "일반",
+        "from": "건대입구",
+        "to": "고속터미널"
+      }
+    ],
+    "elapsed_seconds": 0.838
+  },
+  {
+    "from": "사당",
+    "to": "압구정",
+    "from_line": 2,
+    "to_line": 3,
+    "minutes": 21.0,
+    "arrival": "2026-09-21T08:36:00+09:00",
+    "legs": [
+      {
+        "line": 2,
+        "service": "일반",
+        "from": "사당",
+        "to": "교대"
+      },
+      {
+        "line": 3,
+        "service": "일반",
+        "from": "교대",
+        "to": "압구정"
+      }
+    ],
+    "elapsed_seconds": 0.868
+  },
+  {
+    "from": "김포공항",
+    "to": "봉은사",
+    "from_line": 9,
+    "to_line": 9,
+    "minutes": 43.667,
+    "arrival": "2026-09-21T08:58:40+09:00",
+    "legs": [
+      {
+        "line": 9,
+        "service": "급행",
+        "from": "김포공항",
+        "to": "봉은사"
+      }
+    ],
+    "elapsed_seconds": 0.888
+  },
+  {
+    "from": "김포공항",
+    "to": "봉은사",
+    "from_line": 9,
+    "to_line": 9,
+    "allow_express": false,
+    "minutes": 65.583,
+    "arrival": "2026-09-21T09:20:35+09:00",
+    "legs": [
+      {
+        "line": 9,
+        "service": "일반",
+        "from": "김포공항",
+        "to": "봉은사"
+      }
+    ],
+    "elapsed_seconds": 0.895
+  }
+]

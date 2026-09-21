@@ -43,6 +43,7 @@ class JourneyRequest(BaseModel):
     to_line: int | None = Field(default=None, ge=1, le=9)
     strategy: Literal["estimated_fastest", "fewest_transfers"] = "estimated_fastest"
     allow_express: bool = True
+    use_timetable: bool = True
     scenario_strength: float = Field(default=0.2, ge=0, le=0.3, allow_inf_nan=False)
 
 
@@ -146,6 +147,35 @@ def create_app(db_path=None):
                 "records": records,
             }
 
+    @app.get("/v1/stations/{station_id}/facilities")
+    def facilities(station_id: str):
+        station_detail(station_id)
+        return app.state.journey.guidance.amenities[station_id]
+
+    @app.get("/v1/stations/{station_id}/timetable")
+    def station_timetable(
+        station_id: str,
+        week: Literal["DAY", "SAT", "END"] = "DAY",
+        limit: int = Query(100, ge=1, le=500),
+        offset: int = Query(0, ge=0),
+    ):
+        station_detail(station_id)
+        with connect(db) as conn:
+            total = conn.execute(
+                "SELECT count(*) FROM timetable_stops WHERE station_id=? AND week=?",
+                (station_id, week),
+            ).fetchone()[0]
+            rows = conn.execute(
+                "SELECT * FROM timetable_stops WHERE station_id=? AND week=? ORDER BY coalesce(departure_seconds,arrival_seconds),source_row LIMIT ? OFFSET ?",
+                (station_id, week, limit, offset),
+            )
+            return {
+                "as_of": "2025-09-30",
+                "current_service_verified": False,
+                "total": total,
+                "rows": [dict(r) for r in rows],
+            }
+
     @app.get("/v1/model")
     def model_info():
         return {
@@ -166,6 +196,7 @@ def create_app(db_path=None):
                 body.to_line,
                 body.strategy,
                 body.allow_express,
+                use_timetable=body.use_timetable,
             )
         except PredictionError as exc:
             raise HTTPException(422, str(exc)) from exc

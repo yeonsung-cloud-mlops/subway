@@ -10,6 +10,7 @@ import subprocess
 from pathlib import Path
 
 from app.database import ROOT, connect, seed_database
+from app.enrichment import seed_enrichment
 
 
 def main():
@@ -19,15 +20,19 @@ def main():
     p.add_argument("--skip-originals", action="store_true")
     args = p.parse_args()
     seed_database(args.db)
+    seed_enrichment(args.db)
     if not args.skip_originals:
         roots = [
             ROOT / "data_review/raw",
             ROOT / "car_congestion_review/raw",
             ROOT / "metro_expansion/raw",
+            ROOT / "journey_enrichment/raw",
             ROOT / "var/downloads",
         ]
         roots[-1].mkdir(parents=True, exist_ok=True)
-        for s in json.loads((ROOT / "datasets/sources_all.json").read_text()):
+        for s in json.loads(
+            (ROOT / "datasets/sources_all.json").read_text()
+        ) + json.loads((ROOT / "datasets/enrichment_sources.json").read_text()):
             filename = s["filename"]
             source = next(
                 (r / filename for r in roots if (r / filename).exists()), None

@@ -1,0 +1,35 @@
+[
+  {
+    "dataset": "OA-22522",
+    "filename": "서울교통공사_도시철도열차운행시각표(250930).csv",
+    "seq": "1",
+    "infSeq": "2",
+    "page": "https://data.seoul.go.kr/dataList/OA-22522/F/1/datasetView.do",
+    "url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 44740932,
+    "sha256": "46b6d9e2c2e1e23632fa72208a3ca5dc6aeba9013c403ee6f52747fec2b9a9e2",
+    "checked_on": "2026-09-21"
+  },
+  {
+    "dataset": "OA-22523",
+    "filename": "서울교통공사_편의시설 현황_20250320.csv",
+    "seq": "1",
+    "infSeq": "2",
+    "page": "https://data.seoul.go.kr/dataList/OA-22523/F/1/datasetView.do",
+    "url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 14578,
+    "sha256": "42dbfaa295ddaefd552526cd6a64681c26d0821abdedfbfa2477579b8f6a242a",
+    "checked_on": "2026-09-21"
+  },
+  {
+    "dataset": "OA-22502",
+    "filename": "서울교통공사_수유실현황_20250924.csv",
+    "seq": "1",
+    "infSeq": "2",
+    "page": "https://data.seoul.go.kr/dataList/OA-22502/F/1/datasetView.do",
+    "url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 11948,
+    "sha256": "9cdfde166d83c80d2464cd34c69537aa473eb21092242f1a39609718f3d7d849",
+    "checked_on": "2026-09-21"
+  }
+]
