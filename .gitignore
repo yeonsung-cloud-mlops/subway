@@ -18,3 +18,5 @@ energy_efficiency_review/
 metro_expansion/raw/
 var/
 .ruff_cache/
+
+/test-results/

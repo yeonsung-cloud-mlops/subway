@@ -21,6 +21,14 @@
 
 환승역은 호선마다 별도 레코드입니다. 1·3·4호선의 코레일 구간, 7호선 인천 운영구간, 8호선 별내선의 다른 운영기관 구간은 현재 공식 혼잡도 파일 범위 밖입니다. 수도권 모든 운영기관·노선을 지원한다는 의미는 아닙니다. 일반은 인접역, 급행은 다음 급행 정차역 구간을 입력합니다. 전체 여정은 아래 `/v1/journeys/predict`에서 환승을 포함해 탐색합니다.
 
+## Docker Compose로 로컬 실행
+
+```sh
+./scripts/compose.sh up -d --build --wait --wait-timeout 240
+```
+
+화면은 http://localhost:8080, API 문서는 http://localhost:8080/docs 입니다. Nginx·Next.js·FastAPI와 SQLite 영속 볼륨을 함께 실행합니다. [상세 실행·원본 적재·검증·CI/CD 연결 안내](docs/local-compose.md)를 참고하세요.
+
 ## 실행 및 원본 DB 적재
 
 Python 3.11 이상, 저장소 루트에서:
