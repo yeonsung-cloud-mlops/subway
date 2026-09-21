@@ -2,6 +2,7 @@
 
 import argparse
 import json
+from datetime import datetime
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 
@@ -38,7 +39,9 @@ def main():
     assert len(request("/api/metro/segments")["segments"]) == 640
     assert request("/v1/stations/2:226/observations?limit=2")["total"] > 0
     if args.require_originals:
-        assert request("/v1/stations/2:226/ridership?service_date=2025-01-01")["records"]
+        assert request("/v1/stations/2:226/ridership?service_date=2025-01-01")[
+            "records"
+        ]
     body = {
         "from_station": "건대",
         "to_station": "고속터미널",
@@ -48,12 +51,18 @@ def main():
     proxied = request("/api/metro/journey", body)
     for result in (direct, proxied):
         assert result["status"] == "complete"
-        assert result["ride_segments"] == 7
-        assert result["legs"][0]["line"] == 7
-        assert len(result["legs"][0]["cars"]) == 8
-        assert result["steps"][1]["forecast_at"] == "2026-09-21T08:17:00+09:00"
+        assert result["from_station"] == "건대입구"
+        assert result["to_station"] == "고속터미널"
+        rides = [step for step in result["steps"] if step["kind"] == "ride"]
+        assert len(rides) == result["ride_segments"] > 1
+        assert result["timetable"]["route_search_basis"] == "time_expanded_earliest_arrival"
+        times = [datetime.fromisoformat(step["forecast_at"]) for step in rides]
+        assert all(a < b for a, b in zip(times, times[1:]))
+        assert all(leg["cars"] for leg in result["legs"])
     request("/api/metro/journey", {**body, "from_station": "없는역"}, status=422)
-    print("PASS: Nginx, UI, API docs, stations, observations, Next.js proxy, journey and validation")
+    print(
+        "PASS: Nginx, UI, API docs, stations, observations, Next.js proxy, journey and validation"
+    )
 
 
 if __name__ == "__main__":
