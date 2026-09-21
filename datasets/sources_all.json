@@ -1,0 +1,198 @@
+[
+  {
+    "dataset": "OA-12921",
+    "filename": "서울교통공사_역별 일별 시간대별 승하차인원_20251231.csv",
+    "seq": "46",
+    "page": "https://data.seoul.go.kr/dataList/OA-12921/F/1/datasetView.do",
+    "download_url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 25029452,
+    "sha256": "99591265daf498015499f03913cd3253a57c3ff976ae182f9c4af89fcca4e5ba"
+  },
+  {
+    "dataset": "OA-12921",
+    "filename": "서울교통공사_역별 시간대별 승하차인원(23.1~23.12).csv",
+    "seq": "45",
+    "page": "https://data.seoul.go.kr/dataList/OA-12921/F/1/datasetView.do",
+    "download_url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 24907001,
+    "sha256": "0bb6af0b8ac63d9f679ab2031930db3ec50ca80860ce6cc9ac4e1051a93cfe0f"
+  },
+  {
+    "dataset": "OA-12921",
+    "filename": "서울교통공사_역별 시간대별 승하차인원(24.1~24.12).csv",
+    "seq": "44",
+    "page": "https://data.seoul.go.kr/dataList/OA-12921/F/1/datasetView.do",
+    "download_url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 25007673,
+    "sha256": "8629c3a13ac94155cc3310db88e494f66119cbe543d9dfb44a82305d433fdd15"
+  },
+  {
+    "dataset": "OA-12928",
+    "filename": "서울교통공사_지하철혼잡도정보_20260630.xlsx",
+    "seq": "23",
+    "page": "https://data.seoul.go.kr/dataList/OA-12928/F/1/datasetView.do",
+    "download_url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 691635,
+    "sha256": "5f174d019e38c5fd10b531722fad70573ba8c86160f47bdffe507e82105f49a4"
+  },
+  {
+    "dataset": "OA-12928",
+    "filename": "서울교통공사_지하철혼잡도정보_20260331.xlsx",
+    "seq": "22",
+    "page": "https://data.seoul.go.kr/dataList/OA-12928/F/1/datasetView.do",
+    "download_url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 692138,
+    "sha256": "f7b9c5d2cac1d566c191dfab81e6629fd6b523902a755af4ea8fb40efbb7c02b"
+  },
+  {
+    "dataset": "OA-12928",
+    "filename": "서울교통공사_지하철혼잡도정보_20251130.csv",
+    "seq": "19",
+    "page": "https://data.seoul.go.kr/dataList/OA-12928/F/1/datasetView.do",
+    "download_url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 344804,
+    "sha256": "7bb3ace6f3beab4fad05a344a4ece3d1f7a1355ebdde6ad11cfa8a6cb0211da9"
+  },
+  {
+    "dataset": "OA-12928",
+    "filename": "서울교통공사_지하철혼잡도정보_20250930.csv",
+    "seq": "18",
+    "page": "https://data.seoul.go.kr/dataList/OA-12928/F/1/datasetView.do",
+    "download_url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 429315,
+    "sha256": "c07fd5a3136b05b6eabdba428e11d538aedeec5c3d908102b8e5e433af5c8df3"
+  },
+  {
+    "dataset": "OA-12928",
+    "filename": "서울교통공사_지하철혼잡도정보_20250630.csv",
+    "seq": "17",
+    "page": "https://data.seoul.go.kr/dataList/OA-12928/F/1/datasetView.do",
+    "download_url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 428744,
+    "sha256": "50e68ceec203e54b7bb758467eba64969ccb6b340e3234992c3f54a3eb69aa06"
+  },
+  {
+    "dataset": "OA-12928",
+    "filename": "서울교통공사_지하철혼잡도정보_20250331.xlsx",
+    "seq": "16",
+    "page": "https://data.seoul.go.kr/dataList/OA-12928/F/1/datasetView.do",
+    "download_url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 427545,
+    "sha256": "3fd9943514afb7322fcea36ad4b04d4e86f7fd4f39176ed5d34fbc45f0bef726"
+  },
+  {
+    "dataset": "OA-12928",
+    "filename": "서울교통공사_지하철혼잡도정보_20241231.csv",
+    "seq": "15",
+    "page": "https://data.seoul.go.kr/dataList/OA-12928/F/1/datasetView.do",
+    "download_url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 372679,
+    "sha256": "028bb89fd1dd2c583ee6958a9e735177f99939e7e11a61b4c85475fda3571d23"
+  },
+  {
+    "dataset": "OA-12928",
+    "filename": "서울교통공사_지하철혼잡도정보_20240630.csv",
+    "seq": "12",
+    "page": "https://data.seoul.go.kr/dataList/OA-12928/F/1/datasetView.do",
+    "download_url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 422630,
+    "sha256": "511fb726c2978e5e45c7c588e6ca48feaea88f88fd1e30f97362fb3647db94f0"
+  },
+  {
+    "dataset": "OA-12928",
+    "filename": "서울교통공사_지하철혼잡도정보_20240331.csv",
+    "seq": "11",
+    "page": "https://data.seoul.go.kr/dataList/OA-12928/F/1/datasetView.do",
+    "download_url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 422927,
+    "sha256": "bb08462661400af2ae5693ffe36284efd881009da4ca031f21102f8ef84df8b3"
+  },
+  {
+    "dataset": "OA-22521",
+    "filename": "서울교통공사_수도권 도시철도 환승 데이터_20250317.csv",
+    "seq": "1",
+    "infSeq": "2",
+    "page": "https://data.seoul.go.kr/dataList/OA-22521/F/1/datasetView.do",
+    "url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 82336,
+    "sha256": "1049da33f549e24e3c20b57c6aa594e0fd558df6a1adcb158117e28d97ef9228"
+  },
+  {
+    "dataset": "OA-22486",
+    "filename": "서울교통공사_에스컬레이터 설치현황_20260211.xlsx",
+    "seq": "2",
+    "infSeq": "2",
+    "page": "https://data.seoul.go.kr/dataList/OA-22486/F/1/datasetView.do",
+    "url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 645267,
+    "sha256": "7951bf506cf8f51f91bce093b317586a3db0c99604da41c0986c8abd177ac6bd"
+  },
+  {
+    "dataset": "OA-22443",
+    "filename": "서울교통공사_9호선2_3단계 에스컬레이터 설치현황_20260131.CSV",
+    "seq": "2",
+    "infSeq": "2",
+    "page": "https://data.seoul.go.kr/dataList/OA-22443/F/1/datasetView.do",
+    "url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 23484,
+    "sha256": "4efc3db44e7857a6a12a8c1d2a5d266f1365fc09c1e1616c7fc186017a6dd10c"
+  },
+  {
+    "dataset": "OA-22197",
+    "filename": "2026년 9호선(종합) 역별 시간별 혼잡도 자료.xlsx",
+    "seq": "5",
+    "infSeq": "1",
+    "page": "https://data.seoul.go.kr/dataList/OA-22197/F/1/datasetView.do",
+    "url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 102095,
+    "sha256": "fb37794ff338776b9e465d55136d9ddf89f06fef93d22c6e8faefaf7ab9bbb1b"
+  },
+  {
+    "dataset": "OA-22197",
+    "filename": "2025년 9호선 역별 시간별 혼잡도 자료.xlsx",
+    "seq": "4",
+    "infSeq": "1",
+    "page": "https://data.seoul.go.kr/dataList/OA-22197/F/1/datasetView.do",
+    "url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 91999,
+    "sha256": "fd7611be9a3699b1a054106cc3764aab73c9e96c4a45a476ff3ebda76dd4cd49"
+  },
+  {
+    "dataset": "OA-22197",
+    "filename": "2024년 9호선 역별 시간별 혼잡도 자료.xlsx",
+    "seq": "3",
+    "infSeq": "1",
+    "page": "https://data.seoul.go.kr/dataList/OA-22197/F/1/datasetView.do",
+    "url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 90455,
+    "sha256": "700f4dd18be580b77e513485604a59f191d1cf04dda73bf7af2bc39a399549a4"
+  },
+  {
+    "dataset": "OA-12035",
+    "filename": "서울교통공사_역주소 및 전화번호_20250318.csv",
+    "seq": "11",
+    "infSeq": "1",
+    "page": "https://data.seoul.go.kr/dataList/OA-12035/F/1/datasetView.do",
+    "url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 35464,
+    "sha256": "442fe16d2c7e93c458d1cf31df173d42e24b910b9a9a710ffe4ab0d65b13d5d2"
+  },
+  {
+    "dataset": "OA-12034",
+    "filename": "서울교통공사 역간거리 및 소요시간_240810.csv",
+    "seq": "9",
+    "infSeq": "1",
+    "page": "https://data.seoul.go.kr/dataList/OA-12034/F/1/datasetView.do",
+    "url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 7735,
+    "sha256": "45e83a8cad99f70445e386d1f817a3159be679b8f4cba6f83faa5fbc63b47ded"
+  },
+  {
+    "dataset": "OA-21232",
+    "filename": "stations.csv",
+    "page": "https://data.seoul.go.kr/dataList/OA-21232/S/1/datasetView.do",
+    "bytes": 40334,
+    "sha256": "bd20809626417942cf8c76c81818fdec221336067ad3a38c30f04c914cbc3afb",
+    "bundled_gzip": "station_master.csv.gz"
+  }
+]

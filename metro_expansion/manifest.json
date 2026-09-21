@@ -1,0 +1,52 @@
+[
+  {
+    "dataset": "OA-22197",
+    "filename": "2026년 9호선(종합) 역별 시간별 혼잡도 자료.xlsx",
+    "seq": "5",
+    "infSeq": "1",
+    "page": "https://data.seoul.go.kr/dataList/OA-22197/F/1/datasetView.do",
+    "url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 102095,
+    "sha256": "fb37794ff338776b9e465d55136d9ddf89f06fef93d22c6e8faefaf7ab9bbb1b"
+  },
+  {
+    "dataset": "OA-22197",
+    "filename": "2025년 9호선 역별 시간별 혼잡도 자료.xlsx",
+    "seq": "4",
+    "infSeq": "1",
+    "page": "https://data.seoul.go.kr/dataList/OA-22197/F/1/datasetView.do",
+    "url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 91999,
+    "sha256": "fd7611be9a3699b1a054106cc3764aab73c9e96c4a45a476ff3ebda76dd4cd49"
+  },
+  {
+    "dataset": "OA-22197",
+    "filename": "2024년 9호선 역별 시간별 혼잡도 자료.xlsx",
+    "seq": "3",
+    "infSeq": "1",
+    "page": "https://data.seoul.go.kr/dataList/OA-22197/F/1/datasetView.do",
+    "url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 90455,
+    "sha256": "700f4dd18be580b77e513485604a59f191d1cf04dda73bf7af2bc39a399549a4"
+  },
+  {
+    "dataset": "OA-12035",
+    "filename": "서울교통공사_역주소 및 전화번호_20250318.csv",
+    "seq": "11",
+    "infSeq": "1",
+    "page": "https://data.seoul.go.kr/dataList/OA-12035/F/1/datasetView.do",
+    "url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 35464,
+    "sha256": "442fe16d2c7e93c458d1cf31df173d42e24b910b9a9a710ffe4ab0d65b13d5d2"
+  },
+  {
+    "dataset": "OA-12034",
+    "filename": "서울교통공사 역간거리 및 소요시간_240810.csv",
+    "seq": "9",
+    "infSeq": "1",
+    "page": "https://data.seoul.go.kr/dataList/OA-12034/F/1/datasetView.do",
+    "url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false",
+    "bytes": 7735,
+    "sha256": "45e83a8cad99f70445e386d1f817a3159be679b8f4cba6f83faa5fbc63b47ded"
+  }
+]

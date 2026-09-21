@@ -14,3 +14,7 @@ car_congestion_review/
 electricity_data_review_20260921/
 energy_efficiency_review/
 .DS_Store
+
+metro_expansion/raw/
+var/
+.ruff_cache/

@@ -1,117 +1,915 @@
 {
-  "model_version": "survey-ewma-location-scenario-v1",
-  "prediction_kind": "unvalidated_car_scenario",
-  "line": 2,
-  "from_station": "사당",
-  "to_station": "방배",
-  "direction": "외선",
-  "requested_at": "2026-09-21T08:15:00+09:00",
-  "service_date": "2026-09-21",
-  "daytype": "평일",
-  "holiday": null,
-  "time_bin": "08:00",
-  "train_mean_congestion_pct": 127.282,
-  "cars": [
+  "model_version": "metro-all-ewma-location-scenario-v2",
+  "prediction_kind": "unvalidated_journey_car_scenario",
+  "inference_mode": "on_request",
+  "from_station": "건대입구",
+  "to_station": "고속터미널",
+  "departure_at": "2026-09-21T08:15:00+09:00",
+  "estimated_arrival_at": "2026-09-21T08:29:00+09:00",
+  "estimated_minutes": 14.0,
+  "route_strategy": "estimated_fastest",
+  "transfer_count": 0,
+  "ride_segments": 7,
+  "predicted_segments": 7,
+  "status": "complete",
+  "available_segment_weighted_mean_pct": 67.679,
+  "legs": [
     {
-      "car": 1,
-      "estimated_congestion_pct": 105.27,
-      "scenario_range_pct": [
-        94.264,
-        127.282
-      ]
-    },
-    {
-      "car": 2,
-      "estimated_congestion_pct": 117.277,
-      "scenario_range_pct": [
-        112.275,
-        127.282
-      ]
-    },
-    {
-      "car": 3,
-      "estimated_congestion_pct": 127.839,
-      "scenario_range_pct": [
-        127.282,
-        128.117
-      ]
-    },
-    {
-      "car": 4,
-      "estimated_congestion_pct": 124.157,
-      "scenario_range_pct": [
-        122.594,
-        127.282
-      ]
-    },
-    {
-      "car": 5,
-      "estimated_congestion_pct": 136.422,
-      "scenario_range_pct": [
-        127.282,
-        140.991
-      ]
-    },
-    {
-      "car": 6,
-      "estimated_congestion_pct": 156.447,
-      "scenario_range_pct": [
-        127.282,
-        171.029
-      ]
-    },
-    {
-      "car": 7,
-      "estimated_congestion_pct": 148.138,
-      "scenario_range_pct": [
-        127.282,
-        158.566
-      ]
-    },
-    {
-      "car": 8,
-      "estimated_congestion_pct": 134.161,
-      "scenario_range_pct": [
-        127.282,
-        137.6
-      ]
-    },
-    {
-      "car": 9,
-      "estimated_congestion_pct": 117.826,
-      "scenario_range_pct": [
-        113.098,
-        127.282
-      ]
-    },
-    {
-      "car": 10,
-      "estimated_congestion_pct": 105.287,
-      "scenario_range_pct": [
-        94.289,
-        127.282
+      "line": 7,
+      "service": "일반",
+      "from_station": "건대입구",
+      "to_station": "고속터미널",
+      "car_count": 8,
+      "step_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "predicted_segments": 7,
+      "total_segments": 7,
+      "coverage": 1.0,
+      "cars": [
+        {
+          "car": 1,
+          "estimated_mean_congestion_pct": 62.882,
+          "estimated_peak_congestion_pct": 100.686
+        },
+        {
+          "car": 2,
+          "estimated_mean_congestion_pct": 62.949,
+          "estimated_peak_congestion_pct": 100.686
+        },
+        {
+          "car": 3,
+          "estimated_mean_congestion_pct": 63.731,
+          "estimated_peak_congestion_pct": 100.686
+        },
+        {
+          "car": 4,
+          "estimated_mean_congestion_pct": 66.698,
+          "estimated_peak_congestion_pct": 100.686
+        },
+        {
+          "car": 5,
+          "estimated_mean_congestion_pct": 69.311,
+          "estimated_peak_congestion_pct": 100.686
+        },
+        {
+          "car": 6,
+          "estimated_mean_congestion_pct": 68.441,
+          "estimated_peak_congestion_pct": 100.686
+        },
+        {
+          "car": 7,
+          "estimated_mean_congestion_pct": 71.561,
+          "estimated_peak_congestion_pct": 134.044
+        },
+        {
+          "car": 8,
+          "estimated_mean_congestion_pct": 75.86,
+          "estimated_peak_congestion_pct": 169.604
+        }
       ]
     }
   ],
-  "location_features": {
-    "transfer_board_cars": [
-      6
-    ],
-    "access_cars": [
-      3,
-      8
-    ]
-  },
-  "scenario_strength": 0.2,
-  "range_kind": "sensitivity_strength_0_to_0.3_not_confidence_interval",
-  "evidence": {
-    "trained_through": "20260630",
-    "profile_last_period": "20260630",
-    "profile_snapshot_count": 9,
-    "car_ground_truth_count": 0
-  },
+  "steps": [
+    {
+      "kind": "ride",
+      "line": 7,
+      "service": "일반",
+      "from_station": "건대입구",
+      "to_station": "자양",
+      "start_at": "2026-09-21T08:15:00+09:00",
+      "forecast_at": "2026-09-21T08:15:00+09:00",
+      "end_at": "2026-09-21T08:17:00+09:00",
+      "estimated_minutes": 2.0,
+      "ride_minutes": 2.0,
+      "train_change_wait_minutes": 0,
+      "status": "available",
+      "unavailable_reason": null,
+      "forecast": {
+        "model_version": "metro-all-ewma-location-scenario-v2",
+        "prediction_kind": "unvalidated_car_scenario",
+        "inference_mode": "on_request",
+        "line": 7,
+        "service": "일반",
+        "segment_id": "7:2729:2730:일반",
+        "from_station": "건대입구",
+        "to_station": "자양",
+        "direction": "하선",
+        "requested_at": "2026-09-21T08:15:00+09:00",
+        "service_date": "2026-09-21",
+        "daytype": "평일",
+        "holiday": null,
+        "time_bin": "08:00",
+        "interpolation_fraction": 0.5,
+        "train_mean_congestion_pct": 99.035,
+        "car_count": 8,
+        "cars": [
+          {
+            "car": 1,
+            "estimated_congestion_pct": 79.228,
+            "scenario_range_pct": [
+              69.325,
+              99.035
+            ]
+          },
+          {
+            "car": 2,
+            "estimated_congestion_pct": 79.228,
+            "scenario_range_pct": [
+              69.325,
+              99.035
+            ]
+          },
+          {
+            "car": 3,
+            "estimated_congestion_pct": 79.229,
+            "scenario_range_pct": [
+              69.325,
+              99.035
+            ]
+          },
+          {
+            "car": 4,
+            "estimated_congestion_pct": 79.259,
+            "scenario_range_pct": [
+              69.37,
+              99.035
+            ]
+          },
+          {
+            "car": 5,
+            "estimated_congestion_pct": 80.232,
+            "scenario_range_pct": [
+              70.831,
+              99.035
+            ]
+          },
+          {
+            "car": 6,
+            "estimated_congestion_pct": 91.459,
+            "scenario_range_pct": [
+              87.671,
+              99.035
+            ]
+          },
+          {
+            "car": 7,
+            "estimated_congestion_pct": 134.044,
+            "scenario_range_pct": [
+              99.035,
+              151.548
+            ]
+          },
+          {
+            "car": 8,
+            "estimated_congestion_pct": 169.604,
+            "scenario_range_pct": [
+              99.035,
+              204.888
+            ]
+          }
+        ],
+        "location_features": {
+          "transfer_board_cars": [
+            8
+          ],
+          "access_cars": []
+        },
+        "scenario_strength": 0.2,
+        "range_kind": "sensitivity_strength_0_to_0.3_not_confidence_interval",
+        "evidence": {
+          "available_after": "2026-06-30",
+          "profile_last_period": "20260630",
+          "profile_snapshot_count": 9,
+          "next_profile_last_period": "20260630",
+          "car_ground_truth_count": 0
+        },
+        "warnings": [
+          "칸별 값은 실측 검증되지 않은 위치 기반 시나리오입니다.",
+          "조사평균 시간 패턴을 요청 시점에 추론한 값이며 실제 도착 열차 또는 순간 재차인원은 아닙니다."
+        ]
+      }
+    },
+    {
+      "kind": "ride",
+      "line": 7,
+      "service": "일반",
+      "from_station": "자양",
+      "to_station": "청담",
+      "start_at": "2026-09-21T08:17:00+09:00",
+      "forecast_at": "2026-09-21T08:17:00+09:00",
+      "end_at": "2026-09-21T08:19:00+09:00",
+      "estimated_minutes": 2.0,
+      "ride_minutes": 2.0,
+      "train_change_wait_minutes": 0,
+      "status": "available",
+      "unavailable_reason": null,
+      "forecast": {
+        "model_version": "metro-all-ewma-location-scenario-v2",
+        "prediction_kind": "unvalidated_car_scenario",
+        "inference_mode": "on_request",
+        "line": 7,
+        "service": "일반",
+        "segment_id": "7:2730:2731:일반",
+        "from_station": "자양",
+        "to_station": "청담",
+        "direction": "하선",
+        "requested_at": "2026-09-21T08:17:00+09:00",
+        "service_date": "2026-09-21",
+        "daytype": "평일",
+        "holiday": null,
+        "time_bin": "08:00",
+        "interpolation_fraction": 0.5667,
+        "train_mean_congestion_pct": 100.686,
+        "car_count": 8,
+        "cars": [
+          {
+            "car": 1,
+            "estimated_congestion_pct": 100.686,
+            "scenario_range_pct": [
+              100.686,
+              100.686
+            ]
+          },
+          {
+            "car": 2,
+            "estimated_congestion_pct": 100.686,
+            "scenario_range_pct": [
+              100.686,
+              100.686
+            ]
+          },
+          {
+            "car": 3,
+            "estimated_congestion_pct": 100.686,
+            "scenario_range_pct": [
+              100.686,
+              100.686
+            ]
+          },
+          {
+            "car": 4,
+            "estimated_congestion_pct": 100.686,
+            "scenario_range_pct": [
+              100.686,
+              100.686
+            ]
+          },
+          {
+            "car": 5,
+            "estimated_congestion_pct": 100.686,
+            "scenario_range_pct": [
+              100.686,
+              100.686
+            ]
+          },
+          {
+            "car": 6,
+            "estimated_congestion_pct": 100.686,
+            "scenario_range_pct": [
+              100.686,
+              100.686
+            ]
+          },
+          {
+            "car": 7,
+            "estimated_congestion_pct": 100.686,
+            "scenario_range_pct": [
+              100.686,
+              100.686
+            ]
+          },
+          {
+            "car": 8,
+            "estimated_congestion_pct": 100.686,
+            "scenario_range_pct": [
+              100.686,
+              100.686
+            ]
+          }
+        ],
+        "location_features": {
+          "transfer_board_cars": [],
+          "access_cars": []
+        },
+        "scenario_strength": 0.2,
+        "range_kind": "sensitivity_strength_0_to_0.3_not_confidence_interval",
+        "evidence": {
+          "available_after": "2026-06-30",
+          "profile_last_period": "20260630",
+          "profile_snapshot_count": 9,
+          "next_profile_last_period": "20260630",
+          "car_ground_truth_count": 0
+        },
+        "warnings": [
+          "칸별 값은 실측 검증되지 않은 위치 기반 시나리오입니다.",
+          "조사평균 시간 패턴을 요청 시점에 추론한 값이며 실제 도착 열차 또는 순간 재차인원은 아닙니다.",
+          "방향이 확인된 위치 자료가 없어 칸별 균등 배분을 사용했습니다."
+        ]
+      }
+    },
+    {
+      "kind": "ride",
+      "line": 7,
+      "service": "일반",
+      "from_station": "청담",
+      "to_station": "강남구청",
+      "start_at": "2026-09-21T08:19:00+09:00",
+      "forecast_at": "2026-09-21T08:19:00+09:00",
+      "end_at": "2026-09-21T08:21:00+09:00",
+      "estimated_minutes": 2.0,
+      "ride_minutes": 2.0,
+      "train_change_wait_minutes": 0,
+      "status": "available",
+      "unavailable_reason": null,
+      "forecast": {
+        "model_version": "metro-all-ewma-location-scenario-v2",
+        "prediction_kind": "unvalidated_car_scenario",
+        "inference_mode": "on_request",
+        "line": 7,
+        "service": "일반",
+        "segment_id": "7:2731:2732:일반",
+        "from_station": "청담",
+        "to_station": "강남구청",
+        "direction": "하선",
+        "requested_at": "2026-09-21T08:19:00+09:00",
+        "service_date": "2026-09-21",
+        "daytype": "평일",
+        "holiday": null,
+        "time_bin": "08:00",
+        "interpolation_fraction": 0.6333,
+        "train_mean_congestion_pct": 86.72,
+        "car_count": 8,
+        "cars": [
+          {
+            "car": 1,
+            "estimated_congestion_pct": 86.72,
+            "scenario_range_pct": [
+              86.72,
+              86.72
+            ]
+          },
+          {
+            "car": 2,
+            "estimated_congestion_pct": 86.72,
+            "scenario_range_pct": [
+              86.72,
+              86.72
+            ]
+          },
+          {
+            "car": 3,
+            "estimated_congestion_pct": 86.72,
+            "scenario_range_pct": [
+              86.72,
+              86.72
+            ]
+          },
+          {
+            "car": 4,
+            "estimated_congestion_pct": 86.72,
+            "scenario_range_pct": [
+              86.72,
+              86.72
+            ]
+          },
+          {
+            "car": 5,
+            "estimated_congestion_pct": 86.72,
+            "scenario_range_pct": [
+              86.72,
+              86.72
+            ]
+          },
+          {
+            "car": 6,
+            "estimated_congestion_pct": 86.72,
+            "scenario_range_pct": [
+              86.72,
+              86.72
+            ]
+          },
+          {
+            "car": 7,
+            "estimated_congestion_pct": 86.72,
+            "scenario_range_pct": [
+              86.72,
+              86.72
+            ]
+          },
+          {
+            "car": 8,
+            "estimated_congestion_pct": 86.72,
+            "scenario_range_pct": [
+              86.72,
+              86.72
+            ]
+          }
+        ],
+        "location_features": {
+          "transfer_board_cars": [],
+          "access_cars": []
+        },
+        "scenario_strength": 0.2,
+        "range_kind": "sensitivity_strength_0_to_0.3_not_confidence_interval",
+        "evidence": {
+          "available_after": "2026-06-30",
+          "profile_last_period": "20260630",
+          "profile_snapshot_count": 9,
+          "next_profile_last_period": "20260630",
+          "car_ground_truth_count": 0
+        },
+        "warnings": [
+          "칸별 값은 실측 검증되지 않은 위치 기반 시나리오입니다.",
+          "조사평균 시간 패턴을 요청 시점에 추론한 값이며 실제 도착 열차 또는 순간 재차인원은 아닙니다.",
+          "방향이 확인된 위치 자료가 없어 칸별 균등 배분을 사용했습니다."
+        ]
+      }
+    },
+    {
+      "kind": "ride",
+      "line": 7,
+      "service": "일반",
+      "from_station": "강남구청",
+      "to_station": "학동",
+      "start_at": "2026-09-21T08:21:00+09:00",
+      "forecast_at": "2026-09-21T08:21:00+09:00",
+      "end_at": "2026-09-21T08:23:00+09:00",
+      "estimated_minutes": 2.0,
+      "ride_minutes": 2.0,
+      "train_change_wait_minutes": 0,
+      "status": "available",
+      "unavailable_reason": null,
+      "forecast": {
+        "model_version": "metro-all-ewma-location-scenario-v2",
+        "prediction_kind": "unvalidated_car_scenario",
+        "inference_mode": "on_request",
+        "line": 7,
+        "service": "일반",
+        "segment_id": "7:2732:2733:일반",
+        "from_station": "강남구청",
+        "to_station": "학동",
+        "direction": "하선",
+        "requested_at": "2026-09-21T08:21:00+09:00",
+        "service_date": "2026-09-21",
+        "daytype": "평일",
+        "holiday": null,
+        "time_bin": "08:00",
+        "interpolation_fraction": 0.7,
+        "train_mean_congestion_pct": 68.952,
+        "car_count": 8,
+        "cars": [
+          {
+            "car": 1,
+            "estimated_congestion_pct": 55.176,
+            "scenario_range_pct": [
+              48.288,
+              68.952
+            ]
+          },
+          {
+            "car": 2,
+            "estimated_congestion_pct": 55.65,
+            "scenario_range_pct": [
+              49.0,
+              68.952
+            ]
+          },
+          {
+            "car": 3,
+            "estimated_congestion_pct": 61.118,
+            "scenario_range_pct": [
+              57.202,
+              68.952
+            ]
+          },
+          {
+            "car": 4,
+            "estimated_congestion_pct": 81.86,
+            "scenario_range_pct": [
+              68.952,
+              88.314
+            ]
+          },
+          {
+            "car": 5,
+            "estimated_congestion_pct": 99.179,
+            "scenario_range_pct": [
+              68.952,
+              114.293
+            ]
+          },
+          {
+            "car": 6,
+            "estimated_congestion_pct": 81.86,
+            "scenario_range_pct": [
+              68.952,
+              88.314
+            ]
+          },
+          {
+            "car": 7,
+            "estimated_congestion_pct": 61.118,
+            "scenario_range_pct": [
+              57.202,
+              68.952
+            ]
+          },
+          {
+            "car": 8,
+            "estimated_congestion_pct": 55.65,
+            "scenario_range_pct": [
+              49.0,
+              68.952
+            ]
+          }
+        ],
+        "location_features": {
+          "transfer_board_cars": [
+            5
+          ],
+          "access_cars": []
+        },
+        "scenario_strength": 0.2,
+        "range_kind": "sensitivity_strength_0_to_0.3_not_confidence_interval",
+        "evidence": {
+          "available_after": "2026-06-30",
+          "profile_last_period": "20260630",
+          "profile_snapshot_count": 9,
+          "next_profile_last_period": "20260630",
+          "car_ground_truth_count": 0
+        },
+        "warnings": [
+          "칸별 값은 실측 검증되지 않은 위치 기반 시나리오입니다.",
+          "조사평균 시간 패턴을 요청 시점에 추론한 값이며 실제 도착 열차 또는 순간 재차인원은 아닙니다."
+        ]
+      }
+    },
+    {
+      "kind": "ride",
+      "line": 7,
+      "service": "일반",
+      "from_station": "학동",
+      "to_station": "논현",
+      "start_at": "2026-09-21T08:23:00+09:00",
+      "forecast_at": "2026-09-21T08:23:00+09:00",
+      "end_at": "2026-09-21T08:25:00+09:00",
+      "estimated_minutes": 2.0,
+      "ride_minutes": 2.0,
+      "train_change_wait_minutes": 0,
+      "status": "available",
+      "unavailable_reason": null,
+      "forecast": {
+        "model_version": "metro-all-ewma-location-scenario-v2",
+        "prediction_kind": "unvalidated_car_scenario",
+        "inference_mode": "on_request",
+        "line": 7,
+        "service": "일반",
+        "segment_id": "7:2733:2734:일반",
+        "from_station": "학동",
+        "to_station": "논현",
+        "direction": "하선",
+        "requested_at": "2026-09-21T08:23:00+09:00",
+        "service_date": "2026-09-21",
+        "daytype": "평일",
+        "holiday": null,
+        "time_bin": "08:00",
+        "interpolation_fraction": 0.7667,
+        "train_mean_congestion_pct": 53.431,
+        "car_count": 8,
+        "cars": [
+          {
+            "car": 1,
+            "estimated_congestion_pct": 53.431,
+            "scenario_range_pct": [
+              53.431,
+              53.431
+            ]
+          },
+          {
+            "car": 2,
+            "estimated_congestion_pct": 53.431,
+            "scenario_range_pct": [
+              53.431,
+              53.431
+            ]
+          },
+          {
+            "car": 3,
+            "estimated_congestion_pct": 53.431,
+            "scenario_range_pct": [
+              53.431,
+              53.431
+            ]
+          },
+          {
+            "car": 4,
+            "estimated_congestion_pct": 53.431,
+            "scenario_range_pct": [
+              53.431,
+              53.431
+            ]
+          },
+          {
+            "car": 5,
+            "estimated_congestion_pct": 53.431,
+            "scenario_range_pct": [
+              53.431,
+              53.431
+            ]
+          },
+          {
+            "car": 6,
+            "estimated_congestion_pct": 53.431,
+            "scenario_range_pct": [
+              53.431,
+              53.431
+            ]
+          },
+          {
+            "car": 7,
+            "estimated_congestion_pct": 53.431,
+            "scenario_range_pct": [
+              53.431,
+              53.431
+            ]
+          },
+          {
+            "car": 8,
+            "estimated_congestion_pct": 53.431,
+            "scenario_range_pct": [
+              53.431,
+              53.431
+            ]
+          }
+        ],
+        "location_features": {
+          "transfer_board_cars": [],
+          "access_cars": []
+        },
+        "scenario_strength": 0.2,
+        "range_kind": "sensitivity_strength_0_to_0.3_not_confidence_interval",
+        "evidence": {
+          "available_after": "2026-06-30",
+          "profile_last_period": "20260630",
+          "profile_snapshot_count": 9,
+          "next_profile_last_period": "20260630",
+          "car_ground_truth_count": 0
+        },
+        "warnings": [
+          "칸별 값은 실측 검증되지 않은 위치 기반 시나리오입니다.",
+          "조사평균 시간 패턴을 요청 시점에 추론한 값이며 실제 도착 열차 또는 순간 재차인원은 아닙니다.",
+          "방향이 확인된 위치 자료가 없어 칸별 균등 배분을 사용했습니다."
+        ]
+      }
+    },
+    {
+      "kind": "ride",
+      "line": 7,
+      "service": "일반",
+      "from_station": "논현",
+      "to_station": "반포",
+      "start_at": "2026-09-21T08:25:00+09:00",
+      "forecast_at": "2026-09-21T08:25:00+09:00",
+      "end_at": "2026-09-21T08:27:00+09:00",
+      "estimated_minutes": 2.0,
+      "ride_minutes": 2.0,
+      "train_change_wait_minutes": 0,
+      "status": "available",
+      "unavailable_reason": null,
+      "forecast": {
+        "model_version": "metro-all-ewma-location-scenario-v2",
+        "prediction_kind": "unvalidated_car_scenario",
+        "inference_mode": "on_request",
+        "line": 7,
+        "service": "일반",
+        "segment_id": "7:2734:2735:일반",
+        "from_station": "논현",
+        "to_station": "반포",
+        "direction": "하선",
+        "requested_at": "2026-09-21T08:25:00+09:00",
+        "service_date": "2026-09-21",
+        "daytype": "평일",
+        "holiday": null,
+        "time_bin": "08:00",
+        "interpolation_fraction": 0.8333,
+        "train_mean_congestion_pct": 32.718,
+        "car_count": 8,
+        "cars": [
+          {
+            "car": 1,
+            "estimated_congestion_pct": 32.718,
+            "scenario_range_pct": [
+              32.718,
+              32.718
+            ]
+          },
+          {
+            "car": 2,
+            "estimated_congestion_pct": 32.718,
+            "scenario_range_pct": [
+              32.718,
+              32.718
+            ]
+          },
+          {
+            "car": 3,
+            "estimated_congestion_pct": 32.718,
+            "scenario_range_pct": [
+              32.718,
+              32.718
+            ]
+          },
+          {
+            "car": 4,
+            "estimated_congestion_pct": 32.718,
+            "scenario_range_pct": [
+              32.718,
+              32.718
+            ]
+          },
+          {
+            "car": 5,
+            "estimated_congestion_pct": 32.718,
+            "scenario_range_pct": [
+              32.718,
+              32.718
+            ]
+          },
+          {
+            "car": 6,
+            "estimated_congestion_pct": 32.718,
+            "scenario_range_pct": [
+              32.718,
+              32.718
+            ]
+          },
+          {
+            "car": 7,
+            "estimated_congestion_pct": 32.718,
+            "scenario_range_pct": [
+              32.718,
+              32.718
+            ]
+          },
+          {
+            "car": 8,
+            "estimated_congestion_pct": 32.718,
+            "scenario_range_pct": [
+              32.718,
+              32.718
+            ]
+          }
+        ],
+        "location_features": {
+          "transfer_board_cars": [],
+          "access_cars": []
+        },
+        "scenario_strength": 0.2,
+        "range_kind": "sensitivity_strength_0_to_0.3_not_confidence_interval",
+        "evidence": {
+          "available_after": "2026-06-30",
+          "profile_last_period": "20260630",
+          "profile_snapshot_count": 9,
+          "next_profile_last_period": "20260630",
+          "car_ground_truth_count": 0
+        },
+        "warnings": [
+          "칸별 값은 실측 검증되지 않은 위치 기반 시나리오입니다.",
+          "조사평균 시간 패턴을 요청 시점에 추론한 값이며 실제 도착 열차 또는 순간 재차인원은 아닙니다.",
+          "방향이 확인된 위치 자료가 없어 칸별 균등 배분을 사용했습니다."
+        ]
+      }
+    },
+    {
+      "kind": "ride",
+      "line": 7,
+      "service": "일반",
+      "from_station": "반포",
+      "to_station": "고속터미널",
+      "start_at": "2026-09-21T08:27:00+09:00",
+      "forecast_at": "2026-09-21T08:27:00+09:00",
+      "end_at": "2026-09-21T08:29:00+09:00",
+      "estimated_minutes": 2.0,
+      "ride_minutes": 2.0,
+      "train_change_wait_minutes": 0,
+      "status": "available",
+      "unavailable_reason": null,
+      "forecast": {
+        "model_version": "metro-all-ewma-location-scenario-v2",
+        "prediction_kind": "unvalidated_car_scenario",
+        "inference_mode": "on_request",
+        "line": 7,
+        "service": "일반",
+        "segment_id": "7:2735:2736:일반",
+        "from_station": "반포",
+        "to_station": "고속터미널",
+        "direction": "하선",
+        "requested_at": "2026-09-21T08:27:00+09:00",
+        "service_date": "2026-09-21",
+        "daytype": "평일",
+        "holiday": null,
+        "time_bin": "08:00",
+        "interpolation_fraction": 0.9,
+        "train_mean_congestion_pct": 32.212,
+        "car_count": 8,
+        "cars": [
+          {
+            "car": 1,
+            "estimated_congestion_pct": 32.212,
+            "scenario_range_pct": [
+              32.212,
+              32.212
+            ]
+          },
+          {
+            "car": 2,
+            "estimated_congestion_pct": 32.212,
+            "scenario_range_pct": [
+              32.212,
+              32.212
+            ]
+          },
+          {
+            "car": 3,
+            "estimated_congestion_pct": 32.212,
+            "scenario_range_pct": [
+              32.212,
+              32.212
+            ]
+          },
+          {
+            "car": 4,
+            "estimated_congestion_pct": 32.212,
+            "scenario_range_pct": [
+              32.212,
+              32.212
+            ]
+          },
+          {
+            "car": 5,
+            "estimated_congestion_pct": 32.212,
+            "scenario_range_pct": [
+              32.212,
+              32.212
+            ]
+          },
+          {
+            "car": 6,
+            "estimated_congestion_pct": 32.212,
+            "scenario_range_pct": [
+              32.212,
+              32.212
+            ]
+          },
+          {
+            "car": 7,
+            "estimated_congestion_pct": 32.212,
+            "scenario_range_pct": [
+              32.212,
+              32.212
+            ]
+          },
+          {
+            "car": 8,
+            "estimated_congestion_pct": 32.212,
+            "scenario_range_pct": [
+              32.212,
+              32.212
+            ]
+          }
+        ],
+        "location_features": {
+          "transfer_board_cars": [],
+          "access_cars": []
+        },
+        "scenario_strength": 0.2,
+        "range_kind": "sensitivity_strength_0_to_0.3_not_confidence_interval",
+        "evidence": {
+          "available_after": "2026-06-30",
+          "profile_last_period": "20260630",
+          "profile_snapshot_count": 9,
+          "next_profile_last_period": "20260630",
+          "car_ground_truth_count": 0
+        },
+        "warnings": [
+          "칸별 값은 실측 검증되지 않은 위치 기반 시나리오입니다.",
+          "조사평균 시간 패턴을 요청 시점에 추론한 값이며 실제 도착 열차 또는 순간 재차인원은 아닙니다.",
+          "방향이 확인된 위치 자료가 없어 칸별 균등 배분을 사용했습니다."
+        ]
+      }
+    }
+  ],
   "warnings": [
-    "칸별 값은 실측 검증되지 않은 위치 기반 시나리오입니다.",
-    "출발역·방향의 30분 조사평균 기반이며 다음 열차 또는 도착/출발 순간의 실측값이 아닙니다."
+    "칸별 값은 실측 검증되지 않은 시나리오이며 환승 전후의 칸 번호는 서로 다른 열차를 뜻합니다.",
+    "이동시간은 일반 구간당 2분, 9호선 급행은 통과 역 수 기반 가정입니다. 실제 시간표·대기·지연과 다릅니다.",
+    "환승 보행시간은 방향별 공식 경로값의 평균(없으면 5분), 환승 후 대기는 3분 가정입니다.",
+    "요약 혼잡도는 예측 가능한 탑승 구간만 집계하며 도보·대기시간은 제외합니다."
   ]
 }

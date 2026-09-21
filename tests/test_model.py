@@ -17,16 +17,20 @@ def model():
 
 
 def test_every_segment_and_conservation(model):
-    assert len(model.segments()) == 86
+    assert len(model.segments()) == 640
     for s in model.segments():
         r = model.predict(
-            s["from_station"], s["to_station"], datetime(2026, 9, 21, 8, 15, tzinfo=KST)
+            s["from_station"],
+            s["to_station"],
+            datetime(2026, 9, 21, 8, 15, tzinfo=KST),
+            line=s["line"],
+            service=s["service"],
         )
         assert r["direction"] == s["direction"]
-        assert len(r["cars"]) == 10
+        assert len(r["cars"]) == s["car_count"]
         vals = [c["estimated_congestion_pct"] for c in r["cars"]]
         assert all(math.isfinite(v) and v >= 0 for v in vals)
-        assert abs(sum(vals) / 10 - r["train_mean_congestion_pct"]) < 0.002
+        assert abs(sum(vals) / s["car_count"] - r["train_mean_congestion_pct"]) < 0.002
         assert r["evidence"]["car_ground_truth_count"] == 0
         for c in r["cars"]:
             assert (
@@ -108,3 +112,49 @@ def test_fit_is_chronological_and_skips_unknown_zero():
         json.loads((ROOT / "artifacts/metrics.json").read_text())["car_accuracy"]
         is None
     )
+
+
+@pytest.mark.parametrize(
+    "line,origin,destination,service,count,direction,code",
+    [
+        (2, "성수", "용답", "일반", 4, "외선", 9002),
+        (2, "신도림", "도림천", "일반", 6, "내선", 9003),
+        (5, "강동", "둔촌동", "일반", 8, "하선", 9005),
+        (5, "강동", "길동", "일반", 8, "하선", 2549),
+        (6, "응암", "역촌", "일반", 8, "하선", 9006),
+        (6, "구산", "응암", "일반", 8, "하선", 2616),
+        (8, "복정", "남위례", "일반", 6, "하선", 2821),
+        (9, "김포공항", "마곡나루", "급행", 6, "상선", 4102),
+    ],
+)
+def test_branch_profiles(
+    model, line, origin, destination, service, count, direction, code
+):
+    r = model.predict(
+        origin, destination, datetime(2026, 9, 21, 8), line=line, service=service
+    )
+    assert r["car_count"] == count and r["direction"] == direction
+    assert (
+        model._lookup[(line, origin, destination, service)]["profile_station"] == code
+    )
+
+
+def test_one_way_loop_and_express_stops(model):
+    with pytest.raises(PredictionError):
+        model.predict("역촌", "응암", datetime(2026, 9, 21, 8), line=6)
+    with pytest.raises(PredictionError):
+        model.predict(
+            "김포공항", "공항시장", datetime(2026, 9, 21, 8), line=9, service="급행"
+        )
+
+
+def test_inference_interpolates_time(model):
+    a = model.predict("사당", "방배", datetime(2026, 9, 21, 8, 0))[
+        "train_mean_congestion_pct"
+    ]
+    b = model.predict("사당", "방배", datetime(2026, 9, 21, 8, 30))[
+        "train_mean_congestion_pct"
+    ]
+    mid = model.predict("사당", "방배", datetime(2026, 9, 21, 8, 15))
+    assert mid["interpolation_fraction"] == 0.5
+    assert abs(mid["train_mean_congestion_pct"] - (a + b) / 2) < 0.002

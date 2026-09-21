@@ -1,0 +1,55 @@
+{
+  "stations": 315,
+  "segments": 640,
+  "observations": 610209,
+  "line9_observations": 24624,
+  "stations_with_address": 289,
+  "stations_with_coordinates": 314,
+  "by_line": {
+    "1": {
+      "stations": 10,
+      "segments": 18,
+      "observations": 21060
+    },
+    "2": {
+      "stations": 51,
+      "segments": 102,
+      "observations": 112944
+    },
+    "3": {
+      "stations": 34,
+      "segments": 66,
+      "observations": 71604
+    },
+    "4": {
+      "stations": 26,
+      "segments": 50,
+      "observations": 54756
+    },
+    "5": {
+      "stations": 56,
+      "segments": 110,
+      "observations": 118950
+    },
+    "6": {
+      "stations": 39,
+      "segments": 72,
+      "observations": 78273
+    },
+    "7": {
+      "stations": 42,
+      "segments": 82,
+      "observations": 88452
+    },
+    "8": {
+      "stations": 19,
+      "segments": 36,
+      "observations": 39546
+    },
+    "9": {
+      "stations": 38,
+      "segments": 104,
+      "observations": 24624
+    }
+  }
+}
